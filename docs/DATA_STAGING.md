@@ -47,7 +47,9 @@ The parser rejects unknown fields so uncertainties, masks, covariance, or IDs ca
 
 ## Hugging Face dataset route
 
-Select the actual repository, immutable commit, file, and desired columns before running. No dataset was selected or downloaded from HF during this staging change. The plugin authenticated successfully in the preparation session, but model/dataset search and documentation-fetch operations were unavailable. No remote job was launched.
+**Executed follow-up:** [HF_VALIDATION.md](HF_VALIDATION.md) records two pinned public datasets, 29 independent numerical gates, a CPU browser test, and an unresolved source-metadata finding. Importable examples are now in `public/samples/hf/`. The instructions below also apply to additional datasets.
+
+Select the actual repository, immutable commit, file, and desired columns before running. The first staging change used synthetic fixtures; the follow-up fetched public data using the HF API after plugin search was unavailable. No remote job was launched.
 
 Use the current `hf` CLI in an authenticated local environment. For a JSONL source:
 

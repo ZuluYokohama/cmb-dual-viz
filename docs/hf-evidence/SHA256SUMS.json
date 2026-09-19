@@ -1,0 +1,14 @@
+{
+  "docs/hf-evidence/browser-checks.json": "5ec58ba69496dbce4e2a1ccb113973225b78b5c786ee5fa113393e7b6ee15f1c",
+  "docs/hf-evidence/planck-staging-report.json": "44230f5c184e1357598aa1c9be13b4844bc1a246ed3203c55029b53b0b147588",
+  "docs/hf-evidence/execution-context.json": "39c117987e4f72a15bcd5673a3218178b84235798f791cbdc452f7f8ec7abcdb",
+  "docs/hf-evidence/browser-before-server-ready.json": "8b70eefd1efd7ff732021e8b24288a6bf2be911a6164fbac9c9a539f09723375",
+  "docs/hf-evidence/silso-primary-2019.csv": "d9595d2eeb05af07fdc194604f95f2a9ec09243826a6b0a0ee9a3196b0a9c164",
+  "docs/hf-evidence/report.json": "157b95200414db2e9610a92189771a63e0bc1f8aec3878de5b30c3e4bae73f20",
+  "docs/hf-evidence/numerical-checks.json": "a1c1fb09f226e79d7e5ef4b95297b86db4f5dfdf47dc6a8cecfb070f4158827f",
+  "docs/hf-evidence/planck-identities.json": "0238e649ab8437376b86fb7a03988d14d0fc53ab7aa9292af3b0bd3de314d6bb",
+  "docs/hf-evidence/sunspots-staging-report.json": "8a0a74f87e9171e36643c761d652228beb14f6e8cf4e413480a1790444c05d66",
+  "docs/hf-evidence/sunspots-row-provenance.json": "9fb1eb56fb650a98bc5b7610300390b47d436a3135eac2c4f922e6f79f4c3443",
+  "public/samples/hf/planck.cmb.json": "6f7fc315b0a8de9fca98d53ffe936d846c1a11f6975101997f40cf1f66069353",
+  "public/samples/hf/sunspots.cmb.json": "235e3568c6152ab5a9c183795ebfbe546f4a2f0271abb07438b96664dfefb9e5"
+}

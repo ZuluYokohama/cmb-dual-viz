@@ -2,6 +2,8 @@
 
 Reviewed upstream revision: `1b6ede9c0529a160be2bbff0ea61df44b473c155` (2026-09-19).
 
+**Follow-up:** [Executed HF validation](HF_VALIDATION.md) extends this initial baseline with two pinned datasets, independent numerical comparisons, and a CPU browser intake test. The original gate table below records the initial staging status; consult the follow-up for current evidence and remaining limits.
+
 ## What the repository does
 
 This is a React/TypeScript exploratory research instrument. Thread A synthesizes a CMB-like sky from real spherical harmonics and a **toy** power spectrum. Thread B adds a synthetic coherence field. JSON/CSV/text input becomes a meaning graph, correlation candidates, and derived Smith-chart displays. CPU implementations are the reference; selected operations have WebGPU implementations and epsilon gates. The multi-device implementation includes a dual-logical-device demonstration, which does not demonstrate physical multi-GPU scaling.

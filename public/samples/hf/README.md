@@ -1,0 +1,8 @@
+# HF-derived astronomy intake samples
+
+These external data files retain the source licenses below. The repository's research-only code license does not replace their licenses or add restrictions to rights granted by those licenses.
+
+- **planck.cmb.json**: Planck Collaboration PSZ2 catalog, via NASA HEASARC and Julien Simon's [HF mirror](https://huggingface.co/datasets/juliensimon/planck-sz2-clusters), revision `d502c41c80614530aa6c5a99edc92a2c16166585`. Mirror-declared license: [CC BY-NC 3.0 IGO](https://creativecommons.org/licenses/by-nc/3.0/igo/). Adaptation selects all 1,653 Galactic positions and detection SNRs, wraps longitude into [-180,180), and creates the CMB intake envelope. It is a cluster detection catalog, not a temperature map. Original names remain in the evidence sidecar.
+- **sunspots.cmb.json**: SILSO World Data Center, Royal Observatory of Belgium, Brussels, international sunspot number v2, via Julien Simon's [HF mirror](https://huggingface.co/datasets/juliensimon/silso-sunspot-number), revision `9419617e92fe2c23abf247ee7ffbe4839b082d50`. License: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). Adaptation selects 2019's 365 daily numerical values, checks them against [primary SILSO](https://www.sidc.be/SILSO/DATA/SN_d_tot_V2.0.csv), and expresses time as UTC days since 2019-01-01. The disputed mirror `is_provisional` flag is excluded and retained in the evidence sidecar.
+
+Changes were prepared for noncommercial research intake and software validation. The source institutions and dataset publisher do not endorse this instrument or its correlations. See [the executed validation report](../../../docs/HF_VALIDATION.md).

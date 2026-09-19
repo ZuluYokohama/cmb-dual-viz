@@ -87,6 +87,8 @@ Append-only records for ingest, correlate, compute, and dressing transitions (ep
 
 For checked new-data intake, use [Data staging](docs/DATA_STAGING.md): `npm run stage:data` accepts a versioned envelope or explicitly mapped JSONL, preserves provenance and hashes, and checks the CPU downstream route. `npm run vv` runs the reproducible software gate. See [the review and full V&V roster](docs/VV_REVIEW.md) for remaining source, inference, GPU, and proxy validation.
 
+[Executed Hugging Face validation](docs/HF_VALIDATION.md): Planck SZ catalog + SILSO 2019 intake, independent numerical references, CPU browser checks, and a retained source-metadata failure. Importable samples: `public/samples/hf/`.
+
 `GET /api/fetch?url=<encoded http(s) URL>` — Vite plugin proxy: **http/https only**, **5 MB** cap. Same-origin samples under `public/samples/` exercise the pipeline.
 
 ---

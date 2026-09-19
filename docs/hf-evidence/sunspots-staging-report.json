@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "cmb.staging-report/v1",
+  "status": "VERIFIED_FOR_RESEARCH_INTAKE",
+  "createdAt": "2026-09-19T23:36:54.897Z",
+  "sourceCommit": "1ea3585af23d7c969116ccb5b2875576c11ddc7f",
+  "workingTreeDirty": true,
+  "node": "v24.19.0",
+  "runnerSha256": "2198ee3631f5353f839c2605d7d87c64fdbd2b99ce00e836d8a352b7e4610db8",
+  "implementationSha256": "fda7e8de568d85277d37371f75a3dcf4964b187617c6335c4da06b24a99b4872",
+  "input": {
+    "bytes": 17269,
+    "sha256": "3a7444204beb2c64fa59dc74cb2746072540ffe0dcfcd849d9c2bc45ecaf99eb"
+  },
+  "mappingSha256": null,
+  "envelopeSha256": "235e3568c6152ab5a9c183795ebfbe546f4a2f0271abb07438b96664dfefb9e5",
+  "records": 365,
+  "kind": "series",
+  "provenance": {
+    "source": "hf://datasets/juliensimon/silso-sunspot-number/data/silso_sunspot_number.parquet",
+    "revision": "9419617e92fe2c23abf247ee7ffbe4839b082d50",
+    "license": "CC-BY-NC-4.0",
+    "origin": "measured"
+  },
+  "sourceAssertionsVerified": false,
+  "checks": {
+    "contract": "pass",
+    "atomicAdmission": "pass",
+    "downstreamCpuSmoke": {
+      "device": "cpu",
+      "context": "fixed synthetic fixture",
+      "dataNodes": 1,
+      "seeds": 4,
+      "hitCount": 9,
+      "status": "pass",
+      "scientificValidation": "not-run",
+      "gpuValidation": "not-run"
+    }
+  },
+  "scientificValidation": "NOT_RUN",
+  "browserWebGpu": "NOT_RUN",
+  "notes": [
+    "Contract verified; scientific validity and source assertions remain unverified.",
+    "Current correlates use index alignment; timestamps and units do not calibrate inference."
+  ]
+}

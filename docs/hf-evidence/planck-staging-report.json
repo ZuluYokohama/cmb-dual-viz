@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "cmb.staging-report/v1",
+  "status": "VERIFIED_FOR_RESEARCH_INTAKE",
+  "createdAt": "2026-09-19T23:36:54.755Z",
+  "sourceCommit": "1ea3585af23d7c969116ccb5b2875576c11ddc7f",
+  "workingTreeDirty": true,
+  "node": "v24.19.0",
+  "runnerSha256": "2198ee3631f5353f839c2605d7d87c64fdbd2b99ce00e836d8a352b7e4610db8",
+  "implementationSha256": "fda7e8de568d85277d37371f75a3dcf4964b187617c6335c4da06b24a99b4872",
+  "input": {
+    "bytes": 155341,
+    "sha256": "afc9138d96a93c6f15b2807b7ec5b4b916f066c3fab3b4927c131ffe53b07e86"
+  },
+  "mappingSha256": null,
+  "envelopeSha256": "6f7fc315b0a8de9fca98d53ffe936d846c1a11f6975101997f40cf1f66069353",
+  "records": 1653,
+  "kind": "sky",
+  "provenance": {
+    "source": "hf://datasets/juliensimon/planck-sz2-clusters/data/planck_sz2.parquet",
+    "revision": "d502c41c80614530aa6c5a99edc92a2c16166585",
+    "license": "CC-BY-NC-3.0-IGO",
+    "origin": "measured"
+  },
+  "sourceAssertionsVerified": false,
+  "checks": {
+    "contract": "pass",
+    "atomicAdmission": "pass",
+    "downstreamCpuSmoke": {
+      "device": "cpu",
+      "context": "fixed synthetic fixture",
+      "dataNodes": 25,
+      "seeds": 3,
+      "hitCount": 36,
+      "status": "pass",
+      "scientificValidation": "not-run",
+      "gpuValidation": "not-run"
+    }
+  },
+  "scientificValidation": "NOT_RUN",
+  "browserWebGpu": "NOT_RUN",
+  "notes": [
+    "Contract verified; scientific validity and source assertions remain unverified.",
+    "Sky meaning nodes are subsampled; no coordinate-frame transformation or measured sky reconstruction is performed."
+  ]
+}

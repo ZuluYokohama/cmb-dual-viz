@@ -1,0 +1,23 @@
+{
+  "planck": {
+    "repo": "juliensimon/planck-sz2-clusters",
+    "revision": "d502c41c80614530aa6c5a99edc92a2c16166585",
+    "path": "data/planck_sz2.parquet",
+    "bytes": 112290,
+    "sha256": "fc34bd050d3c19f20165f9af05fb80ecbdcf5178a3f1598749ddea303064a753",
+    "license": "CC-BY-NC-3.0-IGO",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/3.0/igo/",
+    "upstream": "https://heasarc.gsfc.nasa.gov/W3Browse/all/plancksz2.html"
+  },
+  "sunspots": {
+    "repo": "juliensimon/silso-sunspot-number",
+    "revision": "9419617e92fe2c23abf247ee7ffbe4839b082d50",
+    "path": "data/silso_sunspot_number.parquet",
+    "bytes": 1032816,
+    "sha256": "7e53258aaf502fdfb0b68c6a1ddaac27ab87415b82ddb411e969270e973310e4",
+    "license": "CC-BY-NC-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "upstream": "https://www.sidc.be/SILSO/DATA/SN_d_tot_V2.0.csv",
+    "upstreamDocumentation": "https://www.sidc.be/SILSO/infosndtot"
+  }
+}

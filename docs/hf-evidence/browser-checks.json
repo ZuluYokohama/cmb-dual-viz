@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "actual HF file imports and row counts",
+      "status": "PASS",
+      "importedDatasets": 2
+    },
+    {
+      "name": "invalid typed row rejected without dataset admission",
+      "status": "PASS"
+    },
+    {
+      "name": "browser correlate scan completes after HF import",
+      "status": "PASS"
+    },
+    {
+      "name": "no uncaught browser exceptions",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "physicalGpu": "NOT_RUN",
+  "browser": "HeadlessChrome/153.0.8010.52",
+  "correlate": "Scanned 35 targets · top 10 by |z|toy · 61.1 ms · device: cpu · path: worker",
+  "computeDevice": "cpu"
+}
