@@ -18,25 +18,39 @@ jobs:
           python3 << 'PY'
           import base64, zlib, pathlib, subprocess, sys, json
           root = pathlib.Path('.')
-          man_path = root / 'sync-payloads/manifest.json'
-          if not man_path.exists():
-            print('no manifest; nothing to do')
-            sys.exit(0)
-          manifest = json.loads(man_path.read_text())
+
+          def load_text(stem: str):
+            parts = sorted(root.glob(f'sync-payloads/{stem}.part*'))
+            if parts:
+              text = ''.join(p.read_text() for p in parts)
+              print(stem, 'from', len(parts), 'parts', 'chars', len(text))
+              return text
+            sp = root / f'sync-payloads/{stem}'
+            if sp.exists():
+              text = sp.read_text()
+              print(stem, 'from single file chars', len(text))
+              return text
+            return None
 
           def load_b64(stem: str):
             parts = sorted(root.glob(f'sync-payloads/{stem}.zlib.b64.part*'))
             if parts:
               text = ''.join(p.read_text().strip() for p in parts)
-              print(stem, 'from', len(parts), 'parts', 'chars', len(text))
+              print(stem, 'from', len(parts), 'b64 parts', 'chars', len(text))
               return text
             sp = root / f'sync-payloads/{stem}.zlib.b64'
             if sp.exists():
               text = sp.read_text().strip()
-              print(stem, 'from single file chars', len(text))
+              print(stem, 'from single b64 chars', len(text))
               return text
             print('skip missing payload', stem)
             return None
+
+          man_text = load_text('manifest.json')
+          if man_text is None:
+            print('no manifest; nothing to do')
+            sys.exit(0)
+          manifest = json.loads(man_text)
 
           changed = False
           for item in manifest['entries']:
