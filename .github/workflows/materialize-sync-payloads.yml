@@ -20,6 +20,11 @@ jobs:
           root = pathlib.Path('.')
 
           def load_text(stem: str):
+            zb = root / f'sync-payloads/{stem}.zlib.b64'
+            if zb.exists():
+              text = zlib.decompress(base64.b64decode(zb.read_text().strip())).decode()
+              print(stem, 'from zlib.b64 chars', len(text))
+              return text
             parts = sorted(root.glob(f'sync-payloads/{stem}.part*'))
             if parts:
               text = ''.join(p.read_text() for p in parts)
