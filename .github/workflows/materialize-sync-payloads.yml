@@ -1,0 +1,61 @@
+name: materialize-sync-payloads
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'sync-payloads/**'
+      - '.github/workflows/materialize-sync-payloads.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decode zlib.b64 payloads into src
+        run: |
+          python3 << 'PY'
+          import base64, zlib, pathlib, subprocess, sys
+          root = pathlib.Path('.')
+          mapping = {
+            'sync-payloads/App.tsx.zlib.b64': 'src/App.tsx',
+            'sync-payloads/styles.css.zlib.b64': 'src/styles.css',
+          }
+          expected = {
+            'src/App.tsx': '1b1c46270eb893c7b515168fd3e03932fce6ddfe',
+            'src/styles.css': 'e64d41445231767c17aa951a0a1b925c895e671b',
+          }
+          changed = False
+          for src, dst in mapping.items():
+            sp = root / src
+            if not sp.exists():
+              print('skip missing', src)
+              continue
+            raw = zlib.decompress(base64.b64decode(sp.read_text().strip()))
+            h = subprocess.check_output(['git','hash-object','--stdin'], input=raw).decode().strip()
+            want = expected[dst]
+            print(dst, 'git', h, 'want', want, 'ok', h==want)
+            if h != want:
+              sys.exit(f'hash mismatch for {dst}')
+            dp = root / dst
+            if (not dp.exists()) or dp.read_bytes() != raw:
+              dp.parent.mkdir(parents=True, exist_ok=True)
+              dp.write_bytes(raw)
+              changed = True
+              print('wrote', dst, 'bytes', len(raw))
+            else:
+              print('unchanged', dst)
+          print('changed', changed)
+          PY
+      - name: Commit materialized sources
+        run: |
+          git config user.name "Zulu Operations"
+          git config user.email "zuluyokahama@gmail.com"
+          git add src/App.tsx src/styles.css
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "sync: materialize App.tsx + styles.css from verified zlib.b64 payloads"
+            git push
+          fi
