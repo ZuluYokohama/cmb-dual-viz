@@ -104,12 +104,25 @@ Append-only records for ingest, correlate, compute, and dressing transitions (ep
 | `docs/DRESSING_CHECKLIST.md` | Dressing states + Bombelli/DFM motif (no Lean/DFM impl) |
 | `docs/CAPABILITIES_BRIEFING.md` | Operator capabilities briefing (shareable) |
 
+
+## Landing
+
+GitHub Pages–ready cosmic landing (static HTML/CSS/JS, no React build):
+
+- **`site/`** — `index.html` · `styles.css` · `app.js`
+- Enable Pages: **Settings → Pages → Deploy from branch `main` / folder `/site`**
+- See [`site/README.md`](./site/README.md) for local preview and link notes.
+
 ## Screenshots
 
 - `artifacts/cmb-s3-cpu-fabric.png` — S3 CPU fabric gate
 - `artifacts/cmb-smith-v3.png` — prior Smith + correlates
 - `artifacts/cmb-dressing-checklist.png` — Dressing checklist RESEARCH panel
 
-## License / caution
+## License
 
-Toy educational / research-intuition instrument. Use at your own epistemic caution.
+**Zulu Research-Only License** — see [`LICENSE`](./LICENSE) (`SPDX-License-Identifier: LicenseRef-Zulu-Research-Only`).
+
+Non-commercial research, academic, educational, and personal evaluative use only. Commercial use requires a separate written license from ZuluYokohama.
+
+**Caution:** Toy educational / RESEARCH-intuition instrument (Class D-analogue). Does not certify OPEN claims, does not claim NASA compliance, and does not present EXAMPLE / synthetic streams as measured Planck or GCP data. Use at your own epistemic caution.
