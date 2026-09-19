@@ -1,21 +1,51 @@
-MIT License
+Zulu Research-Only License
+SPDX-License-Identifier: LicenseRef-Zulu-Research-Only
 
 Copyright (c) 2026 ZuluYokohama
+All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. Grant of Research Use
+   Permission is hereby granted, free of charge, to any person obtaining a copy
+   of this software and associated documentation files (the "Software"), to use,
+   copy, modify, and distribute the Software solely for non-commercial research,
+   academic, educational, and personal evaluative purposes, subject to the
+   conditions below.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+2. Restrictions
+   a. Commercial use, commercial hosting, sale, sublicensing for fee, or
+      inclusion in a commercial product or service is not permitted without a
+      separate written license from the copyright holder.
+   b. The Software shall not be represented as certified, flight-qualified,
+      NASA-compliant, or as authorizing scientific OPEN / operational decisions
+      solely by virtue of this license or of instrument outputs.
+   c. EXAMPLE, synthetic, metaphor, and derived layers shipped with the Software
+      shall not be presented as measured Planck, GCP, or other observational
+      flight data.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+3. Attribution
+   Redistributions of source or substantial portions must retain this copyright
+   notice, this license text, and the epistemic caution in the accompanying
+   documentation (including Class D-analogue RESEARCH posture).
+
+4. Patent & Trademark
+   No patent or trademark rights are granted except as required for the
+   research use permitted above.
+
+5. Termination
+   Any use outside the grant automatically terminates the permissions under
+   this license. Upon termination, cease use and destroy copies except as
+   required for archival research records.
+
+6. Disclaimer of Warranty
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+7. Limitation of Liability
+   IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+   DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+   OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+   USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+8. Contact
+   For commercial or other licensing: https://github.com/ZuluYokohama
