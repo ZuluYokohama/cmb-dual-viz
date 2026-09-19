@@ -1,0 +1,8 @@
+{"time_s":0,"reading":0,"sensor":"synthetic"}
+{"time_s":1,"reading":1,"sensor":"synthetic"}
+{"time_s":2,"reading":0.5,"sensor":"synthetic"}
+{"time_s":3,"reading":-0.5,"sensor":"synthetic"}
+{"time_s":4,"reading":-1,"sensor":"synthetic"}
+{"time_s":5,"reading":0,"sensor":"synthetic"}
+{"time_s":6,"reading":0.75,"sensor":"synthetic"}
+{"time_s":7,"reading":0.25,"sensor":"synthetic"}

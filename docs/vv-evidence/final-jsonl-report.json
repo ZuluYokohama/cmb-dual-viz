@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "cmb.staging-report/v1",
+  "status": "VERIFIED_FOR_RESEARCH_INTAKE",
+  "createdAt": "2026-09-19T21:29:34.410Z",
+  "sourceCommit": "8fff042499c58973a2cee0dd3491ddf6bf318c80",
+  "workingTreeDirty": false,
+  "node": "v24.19.0",
+  "runnerSha256": "2198ee3631f5353f839c2605d7d87c64fdbd2b99ce00e836d8a352b7e4610db8",
+  "implementationSha256": "fda7e8de568d85277d37371f75a3dcf4964b187617c6335c4da06b24a99b4872",
+  "input": {
+    "bytes": 380,
+    "sha256": "33dab1730f6f827ee0297c16bcc3a196d04b3afa14631f58e1b72a5ea6a3ade3"
+  },
+  "mappingSha256": "797eeedead716ac564857b73663cbf3d36d980c5ccc1376129359a617b3b4c36",
+  "envelopeSha256": "af6516d2cf2594586dfa27503907f8b02814b9185609418a2ade37bd61ea89d1",
+  "records": 8,
+  "kind": "series",
+  "provenance": {
+    "source": "file:examples/staging/rows.jsonl",
+    "revision": "fixture-v1",
+    "license": "LicenseRef-Zulu-Research-Only",
+    "origin": "synthetic"
+  },
+  "sourceAssertionsVerified": false,
+  "checks": {
+    "contract": "pass",
+    "atomicAdmission": "pass",
+    "downstreamCpuSmoke": {
+      "device": "cpu",
+      "context": "fixed synthetic fixture",
+      "dataNodes": 1,
+      "seeds": 4,
+      "hitCount": 9,
+      "status": "pass",
+      "scientificValidation": "not-run",
+      "gpuValidation": "not-run"
+    }
+  },
+  "scientificValidation": "NOT_RUN",
+  "browserWebGpu": "NOT_RUN",
+  "notes": [
+    "Contract verified; scientific validity and source assertions remain unverified.",
+    "Current correlates use index alignment; timestamps and units do not calibrate inference."
+  ]
+}

@@ -100,6 +100,7 @@ export function IngestPanel({
         labeled — never auto-promoted to PHYSICS-BACKED. Convergence is intuition, not
         proof of non-local effects.
       </p>
+      <p className="hint">For checked intake, import a cmb.dataset/v1 JSON file produced by the staging command. JSONL needs an explicit column mapping.</p>
 
       <div className="url-ingest">
         <div className="sky-title">

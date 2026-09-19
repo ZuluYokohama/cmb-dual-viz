@@ -152,13 +152,13 @@ export async function correlateLaggedBatchGpu(
     size: Math.max(4, series.byteLength),
     usage: GPUBufferUsage.STORAGE | GPUBufferUsage.COPY_DST,
   });
-  device.queue.writeBuffer(seriesBuf, 0, series);
+  device.queue.writeBuffer(seriesBuf, 0, series.slice());
 
   const pairBuf = device.createBuffer({
     size: Math.max(8, pairs.byteLength),
     usage: GPUBufferUsage.STORAGE | GPUBufferUsage.COPY_DST,
   });
-  device.queue.writeBuffer(pairBuf, 0, pairs);
+  device.queue.writeBuffer(pairBuf, 0, pairs.slice());
 
   const scoreBuf = device.createBuffer({
     size: nPairs * 4,

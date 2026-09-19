@@ -3,6 +3,7 @@ import { parseCsvDocument } from './parseCsv';
 import { parseTextDocument } from './parseText';
 import type { IngestedDataset, IngestLogEntry } from './types';
 import type { ParseResult } from './parseJson';
+import { MAX_STAGING_BYTES } from './staging';
 
 export * from './types';
 export { parseJsonDocument, parseCsvDocument, parseTextDocument };
@@ -21,7 +22,11 @@ export function ingestFile(
   const lower = filename.toLowerCase();
   let result: ParseResult;
 
-  if (lower.endsWith('.json') || text.trimStart().startsWith('{') || text.trimStart().startsWith('[')) {
+  if (new TextEncoder().encode(text).byteLength > MAX_STAGING_BYTES) {
+    result = { ok: false, errors: ['Input exceeds 5 MiB intake limit'], residue: [] };
+  } else if (lower.endsWith('.jsonl') || lower.endsWith('.parquet') || lower.endsWith('.fits')) {
+    result = { ok: false, errors: ['Use the explicit staging adapter before importing JSONL, Parquet, or FITS'], residue: [] };
+  } else if (lower.endsWith('.json') || text.trimStart().startsWith('{') || text.trimStart().startsWith('[')) {
     // Prefer JSON if extension or content looks like JSON
     if (lower.endsWith('.csv')) {
       result = parseCsvDocument(text, filename, id);
@@ -29,9 +34,7 @@ export function ingestFile(
       result = parseTextDocument(text, filename, id);
     } else {
       result = parseJsonDocument(text, filename, id);
-      if (!result.ok && (lower.endsWith('.txt') || !lower.includes('.'))) {
-        result = parseTextDocument(text, filename, id);
-      }
+      // Structured input must not turn into prose when validation fails.
     }
   } else if (lower.endsWith('.csv') || lower.endsWith('.tsv')) {
     result = parseCsvDocument(text, filename, id);
@@ -94,7 +97,7 @@ export type FetchProxyResult = FetchProxyOk | FetchProxyErr;
 
 /**
  * CORS-safe URL fetch via Vite /api/fetch proxy, then same parse pipeline.
- * Remote data stays DERIVED/MEANING-MAP unless the payload itself declares otherwise —
+ * Remote physics labels are source assertions only —
  * never auto-promote to PHYSICS-BACKED.
  */
 export async function ingestFromUrl(

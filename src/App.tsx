@@ -651,6 +651,7 @@ export default function App() {
         name: ds.name,
         type: ds.type,
         sourceUrl: ds.sourceUrl ?? null,
+        staging: ds.meta?.staging ?? null,
         status: entry.status,
         message: entry.message,
       },

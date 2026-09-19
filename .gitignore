@@ -8,4 +8,6 @@ coverage/
 artifacts/*.png
 artifacts/*.pdf
 artifacts/ledger/*.jsonl
+artifacts/staging/
+artifacts/vv/
 !.gitkeep

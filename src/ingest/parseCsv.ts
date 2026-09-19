@@ -89,6 +89,7 @@ export function parseCsvDocument(
     const cols = splitCsvLine(lines[r]!);
     const num = (i: number) => {
       if (i < 0 || i >= cols.length) return NaN;
+      if (cols[i]!.trim() === '') return NaN;
       return Number(cols[i]);
     };
 

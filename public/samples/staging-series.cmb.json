@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "cmb.dataset/v1",
+  "name": "Synthetic intake fixture — not measured data",
+  "kind": "series",
+  "provenance": {
+    "source": "file:public/samples/staging-series.cmb.json",
+    "revision": "fixture-v1",
+    "license": "LicenseRef-Zulu-Research-Only",
+    "origin": "synthetic"
+  },
+  "units": { "value": "dimensionless", "time": "s" },
+  "records": [
+    { "t": 0, "value": 0 },
+    { "t": 1, "value": 1 },
+    { "t": 2, "value": 0.5 },
+    { "t": 3, "value": -0.5 },
+    { "t": 4, "value": -1 },
+    { "t": 5, "value": 0 },
+    { "t": 6, "value": 0.75 },
+    { "t": 7, "value": 0.25 }
+  ]
+}

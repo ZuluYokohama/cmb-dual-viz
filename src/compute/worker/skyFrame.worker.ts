@@ -91,13 +91,11 @@ self.onmessage = (ev: MessageEvent<SkyWorkerRequest>) => {
       coherenceOpacity: msg.coherenceOpacity ?? 0.45,
     });
 
-    const gridBuffer = grid.buffer.slice(0);
-    const rgbaBuffer = rgba.buffer.slice(
-      rgba.byteOffset,
-      rgba.byteOffset + rgba.byteLength
-    );
+    // Owned ArrayBuffers of the exact views; transferable even with shared input.
+    const gridBuffer = grid.slice().buffer;
+    const rgbaBuffer = rgba.slice().buffer;
     const cohBuffer = cohGrid
-      ? cohGrid.buffer.slice(0)
+      ? cohGrid.slice().buffer
       : null;
 
     const res: SkyWorkerResponse = {

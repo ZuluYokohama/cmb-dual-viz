@@ -1,0 +1,15 @@
+{
+  "envelope": {
+    "schemaVersion": "cmb.dataset/v1",
+    "name": "Mapped synthetic JSONL fixture",
+    "kind": "series",
+    "provenance": {
+      "source": "file:examples/staging/rows.jsonl",
+      "revision": "fixture-v1",
+      "license": "LicenseRef-Zulu-Research-Only",
+      "origin": "synthetic"
+    },
+    "units": { "value": "dimensionless", "time": "s" }
+  },
+  "columns": { "t": "time_s", "value": "reading" }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "check": "invalid row rejects entire dataset without output",
+    "pass": true,
+    "stderr": "STAGING_REJECTED: records[3].value: expected finite numeric value representable in float32"
+  },
+  {
+    "check": "existing output is never overwritten",
+    "pass": true,
+    "stderr": "STAGING_REJECTED: Output directory already exists; use a new run directory to preserve evidence"
+  },
+  {
+    "check": "fixture-envelope input/output hashes match actual bytes",
+    "pass": true
+  },
+  {
+    "check": "fixture-jsonl input/output hashes match actual bytes",
+    "pass": true
+  }
+]
