@@ -3,145 +3,180 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="CMB Dual-Thread Engine — carrier-wave geometry: ingest → meaning map → mismatch→match. RESEARCH Class D-analogue instrument." />
-  <meta name="theme-color" content="#05060f" />
-  <title>CMB Dual-Thread Engine</title>
+  <meta name="description" content="CMB Dual-Thread — boundary-layer instrument. Representations are the interface. RESEARCH · high score ≠ OPEN." />
+  <meta name="theme-color" content="#03040a" />
+  <title>CMB Dual-Thread · boundary layer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="stars" aria-hidden="true"></div>
-  <canvas id="sky" class="sky-canvas" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
 
-  <header class="topbar">
-    <a class="brand" href="#top">
-      <span class="brand-glyph" aria-hidden="true"></span>
-      <span>CMB Dual-Thread</span>
-    </a>
-    <nav class="nav">
-      <a href="#features">Features</a>
-      <a href="#epistemic">Epistemic</a>
-      <a href="https://github.com/ZuluYokohama/cmb-dual-viz" rel="noopener noreferrer">GitHub</a>
-    </nav>
-  </header>
+  <!-- Key-art = last-scatter screen under interactive Mollweide -->
+  <div class="surface-key" aria-hidden="true">
+    <img src="assets/key-art.png" alt="" />
+  </div>
+  <canvas id="sky" class="sky-stage" aria-label="Mollweide last-scatter surface"></canvas>
 
-  <main id="top">
-    <section class="hero">
-      <p class="eyebrow">RESEARCH · Class D-analogue · not NASA-compliant</p>
-      <h1>CMB Dual-Thread Engine</h1>
-      <p class="tagline">
-        Carrier-wave geometry for intuition:
-        <strong>ingest</strong> → <strong>meaning map</strong> → <strong>mismatch→match</strong>.
-        Real <em>Y<sub>ℓm</sub></em> sky · coherence overlay · Smith dial on one OpGraph fabric.
-      </p>
+  <aside class="rail" aria-label="Instrument rail">
+    <div class="rail-mark">
+      <span class="rail-id">ZULU</span>
+      <span class="rail-unit">CMB-DT</span>
+      <span class="rail-mode">BOUNDARY LAYER</span>
+    </div>
 
-      <div class="badge-strip" id="epistemic" role="list" aria-label="Epistemic labels">
-        <span class="badge physics" role="listitem">PHYSICS-BACKED</span>
-        <span class="badge metaphor" role="listitem">METAPHOR</span>
-        <span class="badge derived" role="listitem">DERIVED</span>
-        <span class="badge research" role="listitem">RESEARCH</span>
+    <div class="rail-block">
+      <div class="rail-label">THREADS</div>
+      <button type="button" class="thread-btn active" data-thread="A" aria-pressed="true">
+        <span class="led physics"></span>
+        <span class="thread-code">A</span>
+        <span class="thread-name">Y<sub>ℓm</sub></span>
+      </button>
+      <button type="button" class="thread-btn" data-thread="B" aria-pressed="false">
+        <span class="led metaphor"></span>
+        <span class="thread-code">B</span>
+        <span class="thread-name">COH</span>
+      </button>
+      <button type="button" class="thread-btn" data-thread="MIX" aria-pressed="false">
+        <span class="led derived"></span>
+        <span class="thread-code">⊕</span>
+        <span class="thread-name">MIX</span>
+      </button>
+    </div>
+
+    <div class="rail-block dress-block" id="dress-block" data-active="bare">
+      <div class="rail-label">DRESSING</div>
+      <div class="dress-glyph" aria-hidden="true">
+        <img src="assets/dressing-glyph.png" alt="" />
       </div>
-      <p class="badge-note">Class D-analogue — honest NPR-minded assurance, not NASA compliance.</p>
-
-      <div class="cta-row">
-        <a class="btn primary" href="https://github.com/ZuluYokohama/cmb-dual-viz" rel="noopener noreferrer">
-          GitHub repo
-        </a>
-        <a class="btn ghost" href="https://github.com/ZuluYokohama/cmb-dual-viz/blob/main/docs/CAPABILITIES_BRIEFING.md" rel="noopener noreferrer">
-          Capabilities briefing
-        </a>
-        <a class="btn ghost" href="https://github.com/ZuluYokohama/cmb-dual-viz/blob/main/LICENSE" rel="noopener noreferrer">
-          Research-Only License
-        </a>
+      <div class="dress-chips" role="group" aria-label="Dressing state">
+        <button type="button" class="dress-chip active" data-dress="bare">bare</button>
+        <button type="button" class="dress-chip" data-dress="dressed_candidate">dressed_candidate</button>
+        <button type="button" class="dress-chip" data-dress="invariant_claim">invariant_claim</button>
       </div>
-    </section>
+    </div>
 
-    <section class="features" id="features">
-      <h2>Instrument surface</h2>
-      <p class="section-lead">Eight coupled panels on a dual-thread sky — Core harmonics, Instrument coherence, and a thin optional analogy lane.</p>
-
-      <div class="card-grid">
-        <article class="card">
-          <div class="card-icon cyan">A</div>
-          <h3>Thread A · Y<sub>ℓm</sub></h3>
-          <p>PHYSICS-BACKED Mollweide from real associated Legendre / spherical harmonics — not a stock image. ℓ-max, focus, seed, EXAMPLE C<sub>ℓ</sub>.</p>
-          <span class="tag physics">PHYSICS-BACKED</span>
-        </article>
-
-        <article class="card">
-          <div class="card-icon magenta">B</div>
-          <h3>Thread B · Coherence</h3>
-          <p>Synthetic global coherence overlay with time scrub. Spatial autocorr vs shuffle-null — toy intuition, not GCP = CMB.</p>
-          <span class="tag metaphor">METAPHOR</span>
-        </article>
-
-        <article class="card">
-          <div class="card-icon amber">↗</div>
-          <h3>URL ingest</h3>
-          <p>Local files + http(s) proxy fetch (5&nbsp;MB cap). Provenance on every dataset; remotes stay untrusted until labeled.</p>
-          <span class="tag derived">DERIVED</span>
-        </article>
-
-        <article class="card">
-          <div class="card-icon cyan">◉</div>
-          <h3>Meaning map</h3>
-          <p>PCA + force layout of ℓ-bins, claims, series, and sky samples. Thread A/B pull halos and node inspector.</p>
-          <span class="tag derived">DERIVED</span>
-        </article>
-
-        <article class="card">
-          <div class="card-icon magenta">≈</div>
-          <h3>Correlate search</h3>
-          <p>Pearson / lagged / Spearman / cosine under shuffle null → z<sub>toy</sub>. High score ≠ OPEN. Worker path with main fallback.</p>
-          <span class="tag research">RESEARCH</span>
-        </article>
-
-        <article class="card">
-          <div class="card-icon amber">Γ</div>
-          <h3>Smith dial</h3>
-          <p>Real Möbius Γ↔z chart with MATCH center, trail, and transfer arcs. DERIVED z — not measured Z<sub>0</sub>, not EW/SDR.</p>
-          <span class="tag derived">DERIVED</span>
-        </article>
-
-        <article class="card">
-          <div class="card-icon cyan">✓</div>
-          <h3>Dressing checklist</h3>
-          <p>bare → dressed_candidate → invariant_claim. Bombelli motif: scaffolding OK if controlled. Not DFM algebra.</p>
-          <span class="tag research">RESEARCH</span>
-        </article>
-
-        <article class="card">
-          <div class="card-icon magenta">⧉</div>
-          <h3>OpGraph / WebGPU</h3>
-          <p>CPU fabric + ε-gated WebGPU for SH_SYNTH / CORRELATE_BATCH. SkyFrame / IngestConverge fusion. SwiftShader honesty.</p>
-          <span class="tag physics">FABRIC</span>
-        </article>
+    <div class="rail-block scrub-block">
+      <div class="rail-label">Γ SCRUB · RIM</div>
+      <input type="range" id="gamma-scrub" min="0" max="100" value="18" aria-label="Smith Gamma mismatch to match" />
+      <div class="scrub-readout">
+        <span id="gamma-val">|Γ| 0.82</span>
+        <span id="match-val" class="mismatch">MISMATCH</span>
       </div>
-    </section>
+    </div>
 
-    <section class="caution">
-      <h2>Epistemic brakes</h2>
-      <ul>
-        <li>Never certifies OPEN claims. Meaning map / correlates / Smith z-mapping are intuition instruments.</li>
-        <li>Not “NASA compliant.” Honest Class D-<em>analogue</em> only.</li>
-        <li>Never present fake citations or invented “measured” GCP/Planck numbers as real.</li>
-        <li><strong>High score ≠ OPEN.</strong></li>
-      </ul>
-    </section>
-  </main>
+    <div class="rail-foot">
+      <a href="https://github.com/ZuluYokohama/cmb-dual-viz" rel="noopener noreferrer">GH</a>
+      <a href="https://github.com/ZuluYokohama/cmb-dual-viz/blob/main/docs/CAPABILITIES_BRIEFING.md" rel="noopener noreferrer">CAP</a>
+      <a href="https://github.com/ZuluYokohama/cmb-dual-viz/blob/main/LICENSE" rel="noopener noreferrer">LIC</a>
+    </div>
+  </aside>
 
-  <footer class="footer">
-    <p>Zulu Research-Only License · © 2026 ZuluYokohama · RESEARCH instrument · high score ≠ OPEN</p>
-    <p class="footer-links">
-      <a href="https://github.com/ZuluYokohama/cmb-dual-viz" rel="noopener noreferrer">Repo</a>
-      ·
-      <a href="https://github.com/ZuluYokohama/cmb-dual-viz/blob/main/docs/CAPABILITIES_BRIEFING.md" rel="noopener noreferrer">Briefing</a>
-      ·
-      <a href="https://github.com/ZuluYokohama/cmb-dual-viz/blob/main/LICENSE" rel="noopener noreferrer">LicenseRef-Zulu-Research-Only</a>
+  <div class="hud">
+    <header class="hud-header">
+      <div class="pkt">
+        <span class="pkt-k">PACKET</span>
+        <span class="pkt-v">BOUNDARY-LAYER / RESEARCH</span>
+      </div>
+      <div class="status-leds" aria-label="Epistemic status">
+        <span class="status-led"><i class="led physics on"></i>PHYS</span>
+        <span class="status-led"><i class="led metaphor on"></i>META</span>
+        <span class="status-led"><i class="led derived on"></i>DERIV</span>
+        <span class="status-led"><i class="led research on"></i>RSRCH</span>
+      </div>
+      <div class="pkt-right">
+        <span class="pkt-k">CLASS</span>
+        <span class="pkt-v amber">D-ANALOGUE</span>
+      </div>
+    </header>
+
+    <p class="boundary-one-liner">
+      Representations are the interface · high score ≠ OPEN
     </p>
-  </footer>
+
+    <div class="hud-body">
+      <section class="panel packet-panel" id="panel-packet">
+        <div class="panel-hd">
+          <span class="panel-id">01</span>
+          <span>LAB PACKET</span>
+        </div>
+        <h1>CMB Dual-Thread Engine</h1>
+        <p class="epigraph">Humans like representations… we can only perceive the boundary layers.</p>
+        <p class="mono-line" id="dress-copy">
+          state: bare · scaffolding visible · last-scatter screen only
+        </p>
+        <p class="terse" id="dress-detail">
+          Mollweide = readable surface · not the interior.<br />
+          Smith = rim of reflection · mismatch→match.<br />
+          Fail-closed. Not NASA. Research-Only.
+        </p>
+      </section>
+
+      <section class="panel smith-panel" id="panel-smith">
+        <div class="panel-hd">
+          <span class="panel-id">02</span>
+          <span>SMITH Γ · RIM</span>
+          <span class="panel-tag derived">DERIVED z</span>
+        </div>
+        <div class="smith-stage">
+          <img class="smith-relic" src="assets/smith-relic.png" alt="" aria-hidden="true" />
+          <canvas id="smith" width="180" height="180" aria-label="Smith chart Gamma dial"></canvas>
+        </div>
+        <div class="smith-readouts">
+          <div><span class="k">Γ</span> <span id="smith-g">—</span></div>
+          <div><span class="k">z</span> <span id="smith-z">—</span></div>
+          <div><span class="k">rim</span> <span id="smith-state" class="mismatch">MISMATCH</span></div>
+        </div>
+      </section>
+
+      <section class="panel map-panel" id="panel-map">
+        <div class="panel-hd">
+          <span class="panel-id">03</span>
+          <span>POINT-COINCIDENCES</span>
+          <span class="panel-tag derived">DERIVED</span>
+        </div>
+        <div class="map-stage">
+          <img class="map-relic" src="assets/meaning-constellation.png" alt="" aria-hidden="true" />
+          <canvas id="constellation" width="280" height="160" aria-label="Meaning map constellation"></canvas>
+        </div>
+        <div class="map-legend mono-line">
+          surface coincidences · ℓ-bin · claim · series · sky
+        </div>
+      </section>
+
+      <section class="panel readout-panel" id="panel-readout">
+        <div class="panel-hd">
+          <span class="panel-id">04</span>
+          <span>READOUT</span>
+        </div>
+        <dl class="readout-grid">
+          <div><dt>SURFACE</dt><dd>last-scatter</dd></div>
+          <div><dt>THREAD</dt><dd id="ro-thread">A · multipole</dd></div>
+          <div><dt>ℓ EMPHASIS</dt><dd id="ro-ell">Y₂₀ + Y₂₂</dd></div>
+          <div><dt>COH WEIGHT</dt><dd id="ro-coh">0.12</dd></div>
+          <div><dt>DRESSING</dt><dd id="ro-dress">bare</dd></div>
+          <div><dt>OPEN?</dt><dd class="fail">NEVER CERTIFY</dd></div>
+        </dl>
+      </section>
+    </div>
+
+    <footer class="hud-footer">
+      <span>Zulu Research-Only License</span>
+      <span class="sep">·</span>
+      <span class="amber">high score ≠ OPEN</span>
+      <span class="sep">·</span>
+      <span>Class D-analogue</span>
+      <span class="sep">·</span>
+      <span class="muted">© 2026 ZuluYokohama</span>
+      <span class="footer-links">
+        <a href="https://github.com/ZuluYokohama/cmb-dual-viz" rel="noopener noreferrer">GitHub</a>
+        <a href="https://github.com/ZuluYokohama/cmb-dual-viz/blob/main/docs/CAPABILITIES_BRIEFING.md" rel="noopener noreferrer">CAPABILITIES_BRIEFING</a>
+        <a href="https://github.com/ZuluYokohama/cmb-dual-viz/blob/main/LICENSE" rel="noopener noreferrer">LICENSE</a>
+      </span>
+    </footer>
+  </div>
 
   <script src="app.js"></script>
 </body>
