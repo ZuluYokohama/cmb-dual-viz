@@ -16,14 +16,15 @@ jobs:
       - name: Decode zlib.b64 payloads into src
         run: |
           python3 << 'PY'
-          import base64, zlib, pathlib, subprocess, sys
+          import base64, zlib, pathlib, subprocess, sys, json
           root = pathlib.Path('.')
-          expected = {
-            'src/App.tsx': '1b1c46270eb893c7b515168fd3e03932fce6ddfe',
-            'src/styles.css': 'e64d41445231767c17aa951a0a1b925c895e671b',
-          }
+          man_path = root / 'sync-payloads/manifest.json'
+          if not man_path.exists():
+            print('no manifest; nothing to do')
+            sys.exit(0)
+          manifest = json.loads(man_path.read_text())
 
-          def load_b64(stem: str) -> str | None:
+          def load_b64(stem: str):
             parts = sorted(root.glob(f'sync-payloads/{stem}.zlib.b64.part*'))
             if parts:
               text = ''.join(p.read_text().strip() for p in parts)
@@ -34,17 +35,19 @@ jobs:
               text = sp.read_text().strip()
               print(stem, 'from single file chars', len(text))
               return text
-            print('skip missing', stem)
+            print('skip missing payload', stem)
             return None
 
           changed = False
-          for stem, dst in [('App.tsx', 'src/App.tsx'), ('styles.css', 'src/styles.css')]:
+          for item in manifest['entries']:
+            stem = item['payload']
+            dst = item['dest']
+            want = item['sha']
             text = load_b64(stem)
             if text is None:
               continue
             raw = zlib.decompress(base64.b64decode(text))
             h = subprocess.check_output(['git','hash-object','--stdin'], input=raw).decode().strip()
-            want = expected[dst]
             print(dst, 'git', h, 'want', want, 'ok', h==want)
             if h != want:
               sys.exit(f'hash mismatch for {dst}')
@@ -62,10 +65,10 @@ jobs:
         run: |
           git config user.name "Zulu Operations"
           git config user.email "zuluyokahama@gmail.com"
-          git add src/App.tsx src/styles.css
+          git add -A src
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "sync: materialize App.tsx + styles.css from verified zlib.b64 payloads"
+            git commit -m "sync: materialize src from verified zlib.b64 payloads"
             git push
           fi
