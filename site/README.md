@@ -1,40 +1,36 @@
-# Landing page (GitHub Pages)
+# Landing (GitHub Pages)
 
-Static cosmic landing for **CMB Dual-Thread Engine**. Pure HTML/CSS/JS — no React build.
+Static **boundary-layer instrument** for CMB Dual-Thread Engine — not a SaaS brochure.
+Pure HTML/CSS/JS. Full-bleed Mollweide (last-scatter surface) + HUD rail + art relics.
 
 ## Files
 
-| File | Role |
+| Path | Role |
 |------|------|
-| `index.html` | Landing markup |
-| `styles.css` | Deep-space / CMB accent styles |
-| `app.js` | Animated Mollweide-ish canvas |
+| `index.html` | Instrument shell (rail + HUD) |
+| `styles.css` | Asymmetric lab / certificate layout |
+| `app.js` | Sky · Thread A/B/MIX · Smith Γ · dressing · coincidences |
+| `assets/key-art.png` | Last-scatter screen under sky |
+| `assets/smith-relic.png` | Smith rim backdrop |
+| `assets/meaning-constellation.png` | Point-coincidence backdrop |
+| `assets/dressing-glyph.png` | Dressing strip glyph |
+
+## Interaction
+
+- **Thread A / B / MIX** — multipole vs coherence weights on the sky
+- **Dressing** — `bare` → `dressed_candidate` → `invariant_claim` (scaffolding that cancels)
+- **Γ scrub** — Smith rim mismatch→match
+- Meaning map — force constellation of surface coincidences
+
+## One-liner
+
+Representations are the interface · high score ≠ OPEN
 
 ## Enable GitHub Pages
 
-1. Open the repo on GitHub → **Settings** → **Pages**.
-2. Under **Build and deployment** → **Source**, choose **Deploy from a branch**.
-3. Branch: **`main`** · Folder: **`/site`**.
-4. Save. After the Pages workflow finishes, the site is at:
+Settings → Pages → Deploy from branch **`main`** · Folder **`/site`**
 
-   `https://<user>.github.io/cmb-dual-viz/`
+## Epistemic
 
-   (or the custom domain you configure).
-
-> Stick with **`/site`**. Do not point Pages at `/docs` for this landing — project assurance docs live under `docs/` and are not the public landing root.
-
-## Local preview
-
-```bash
-cd site
-python3 -m http.server 8080
-# open http://localhost:8080
-```
-
-Or open `index.html` directly in a browser (canvas and relative CSS/JS still work).
-
-## Links
-
-- Repo: https://github.com/ZuluYokohama/cmb-dual-viz
-- Capabilities briefing: https://github.com/ZuluYokohama/cmb-dual-viz/blob/main/docs/CAPABILITIES_BRIEFING.md
-- License: **Zulu Research-Only** © 2026 ZuluYokohama (`LicenseRef-Zulu-Research-Only`) — see [`../LICENSE`](../LICENSE)
+RESEARCH · Class D-analogue · high score ≠ OPEN · not NASA-compliant.
+License: **Zulu Research-Only** (`LicenseRef-Zulu-Research-Only`).
