@@ -119,7 +119,7 @@ export function coherenceScore(
     nulls.push(autocorrMid(shuffled, nTheta, nPhi));
   }
 
-  const nullMean = nulls.reduce((a, b) => a + b, 0) / Math.max(1, nulls.length);
+  const nullMean = nulls.reduce((a, b) => a + b, 0) / nulls.length;
   const nullVar =
     nulls.reduce((a, b) => a + (b - nullMean) ** 2, 0) / Math.max(1, nulls.length - 1);
   const nullStd = Math.sqrt(nullVar);
