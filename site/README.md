@@ -10,15 +10,13 @@ Pure HTML/CSS/JS. Full-bleed Mollweide (last-scatter surface) + HUD rail + art r
 | `index.html` | Instrument shell (rail + HUD) |
 | `styles.css` | Asymmetric lab / certificate layout |
 | `app.js` | Sky · Thread A/B/MIX · Smith Γ · dressing · coincidences |
-| `assets/key-art.png` | Last-scatter screen under sky |
-| `assets/smith-relic.png` | Smith rim backdrop |
-| `assets/meaning-constellation.png` | Point-coincidence backdrop |
-| `assets/dressing-glyph.png` | Dressing strip glyph |
+| `asset-*.js` / `asset-data.js` | Art surface layers (base64) + hydrator |
+| `assets/*.png` | Source art (key / smith / constellation / dressing) |
 
 ## Interaction
 
 - **Thread A / B / MIX** — multipole vs coherence weights on the sky
-- **Dressing** — `bare` → `dressed_candidate` → `invariant_claim` (scaffolding that cancels)
+- **Dressing** — `bare` → `dressed_candidate` → `invariant_claim`
 - **Γ scrub** — Smith rim mismatch→match
 - Meaning map — force constellation of surface coincidences
 
