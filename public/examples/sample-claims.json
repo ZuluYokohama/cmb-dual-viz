@@ -1,0 +1,10 @@
+{
+  "type": "claims",
+  "name": "Acoustic intuition notes",
+  "epistemic": "DERIVED/MEANING-MAP",
+  "claims": [
+    "The first acoustic peak encodes the angular size of the sound horizon.",
+    "Low-ell modes are cosmic-variance limited on the largest scales.",
+    "Meaning-map edges are similarity and shared multipole links, not causation."
+  ]
+}

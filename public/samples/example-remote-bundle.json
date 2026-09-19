@@ -1,0 +1,16 @@
+{
+  "name": "EXAMPLE remote bundle",
+  "epistemic": "DERIVED/MEANING-MAP",
+  "claims": [
+    "Remote ingest via URL proxy — untrusted until labeled.",
+    "Smith chart maps DERIVED z from dual-thread features.",
+    "Minimize reflection / maximize transfer is a research analogy label only."
+  ],
+  "series": [
+    {"t": 0, "value": 0.05},
+    {"t": 5, "value": -0.08},
+    {"t": 10, "value": 0.16},
+    {"t": 15, "value": 0.03},
+    {"t": 20, "value": -0.11}
+  ]
+}
