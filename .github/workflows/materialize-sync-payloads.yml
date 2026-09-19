@@ -18,21 +18,31 @@ jobs:
           python3 << 'PY'
           import base64, zlib, pathlib, subprocess, sys
           root = pathlib.Path('.')
-          mapping = {
-            'sync-payloads/App.tsx.zlib.b64': 'src/App.tsx',
-            'sync-payloads/styles.css.zlib.b64': 'src/styles.css',
-          }
           expected = {
             'src/App.tsx': '1b1c46270eb893c7b515168fd3e03932fce6ddfe',
             'src/styles.css': 'e64d41445231767c17aa951a0a1b925c895e671b',
           }
+
+          def load_b64(stem: str) -> str | None:
+            parts = sorted(root.glob(f'sync-payloads/{stem}.zlib.b64.part*'))
+            if parts:
+              text = ''.join(p.read_text().strip() for p in parts)
+              print(stem, 'from', len(parts), 'parts', 'chars', len(text))
+              return text
+            sp = root / f'sync-payloads/{stem}.zlib.b64'
+            if sp.exists():
+              text = sp.read_text().strip()
+              print(stem, 'from single file chars', len(text))
+              return text
+            print('skip missing', stem)
+            return None
+
           changed = False
-          for src, dst in mapping.items():
-            sp = root / src
-            if not sp.exists():
-              print('skip missing', src)
+          for stem, dst in [('App.tsx', 'src/App.tsx'), ('styles.css', 'src/styles.css')]:
+            text = load_b64(stem)
+            if text is None:
               continue
-            raw = zlib.decompress(base64.b64decode(sp.read_text().strip()))
+            raw = zlib.decompress(base64.b64decode(text))
             h = subprocess.check_output(['git','hash-object','--stdin'], input=raw).decode().strip()
             want = expected[dst]
             print(dst, 'git', h, 'want', want, 'ok', h==want)
