@@ -10,6 +10,7 @@ import type {
   SeriesPoint,
   SkySample,
 } from './types';
+import { parseStagingDocument } from './staging';
 
 export interface ParseResult {
   ok: boolean;
@@ -87,6 +88,7 @@ function parseEpistemic(raw: unknown): EpistemicLabel {
   return 'DERIVED/MEANING-MAP';
 }
 
+/** Parse versioned or legacy JSON while preventing label promotion. */
 export function parseJsonDocument(
   text: string,
   nameHint: string,
@@ -113,7 +115,11 @@ export function parseJsonDocument(
   }
 
   const name = String(doc.name ?? nameHint ?? 'json-dataset');
-  const epistemic = parseEpistemic(doc.epistemic ?? doc.label);
+  // Versioned inputs fail closed; never fall back to permissive legacy parsing.
+  if ('schemaVersion' in doc) return parseStagingDocument(doc, id);
+  const declaredEpistemic = parseEpistemic(doc.epistemic ?? doc.label);
+  const epistemic = declaredEpistemic.startsWith('PHYSICS') ? 'DERIVED/MEANING-MAP' : declaredEpistemic;
+  if (declaredEpistemic !== epistemic) residue.push('Input physics label retained as a source assertion only; external data stays DERIVED/MEANING-MAP');
 
   const skySamples: SkySample[] = [];
   const pointsSrc = doc.points ?? doc.sky ?? doc.samples;
@@ -243,7 +249,7 @@ export function parseJsonDocument(
     claims: claims.length ? claims : undefined,
     cl,
     alm,
-    meta: { ...(doc.meta as object), residueKeys: residue },
+    meta: { ...(doc.meta as object), declaredEpistemic, residueKeys: residue },
     ingestedAt: Date.now(),
   };
 

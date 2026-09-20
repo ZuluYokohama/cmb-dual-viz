@@ -120,6 +120,7 @@ async function readI32(device: GPUDevice, src: GPUBuffer, n: number): Promise<In
   return copy;
 }
 
+/** Compute lagged pair correlations on WebGPU and return scores and lags. */
 export async function correlateLaggedBatchGpu(
   handle: WebGpuHandle,
   series: Float32Array,
@@ -152,13 +153,13 @@ export async function correlateLaggedBatchGpu(
     size: Math.max(4, series.byteLength),
     usage: GPUBufferUsage.STORAGE | GPUBufferUsage.COPY_DST,
   });
-  device.queue.writeBuffer(seriesBuf, 0, series);
+  device.queue.writeBuffer(seriesBuf, 0, series.slice());
 
   const pairBuf = device.createBuffer({
     size: Math.max(8, pairs.byteLength),
     usage: GPUBufferUsage.STORAGE | GPUBufferUsage.COPY_DST,
   });
-  device.queue.writeBuffer(pairBuf, 0, pairs);
+  device.queue.writeBuffer(pairBuf, 0, pairs.slice());
 
   const scoreBuf = device.createBuffer({
     size: nPairs * 4,

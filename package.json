@@ -16,7 +16,9 @@
     "shot:g2": "node scripts/shot-g2.mjs",
     "shot:g3": "node scripts/shot-g3.mjs",
     "shot:residue": "node scripts/shot-residue.mjs",
-    "shot:dressing": "node scripts/shot-dressing.mjs"
+    "shot:dressing": "node scripts/shot-dressing.mjs",
+    "stage:data": "node scripts/stage-data.mjs",
+    "vv": "node scripts/vv.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",

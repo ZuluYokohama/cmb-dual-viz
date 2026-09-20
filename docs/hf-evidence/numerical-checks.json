@@ -1,0 +1,424 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "all sky angles vs independent degree conversion",
+      "maxAbsoluteError": 8.881784197001252e-16,
+      "tolerance": 1e-12,
+      "status": "PASS",
+      "count": 1653
+    },
+    {
+      "name": "all sky SNR values preserved",
+      "maxAbsoluteError": 0,
+      "tolerance": 0,
+      "status": "PASS",
+      "count": 1653
+    },
+    {
+      "name": "all daily times and values preserved through staging",
+      "maxAbsoluteError": 0,
+      "tolerance": 0,
+      "status": "PASS",
+      "count": 365
+    },
+    {
+      "name": "positive-affine-32-lag0",
+      "maxAbsoluteError": 0,
+      "tolerance": 1e-10,
+      "status": "PASS",
+      "actual": {
+        "score": 1,
+        "lag": 0
+      },
+      "expected": {
+        "score": 1,
+        "lag": 0
+      },
+      "lagMatches": true
+    },
+    {
+      "name": "positive-affine-32-lag5",
+      "maxAbsoluteError": 0,
+      "tolerance": 1e-10,
+      "status": "PASS",
+      "actual": {
+        "score": 1,
+        "lag": 0
+      },
+      "expected": {
+        "score": 1,
+        "lag": 0
+      },
+      "lagMatches": true
+    },
+    {
+      "name": "negative-affine-32-lag0",
+      "maxAbsoluteError": 2.220446049250313e-16,
+      "tolerance": 1e-10,
+      "status": "PASS",
+      "actual": {
+        "score": -1,
+        "lag": 0
+      },
+      "expected": {
+        "score": -0.9999999999999998,
+        "lag": 0
+      },
+      "lagMatches": true
+    },
+    {
+      "name": "negative-affine-32-lag5",
+      "maxAbsoluteError": 2.220446049250313e-16,
+      "tolerance": 1e-10,
+      "status": "PASS",
+      "actual": {
+        "score": -1,
+        "lag": 0
+      },
+      "expected": {
+        "score": -0.9999999999999998,
+        "lag": 0
+      },
+      "lagMatches": true
+    },
+    {
+      "name": "seeded-permutation-32-lag0",
+      "maxAbsoluteError": 2.7755575615628914e-17,
+      "tolerance": 1e-10,
+      "status": "PASS",
+      "actual": {
+        "score": 0.23320827786518214,
+        "lag": 0
+      },
+      "expected": {
+        "score": 0.2332082778651821,
+        "lag": 0
+      },
+      "lagMatches": true
+    },
+    {
+      "name": "seeded-permutation-32-lag5",
+      "maxAbsoluteError": 5.551115123125783e-17,
+      "tolerance": 1e-10,
+      "status": "PASS",
+      "actual": {
+        "score": 0.36639243929516924,
+        "lag": 1
+      },
+      "expected": {
+        "score": 0.3663924392951692,
+        "lag": 1
+      },
+      "lagMatches": true
+    },
+    {
+      "name": "circular-shift-7-32-lag0",
+      "maxAbsoluteError": 4.85722573273506e-17,
+      "tolerance": 1e-10,
+      "status": "PASS",
+      "actual": {
+        "score": -0.034867616012478654,
+        "lag": 0
+      },
+      "expected": {
+        "score": -0.0348676160124787,
+        "lag": 0
+      },
+      "lagMatches": true
+    },
+    {
+      "name": "circular-shift-7-32-lag5",
+      "maxAbsoluteError": 1.1102230246251565e-16,
+      "tolerance": 1e-10,
+      "status": "PASS",
+      "actual": {
+        "score": 0.7064742632145108,
+        "lag": 5
+      },
+      "expected": {
+        "score": 0.7064742632145109,
+        "lag": 5
+      },
+      "lagMatches": true
+    },
+    {
+      "name": "positive-affine-128-lag0",
+      "maxAbsoluteError": 0,
+      "tolerance": 1e-10,
+      "status": "PASS",
+      "actual": {
+        "score": 1,
+        "lag": 0
+      },
+      "expected": {
+        "score": 1,
+        "lag": 0
+      },
+      "lagMatches": true
+    },
+    {
+      "name": "positive-affine-128-lag5",
+      "maxAbsoluteError": 0,
+      "tolerance": 1e-10,
+      "status": "PASS",
+      "actual": {
+        "score": 1,
+        "lag": 0
+      },
+      "expected": {
+        "score": 1,
+        "lag": 0
+      },
+      "lagMatches": true
+    },
+    {
+      "name": "negative-affine-128-lag0",
+      "maxAbsoluteError": 0,
+      "tolerance": 1e-10,
+      "status": "PASS",
+      "actual": {
+        "score": -1,
+        "lag": 0
+      },
+      "expected": {
+        "score": -1,
+        "lag": 0
+      },
+      "lagMatches": true
+    },
+    {
+      "name": "negative-affine-128-lag5",
+      "maxAbsoluteError": 0,
+      "tolerance": 1e-10,
+      "status": "PASS",
+      "actual": {
+        "score": -1,
+        "lag": 0
+      },
+      "expected": {
+        "score": -1,
+        "lag": 0
+      },
+      "lagMatches": true
+    },
+    {
+      "name": "seeded-permutation-128-lag0",
+      "maxAbsoluteError": 7.806255641895632e-18,
+      "tolerance": 1e-10,
+      "status": "PASS",
+      "actual": {
+        "score": 0.0010618873613395972,
+        "lag": 0
+      },
+      "expected": {
+        "score": 0.001061887361339605,
+        "lag": 0
+      },
+      "lagMatches": true
+    },
+    {
+      "name": "seeded-permutation-128-lag5",
+      "maxAbsoluteError": 1.6653345369377348e-16,
+      "tolerance": 1e-10,
+      "status": "PASS",
+      "actual": {
+        "score": 0.15976401405191976,
+        "lag": -2
+      },
+      "expected": {
+        "score": 0.1597640140519196,
+        "lag": -2
+      },
+      "lagMatches": true
+    },
+    {
+      "name": "circular-shift-7-128-lag0",
+      "maxAbsoluteError": 2.7755575615628914e-17,
+      "tolerance": 1e-10,
+      "status": "PASS",
+      "actual": {
+        "score": -0.1756059871268755,
+        "lag": 0
+      },
+      "expected": {
+        "score": -0.17560598712687547,
+        "lag": 0
+      },
+      "lagMatches": true
+    },
+    {
+      "name": "circular-shift-7-128-lag5",
+      "maxAbsoluteError": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "status": "PASS",
+      "actual": {
+        "score": 0.6109125731812005,
+        "lag": 5
+      },
+      "expected": {
+        "score": 0.6109125731812001,
+        "lag": 5
+      },
+      "lagMatches": true
+    },
+    {
+      "name": "positive-affine-365-lag0",
+      "maxAbsoluteError": 1.2434497875801753e-14,
+      "tolerance": 1e-10,
+      "status": "PASS",
+      "actual": {
+        "score": 0.9999999999999876,
+        "lag": 0
+      },
+      "expected": {
+        "score": 1,
+        "lag": 0
+      },
+      "lagMatches": true
+    },
+    {
+      "name": "positive-affine-365-lag5",
+      "maxAbsoluteError": 1.2434497875801753e-14,
+      "tolerance": 1e-10,
+      "status": "PASS",
+      "actual": {
+        "score": 0.9999999999999876,
+        "lag": 0
+      },
+      "expected": {
+        "score": 1,
+        "lag": 0
+      },
+      "lagMatches": true
+    },
+    {
+      "name": "negative-affine-365-lag0",
+      "maxAbsoluteError": 0,
+      "tolerance": 1e-10,
+      "status": "PASS",
+      "actual": {
+        "score": -1,
+        "lag": 0
+      },
+      "expected": {
+        "score": -1,
+        "lag": 0
+      },
+      "lagMatches": true
+    },
+    {
+      "name": "negative-affine-365-lag5",
+      "maxAbsoluteError": 0,
+      "tolerance": 1e-10,
+      "status": "PASS",
+      "actual": {
+        "score": -1,
+        "lag": 0
+      },
+      "expected": {
+        "score": -1,
+        "lag": 0
+      },
+      "lagMatches": true
+    },
+    {
+      "name": "seeded-permutation-365-lag0",
+      "maxAbsoluteError": 1.5612511283791264e-16,
+      "tolerance": 1e-10,
+      "status": "PASS",
+      "actual": {
+        "score": -0.015807175482774553,
+        "lag": 0
+      },
+      "expected": {
+        "score": -0.01580717548277471,
+        "lag": 0
+      },
+      "lagMatches": true
+    },
+    {
+      "name": "seeded-permutation-365-lag5",
+      "maxAbsoluteError": 6.800116025829084e-16,
+      "tolerance": 1e-10,
+      "status": "PASS",
+      "actual": {
+        "score": 0.0440479740251128,
+        "lag": 1
+      },
+      "expected": {
+        "score": 0.04404797402511348,
+        "lag": 1
+      },
+      "lagMatches": true
+    },
+    {
+      "name": "circular-shift-7-365-lag0",
+      "maxAbsoluteError": 3.608224830031759e-16,
+      "tolerance": 1e-10,
+      "status": "PASS",
+      "actual": {
+        "score": 0.16878232820248512,
+        "lag": 0
+      },
+      "expected": {
+        "score": 0.16878232820248548,
+        "lag": 0
+      },
+      "lagMatches": true
+    },
+    {
+      "name": "circular-shift-7-365-lag5",
+      "maxAbsoluteError": 1.6653345369377348e-15,
+      "tolerance": 1e-10,
+      "status": "PASS",
+      "actual": {
+        "score": 0.6884661719043006,
+        "lag": 5
+      },
+      "expected": {
+        "score": 0.6884661719042989,
+        "lag": 5
+      },
+      "lagMatches": true
+    },
+    {
+      "name": "index interpolation vs NumPy interp",
+      "maxAbsoluteError": 7.815970093361102e-14,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "name": "real harmonics vs SciPy through ell=64",
+      "maxAbsoluteError": 2.4091839634365897e-13,
+      "tolerance": 1e-10,
+      "status": "PASS",
+      "count": 87
+    }
+  ],
+  "smoke": {
+    "planck": {
+      "device": "cpu",
+      "context": "fixed synthetic fixture",
+      "dataNodes": 25,
+      "seeds": 3,
+      "hitCount": 36,
+      "status": "pass",
+      "scientificValidation": "not-run",
+      "gpuValidation": "not-run"
+    },
+    "sunspots": {
+      "device": "cpu",
+      "context": "fixed synthetic fixture",
+      "dataNodes": 1,
+      "seeds": 4,
+      "hitCount": 9,
+      "status": "pass",
+      "scientificValidation": "not-run",
+      "gpuValidation": "not-run"
+    }
+  },
+  "inferenceCalibration": "NOT_RUN",
+  "physicalGpu": "NOT_RUN",
+  "note": "Permutation cases check numerical agreement, not significance or a valid scientific null."
+}

@@ -1,0 +1,15 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> cmb-dual-viz@1.0.0 test
+> vitest run
+
+
+ RUN  v2.1.9 /workspace/scratch/4cbc4b1a1f06/cmb-dual-viz
+
+ ✓ src/math/dressing.test.ts (7 tests) 10ms
+ ✓ src/math/correlates.test.ts (3 tests) 16ms
+ ✓ src/compute/webgpu.test.ts (9 tests) 117ms
+ ✓ src/math/smith.test.ts (3 tests) 15ms
+ ✓ src/compute/multiDevice.test.ts (8 tests) 120ms
+ ✓ src/math/sphericalHarmonics.test.ts (3 tests) 470ms
+   ✓ SH / EXAMPLE C_ℓ > synthesizeGrid is finite and seed-stable 465ms

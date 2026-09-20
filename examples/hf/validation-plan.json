@@ -1,0 +1,24 @@
+{
+  "scope": "HF byte identity, selected-field correctness, software and numerical verification; no cosmological hypothesis test",
+  "selection": {
+    "planck": "All 1653 rows; lii,bii in Galactic degrees; value=snr (dimensionless detection SNR, not temperature). Preserve original order and a name-to-row sidecar.",
+    "sunspots": "Calendar year 2019, date ascending; 365 unique consecutive days; t=UTC days since 2019-01-01; value=sunspot_number; all numeric values must match primary SILSO. Preserve other columns in raw Parquet and sidecar. Exclude disputed is_provisional from engine input."
+  },
+  "tolerances": {
+    "sourceValues": 0,
+    "coordinateRadians": 1e-12,
+    "pearsonScore": 1e-10,
+    "alignedValues": 1e-10,
+    "realYlmAbsolute": 1e-10
+  },
+  "controls": {
+    "seed": 20260919,
+    "seriesLengths": [32, 128, 365],
+    "transforms": ["positive-affine", "negative-affine", "seeded-permutation", "circular-shift-7"],
+    "maxLags": [0, 5],
+    "harmonicEll": [0, 1, 2, 8, 16, 32, 64]
+  },
+  "blocking": ["HF content hash mismatch", "missing or invalid selected field", "SILSO numeric source mismatch", "nonfinite engine output", "independent numerical tolerance failure"],
+  "nonblockingForSelectedFieldsOnly": ["is_provisional metadata mismatch, retained as an explicit source-semantic failure"],
+  "notClaimed": ["source publisher endorsement", "significance or causation", "full measured-CMB reconstruction", "physical GPU performance", "full V&V certification"]
+}

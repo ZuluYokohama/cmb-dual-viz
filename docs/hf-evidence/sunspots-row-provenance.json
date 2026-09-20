@@ -1,0 +1,3287 @@
+[
+  {
+    "date": "2019-01-01",
+    "decimal_date": 2019.001,
+    "sunspot_number": 12,
+    "std_dev": 1.0,
+    "n_observations": 25,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-02",
+    "decimal_date": 2019.004,
+    "sunspot_number": 15,
+    "std_dev": 1.5,
+    "n_observations": 31,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-03",
+    "decimal_date": 2019.007,
+    "sunspot_number": 15,
+    "std_dev": 1.2,
+    "n_observations": 20,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-04",
+    "decimal_date": 2019.01,
+    "sunspot_number": 13,
+    "std_dev": 0.8,
+    "n_observations": 32,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-05",
+    "decimal_date": 2019.012,
+    "sunspot_number": 11,
+    "std_dev": 1.4,
+    "n_observations": 17,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-06",
+    "decimal_date": 2019.015,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 18,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-07",
+    "decimal_date": 2019.018,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 31,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-08",
+    "decimal_date": 2019.021,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 31,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-09",
+    "decimal_date": 2019.023,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 38,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-10",
+    "decimal_date": 2019.026,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 25,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-11",
+    "decimal_date": 2019.029,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 26,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-12",
+    "decimal_date": 2019.032,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 16,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-13",
+    "decimal_date": 2019.034,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 23,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-14",
+    "decimal_date": 2019.037,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 43,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-15",
+    "decimal_date": 2019.04,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 29,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-16",
+    "decimal_date": 2019.042,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 27,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-17",
+    "decimal_date": 2019.045,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 32,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-18",
+    "decimal_date": 2019.048,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 34,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-19",
+    "decimal_date": 2019.051,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 35,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-20",
+    "decimal_date": 2019.053,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 37,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-21",
+    "decimal_date": 2019.056,
+    "sunspot_number": 10,
+    "std_dev": 0.8,
+    "n_observations": 16,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-22",
+    "decimal_date": 2019.059,
+    "sunspot_number": 16,
+    "std_dev": 1.3,
+    "n_observations": 33,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-23",
+    "decimal_date": 2019.062,
+    "sunspot_number": 19,
+    "std_dev": 1.5,
+    "n_observations": 27,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-24",
+    "decimal_date": 2019.064,
+    "sunspot_number": 21,
+    "std_dev": 1.1,
+    "n_observations": 24,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-25",
+    "decimal_date": 2019.067,
+    "sunspot_number": 22,
+    "std_dev": 1.6,
+    "n_observations": 23,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-26",
+    "decimal_date": 2019.07,
+    "sunspot_number": 26,
+    "std_dev": 1.1,
+    "n_observations": 16,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-27",
+    "decimal_date": 2019.073,
+    "sunspot_number": 19,
+    "std_dev": 1.6,
+    "n_observations": 15,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-28",
+    "decimal_date": 2019.075,
+    "sunspot_number": 16,
+    "std_dev": 1.1,
+    "n_observations": 39,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-29",
+    "decimal_date": 2019.078,
+    "sunspot_number": 13,
+    "std_dev": 1.0,
+    "n_observations": 35,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-30",
+    "decimal_date": 2019.081,
+    "sunspot_number": 11,
+    "std_dev": 1.3,
+    "n_observations": 12,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-01-31",
+    "decimal_date": 2019.084,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 31,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-01",
+    "decimal_date": 2019.086,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 24,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-02",
+    "decimal_date": 2019.089,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 26,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-03",
+    "decimal_date": 2019.092,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 38,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-04",
+    "decimal_date": 2019.095,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 34,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-05",
+    "decimal_date": 2019.097,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 29,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-06",
+    "decimal_date": 2019.1,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 27,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-07",
+    "decimal_date": 2019.103,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 39,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-08",
+    "decimal_date": 2019.105,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 32,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-09",
+    "decimal_date": 2019.108,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 37,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-10",
+    "decimal_date": 2019.111,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 24,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-11",
+    "decimal_date": 2019.114,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 36,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-12",
+    "decimal_date": 2019.116,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 39,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-13",
+    "decimal_date": 2019.119,
+    "sunspot_number": 12,
+    "std_dev": 0.7,
+    "n_observations": 17,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-14",
+    "decimal_date": 2019.122,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 40,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-15",
+    "decimal_date": 2019.125,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 47,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-16",
+    "decimal_date": 2019.127,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 50,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-17",
+    "decimal_date": 2019.13,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 47,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-18",
+    "decimal_date": 2019.133,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 46,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-19",
+    "decimal_date": 2019.136,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 45,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-20",
+    "decimal_date": 2019.138,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 44,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-21",
+    "decimal_date": 2019.141,
+    "sunspot_number": 11,
+    "std_dev": 0.8,
+    "n_observations": 13,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-22",
+    "decimal_date": 2019.144,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 36,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-23",
+    "decimal_date": 2019.147,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 46,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-24",
+    "decimal_date": 2019.149,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 45,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-25",
+    "decimal_date": 2019.152,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 50,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-26",
+    "decimal_date": 2019.155,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 50,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-27",
+    "decimal_date": 2019.158,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 42,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-02-28",
+    "decimal_date": 2019.16,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 39,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-01",
+    "decimal_date": 2019.163,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 30,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-02",
+    "decimal_date": 2019.166,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 29,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-03",
+    "decimal_date": 2019.168,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 24,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-04",
+    "decimal_date": 2019.171,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 35,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-05",
+    "decimal_date": 2019.174,
+    "sunspot_number": 14,
+    "std_dev": 2.8,
+    "n_observations": 29,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-06",
+    "decimal_date": 2019.177,
+    "sunspot_number": 18,
+    "std_dev": 1.7,
+    "n_observations": 32,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-07",
+    "decimal_date": 2019.179,
+    "sunspot_number": 16,
+    "std_dev": 1.1,
+    "n_observations": 24,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-08",
+    "decimal_date": 2019.182,
+    "sunspot_number": 11,
+    "std_dev": 0.4,
+    "n_observations": 41,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-09",
+    "decimal_date": 2019.185,
+    "sunspot_number": 11,
+    "std_dev": 0.4,
+    "n_observations": 45,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-10",
+    "decimal_date": 2019.188,
+    "sunspot_number": 11,
+    "std_dev": 0.4,
+    "n_observations": 40,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-11",
+    "decimal_date": 2019.19,
+    "sunspot_number": 11,
+    "std_dev": 0.4,
+    "n_observations": 39,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-12",
+    "decimal_date": 2019.193,
+    "sunspot_number": 11,
+    "std_dev": 0.4,
+    "n_observations": 21,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-13",
+    "decimal_date": 2019.196,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 36,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-14",
+    "decimal_date": 2019.199,
+    "sunspot_number": 12,
+    "std_dev": 1.2,
+    "n_observations": 14,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-15",
+    "decimal_date": 2019.201,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 28,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-16",
+    "decimal_date": 2019.204,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 33,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-17",
+    "decimal_date": 2019.207,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 39,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-18",
+    "decimal_date": 2019.21,
+    "sunspot_number": 13,
+    "std_dev": 0.8,
+    "n_observations": 21,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-19",
+    "decimal_date": 2019.212,
+    "sunspot_number": 15,
+    "std_dev": 1.2,
+    "n_observations": 42,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-20",
+    "decimal_date": 2019.215,
+    "sunspot_number": 32,
+    "std_dev": 2.5,
+    "n_observations": 18,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-21",
+    "decimal_date": 2019.218,
+    "sunspot_number": 38,
+    "std_dev": 3.2,
+    "n_observations": 31,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-22",
+    "decimal_date": 2019.221,
+    "sunspot_number": 30,
+    "std_dev": 1.5,
+    "n_observations": 19,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-23",
+    "decimal_date": 2019.223,
+    "sunspot_number": 22,
+    "std_dev": 1.3,
+    "n_observations": 14,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-24",
+    "decimal_date": 2019.226,
+    "sunspot_number": 14,
+    "std_dev": 0.9,
+    "n_observations": 25,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-25",
+    "decimal_date": 2019.229,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 50,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-26",
+    "decimal_date": 2019.232,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 48,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-27",
+    "decimal_date": 2019.234,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 36,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-28",
+    "decimal_date": 2019.237,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 36,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-29",
+    "decimal_date": 2019.24,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 52,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-30",
+    "decimal_date": 2019.242,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 41,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-03-31",
+    "decimal_date": 2019.245,
+    "sunspot_number": 13,
+    "std_dev": 1.4,
+    "n_observations": 23,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-01",
+    "decimal_date": 2019.248,
+    "sunspot_number": 14,
+    "std_dev": 0.8,
+    "n_observations": 45,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-02",
+    "decimal_date": 2019.251,
+    "sunspot_number": 17,
+    "std_dev": 1.6,
+    "n_observations": 27,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-03",
+    "decimal_date": 2019.253,
+    "sunspot_number": 19,
+    "std_dev": 1.6,
+    "n_observations": 38,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-04",
+    "decimal_date": 2019.256,
+    "sunspot_number": 11,
+    "std_dev": 1.6,
+    "n_observations": 23,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-05",
+    "decimal_date": 2019.259,
+    "sunspot_number": 5,
+    "std_dev": 0.7,
+    "n_observations": 15,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-06",
+    "decimal_date": 2019.262,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 8,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-07",
+    "decimal_date": 2019.264,
+    "sunspot_number": 11,
+    "std_dev": 0.6,
+    "n_observations": 36,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-08",
+    "decimal_date": 2019.267,
+    "sunspot_number": 12,
+    "std_dev": 0.5,
+    "n_observations": 33,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-09",
+    "decimal_date": 2019.27,
+    "sunspot_number": 12,
+    "std_dev": 0.4,
+    "n_observations": 30,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-10",
+    "decimal_date": 2019.273,
+    "sunspot_number": 13,
+    "std_dev": 0.5,
+    "n_observations": 37,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-11",
+    "decimal_date": 2019.275,
+    "sunspot_number": 12,
+    "std_dev": 0.8,
+    "n_observations": 51,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-12",
+    "decimal_date": 2019.278,
+    "sunspot_number": 13,
+    "std_dev": 0.8,
+    "n_observations": 35,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-13",
+    "decimal_date": 2019.281,
+    "sunspot_number": 16,
+    "std_dev": 1.5,
+    "n_observations": 9,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-14",
+    "decimal_date": 2019.284,
+    "sunspot_number": 14,
+    "std_dev": 1.0,
+    "n_observations": 24,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-15",
+    "decimal_date": 2019.286,
+    "sunspot_number": 12,
+    "std_dev": 0.3,
+    "n_observations": 38,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-16",
+    "decimal_date": 2019.289,
+    "sunspot_number": 11,
+    "std_dev": 0.4,
+    "n_observations": 39,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-17",
+    "decimal_date": 2019.292,
+    "sunspot_number": 16,
+    "std_dev": 0.6,
+    "n_observations": 34,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-18",
+    "decimal_date": 2019.295,
+    "sunspot_number": 24,
+    "std_dev": 0.9,
+    "n_observations": 48,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-19",
+    "decimal_date": 2019.297,
+    "sunspot_number": 24,
+    "std_dev": 0.7,
+    "n_observations": 32,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-20",
+    "decimal_date": 2019.3,
+    "sunspot_number": 11,
+    "std_dev": 0.6,
+    "n_observations": 48,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-21",
+    "decimal_date": 2019.303,
+    "sunspot_number": 5,
+    "std_dev": 0.4,
+    "n_observations": 18,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-22",
+    "decimal_date": 2019.305,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 54,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-23",
+    "decimal_date": 2019.308,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 37,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-24",
+    "decimal_date": 2019.311,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 33,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-25",
+    "decimal_date": 2019.314,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 46,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-26",
+    "decimal_date": 2019.316,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 40,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-27",
+    "decimal_date": 2019.319,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 35,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-28",
+    "decimal_date": 2019.322,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 36,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-29",
+    "decimal_date": 2019.325,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 46,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-04-30",
+    "decimal_date": 2019.327,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 44,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-01",
+    "decimal_date": 2019.33,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 38,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-02",
+    "decimal_date": 2019.333,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 40,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-03",
+    "decimal_date": 2019.336,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 36,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-04",
+    "decimal_date": 2019.338,
+    "sunspot_number": 12,
+    "std_dev": 0.8,
+    "n_observations": 41,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-05",
+    "decimal_date": 2019.341,
+    "sunspot_number": 12,
+    "std_dev": 0.4,
+    "n_observations": 35,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-06",
+    "decimal_date": 2019.344,
+    "sunspot_number": 16,
+    "std_dev": 0.9,
+    "n_observations": 14,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-07",
+    "decimal_date": 2019.347,
+    "sunspot_number": 26,
+    "std_dev": 1.1,
+    "n_observations": 35,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-08",
+    "decimal_date": 2019.349,
+    "sunspot_number": 25,
+    "std_dev": 1.7,
+    "n_observations": 34,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-09",
+    "decimal_date": 2019.352,
+    "sunspot_number": 26,
+    "std_dev": 1.1,
+    "n_observations": 31,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-10",
+    "decimal_date": 2019.355,
+    "sunspot_number": 26,
+    "std_dev": 1.5,
+    "n_observations": 43,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-11",
+    "decimal_date": 2019.358,
+    "sunspot_number": 27,
+    "std_dev": 1.2,
+    "n_observations": 32,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-12",
+    "decimal_date": 2019.36,
+    "sunspot_number": 26,
+    "std_dev": 1.3,
+    "n_observations": 39,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-13",
+    "decimal_date": 2019.363,
+    "sunspot_number": 24,
+    "std_dev": 1.2,
+    "n_observations": 49,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-14",
+    "decimal_date": 2019.366,
+    "sunspot_number": 24,
+    "std_dev": 0.8,
+    "n_observations": 43,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-15",
+    "decimal_date": 2019.368,
+    "sunspot_number": 18,
+    "std_dev": 0.7,
+    "n_observations": 20,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-16",
+    "decimal_date": 2019.371,
+    "sunspot_number": 13,
+    "std_dev": 0.5,
+    "n_observations": 43,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-17",
+    "decimal_date": 2019.374,
+    "sunspot_number": 13,
+    "std_dev": 0.6,
+    "n_observations": 26,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-18",
+    "decimal_date": 2019.377,
+    "sunspot_number": 12,
+    "std_dev": 0.9,
+    "n_observations": 35,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-19",
+    "decimal_date": 2019.379,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 31,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-20",
+    "decimal_date": 2019.382,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 32,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-21",
+    "decimal_date": 2019.385,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 42,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-22",
+    "decimal_date": 2019.388,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 41,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-23",
+    "decimal_date": 2019.39,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 44,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-24",
+    "decimal_date": 2019.393,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 48,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-25",
+    "decimal_date": 2019.396,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 46,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-26",
+    "decimal_date": 2019.399,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 42,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-27",
+    "decimal_date": 2019.401,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 46,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-28",
+    "decimal_date": 2019.404,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 40,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-29",
+    "decimal_date": 2019.407,
+    "sunspot_number": 7,
+    "std_dev": 0.4,
+    "n_observations": 22,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-30",
+    "decimal_date": 2019.41,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 45,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-05-31",
+    "decimal_date": 2019.412,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 46,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-01",
+    "decimal_date": 2019.415,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 49,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-02",
+    "decimal_date": 2019.418,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 45,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-03",
+    "decimal_date": 2019.421,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 48,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-04",
+    "decimal_date": 2019.423,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 48,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-05",
+    "decimal_date": 2019.426,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 39,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-06",
+    "decimal_date": 2019.429,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 44,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-07",
+    "decimal_date": 2019.432,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 39,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-08",
+    "decimal_date": 2019.434,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 43,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-09",
+    "decimal_date": 2019.437,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 37,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-10",
+    "decimal_date": 2019.44,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 41,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-11",
+    "decimal_date": 2019.442,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 49,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-12",
+    "decimal_date": 2019.445,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 43,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-13",
+    "decimal_date": 2019.448,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 50,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-14",
+    "decimal_date": 2019.451,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 47,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-15",
+    "decimal_date": 2019.453,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 42,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-16",
+    "decimal_date": 2019.456,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 48,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-17",
+    "decimal_date": 2019.459,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 49,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-18",
+    "decimal_date": 2019.462,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 48,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-19",
+    "decimal_date": 2019.464,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 46,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-20",
+    "decimal_date": 2019.467,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 44,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-21",
+    "decimal_date": 2019.47,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 50,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-22",
+    "decimal_date": 2019.473,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 42,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-23",
+    "decimal_date": 2019.475,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 40,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-24",
+    "decimal_date": 2019.478,
+    "sunspot_number": 11,
+    "std_dev": 3.9,
+    "n_observations": 38,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-25",
+    "decimal_date": 2019.481,
+    "sunspot_number": 12,
+    "std_dev": 0.0,
+    "n_observations": 10,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-26",
+    "decimal_date": 2019.484,
+    "sunspot_number": 7,
+    "std_dev": 0.6,
+    "n_observations": 34,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-27",
+    "decimal_date": 2019.486,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 51,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-28",
+    "decimal_date": 2019.489,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 47,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-29",
+    "decimal_date": 2019.492,
+    "sunspot_number": 5,
+    "std_dev": 1.0,
+    "n_observations": 18,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-06-30",
+    "decimal_date": 2019.495,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 44,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-01",
+    "decimal_date": 2019.497,
+    "sunspot_number": 5,
+    "std_dev": 0.5,
+    "n_observations": 15,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-02",
+    "decimal_date": 2019.5,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 42,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-03",
+    "decimal_date": 2019.503,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 44,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-04",
+    "decimal_date": 2019.505,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 43,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-05",
+    "decimal_date": 2019.508,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 42,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-06",
+    "decimal_date": 2019.511,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 39,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-07",
+    "decimal_date": 2019.514,
+    "sunspot_number": 9,
+    "std_dev": 0.7,
+    "n_observations": 21,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-08",
+    "decimal_date": 2019.516,
+    "sunspot_number": 5,
+    "std_dev": 0.5,
+    "n_observations": 17,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-09",
+    "decimal_date": 2019.519,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 42,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-10",
+    "decimal_date": 2019.522,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 46,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-11",
+    "decimal_date": 2019.525,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 35,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-12",
+    "decimal_date": 2019.527,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 47,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-13",
+    "decimal_date": 2019.53,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 28,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-14",
+    "decimal_date": 2019.533,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 32,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-15",
+    "decimal_date": 2019.536,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 33,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-16",
+    "decimal_date": 2019.538,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 42,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-17",
+    "decimal_date": 2019.541,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 44,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-18",
+    "decimal_date": 2019.544,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 41,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-19",
+    "decimal_date": 2019.547,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 46,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-20",
+    "decimal_date": 2019.549,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 40,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-21",
+    "decimal_date": 2019.552,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 43,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-22",
+    "decimal_date": 2019.555,
+    "sunspot_number": 8,
+    "std_dev": 0.8,
+    "n_observations": 25,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-23",
+    "decimal_date": 2019.558,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 45,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-24",
+    "decimal_date": 2019.56,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 52,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-25",
+    "decimal_date": 2019.563,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 52,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-26",
+    "decimal_date": 2019.566,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 50,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-27",
+    "decimal_date": 2019.568,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 34,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-28",
+    "decimal_date": 2019.571,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 33,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-29",
+    "decimal_date": 2019.574,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 48,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-30",
+    "decimal_date": 2019.577,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 48,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-07-31",
+    "decimal_date": 2019.579,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 45,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-01",
+    "decimal_date": 2019.582,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 47,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-02",
+    "decimal_date": 2019.585,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 49,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-03",
+    "decimal_date": 2019.588,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 40,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-04",
+    "decimal_date": 2019.59,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 40,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-05",
+    "decimal_date": 2019.593,
+    "sunspot_number": 8,
+    "std_dev": 0.7,
+    "n_observations": 29,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-06",
+    "decimal_date": 2019.596,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 41,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-07",
+    "decimal_date": 2019.599,
+    "sunspot_number": 7,
+    "std_dev": 0.7,
+    "n_observations": 26,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-08",
+    "decimal_date": 2019.601,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 44,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-09",
+    "decimal_date": 2019.604,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 44,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-10",
+    "decimal_date": 2019.607,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 41,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-11",
+    "decimal_date": 2019.61,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 41,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-12",
+    "decimal_date": 2019.612,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 47,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-13",
+    "decimal_date": 2019.615,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 48,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-14",
+    "decimal_date": 2019.618,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 42,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-15",
+    "decimal_date": 2019.621,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 42,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-16",
+    "decimal_date": 2019.623,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 40,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-17",
+    "decimal_date": 2019.626,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 39,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-18",
+    "decimal_date": 2019.629,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 46,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-19",
+    "decimal_date": 2019.632,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 47,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-20",
+    "decimal_date": 2019.634,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 45,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-21",
+    "decimal_date": 2019.637,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 48,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-22",
+    "decimal_date": 2019.64,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 47,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-23",
+    "decimal_date": 2019.642,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 47,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-24",
+    "decimal_date": 2019.645,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 44,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-25",
+    "decimal_date": 2019.648,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 48,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-26",
+    "decimal_date": 2019.651,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 49,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-27",
+    "decimal_date": 2019.653,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 47,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-28",
+    "decimal_date": 2019.656,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 35,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-29",
+    "decimal_date": 2019.659,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 46,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-30",
+    "decimal_date": 2019.662,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 45,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-08-31",
+    "decimal_date": 2019.664,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 50,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-01",
+    "decimal_date": 2019.667,
+    "sunspot_number": 14,
+    "std_dev": 1.6,
+    "n_observations": 31,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-02",
+    "decimal_date": 2019.67,
+    "sunspot_number": 14,
+    "std_dev": 0.0,
+    "n_observations": 9,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-03",
+    "decimal_date": 2019.673,
+    "sunspot_number": 5,
+    "std_dev": 0.4,
+    "n_observations": 15,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-04",
+    "decimal_date": 2019.675,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 46,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-05",
+    "decimal_date": 2019.678,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 42,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-06",
+    "decimal_date": 2019.681,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 40,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-07",
+    "decimal_date": 2019.684,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 47,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-08",
+    "decimal_date": 2019.686,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 41,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-09",
+    "decimal_date": 2019.689,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 45,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-10",
+    "decimal_date": 2019.692,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 41,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-11",
+    "decimal_date": 2019.695,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 43,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-12",
+    "decimal_date": 2019.697,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 52,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-13",
+    "decimal_date": 2019.7,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 49,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-14",
+    "decimal_date": 2019.703,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 49,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-15",
+    "decimal_date": 2019.705,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 48,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-16",
+    "decimal_date": 2019.708,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 32,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-17",
+    "decimal_date": 2019.711,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 52,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-18",
+    "decimal_date": 2019.714,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 53,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-19",
+    "decimal_date": 2019.716,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 50,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-20",
+    "decimal_date": 2019.719,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 48,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-21",
+    "decimal_date": 2019.722,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 46,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-22",
+    "decimal_date": 2019.725,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 40,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-23",
+    "decimal_date": 2019.727,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 38,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-24",
+    "decimal_date": 2019.73,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 34,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-25",
+    "decimal_date": 2019.733,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 31,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-26",
+    "decimal_date": 2019.736,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 37,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-27",
+    "decimal_date": 2019.738,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 40,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-28",
+    "decimal_date": 2019.741,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 43,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-29",
+    "decimal_date": 2019.744,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 37,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-09-30",
+    "decimal_date": 2019.747,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 46,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-01",
+    "decimal_date": 2019.749,
+    "sunspot_number": 6,
+    "std_dev": 0.5,
+    "n_observations": 23,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-02",
+    "decimal_date": 2019.752,
+    "sunspot_number": 6,
+    "std_dev": 0.6,
+    "n_observations": 19,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-03",
+    "decimal_date": 2019.755,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 38,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-04",
+    "decimal_date": 2019.758,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 38,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-05",
+    "decimal_date": 2019.76,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 32,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-06",
+    "decimal_date": 2019.763,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 29,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-07",
+    "decimal_date": 2019.766,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 33,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-08",
+    "decimal_date": 2019.768,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 32,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-09",
+    "decimal_date": 2019.771,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 32,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-10",
+    "decimal_date": 2019.774,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 42,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-11",
+    "decimal_date": 2019.777,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 31,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-12",
+    "decimal_date": 2019.779,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 34,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-13",
+    "decimal_date": 2019.782,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 39,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-14",
+    "decimal_date": 2019.785,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 36,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-15",
+    "decimal_date": 2019.788,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 30,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-16",
+    "decimal_date": 2019.79,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 37,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-17",
+    "decimal_date": 2019.793,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 41,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-18",
+    "decimal_date": 2019.796,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 36,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-19",
+    "decimal_date": 2019.799,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 31,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-20",
+    "decimal_date": 2019.801,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 28,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-21",
+    "decimal_date": 2019.804,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 24,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-22",
+    "decimal_date": 2019.807,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 36,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-23",
+    "decimal_date": 2019.81,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 38,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-24",
+    "decimal_date": 2019.812,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 34,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-25",
+    "decimal_date": 2019.815,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 39,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-26",
+    "decimal_date": 2019.818,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 42,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-27",
+    "decimal_date": 2019.821,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 44,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-28",
+    "decimal_date": 2019.823,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 41,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-29",
+    "decimal_date": 2019.826,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 36,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-30",
+    "decimal_date": 2019.829,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 32,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-10-31",
+    "decimal_date": 2019.832,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 38,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-01",
+    "decimal_date": 2019.834,
+    "sunspot_number": 7,
+    "std_dev": 1.1,
+    "n_observations": 11,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-02",
+    "decimal_date": 2019.837,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 25,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-03",
+    "decimal_date": 2019.84,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 26,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-04",
+    "decimal_date": 2019.842,
+    "sunspot_number": 4,
+    "std_dev": 0.3,
+    "n_observations": 12,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-05",
+    "decimal_date": 2019.845,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 29,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-06",
+    "decimal_date": 2019.848,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 33,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-07",
+    "decimal_date": 2019.851,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 35,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-08",
+    "decimal_date": 2019.853,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 38,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-09",
+    "decimal_date": 2019.856,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 35,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-10",
+    "decimal_date": 2019.859,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 41,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-11",
+    "decimal_date": 2019.862,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 29,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-12",
+    "decimal_date": 2019.864,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 28,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-13",
+    "decimal_date": 2019.867,
+    "sunspot_number": 3,
+    "std_dev": 0.2,
+    "n_observations": 8,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-14",
+    "decimal_date": 2019.87,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 29,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-15",
+    "decimal_date": 2019.873,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 21,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-16",
+    "decimal_date": 2019.875,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 34,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-17",
+    "decimal_date": 2019.878,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 28,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-18",
+    "decimal_date": 2019.881,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 32,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-19",
+    "decimal_date": 2019.884,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 34,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-20",
+    "decimal_date": 2019.886,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 36,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-21",
+    "decimal_date": 2019.889,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 28,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-22",
+    "decimal_date": 2019.892,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 26,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-23",
+    "decimal_date": 2019.895,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 19,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-24",
+    "decimal_date": 2019.897,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 25,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-25",
+    "decimal_date": 2019.9,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 37,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-26",
+    "decimal_date": 2019.903,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 22,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-27",
+    "decimal_date": 2019.905,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 17,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-28",
+    "decimal_date": 2019.908,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 17,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-29",
+    "decimal_date": 2019.911,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 34,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-11-30",
+    "decimal_date": 2019.914,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 43,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-01",
+    "decimal_date": 2019.916,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 25,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-02",
+    "decimal_date": 2019.919,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 32,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-03",
+    "decimal_date": 2019.922,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 37,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-04",
+    "decimal_date": 2019.925,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 37,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-05",
+    "decimal_date": 2019.927,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 29,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-06",
+    "decimal_date": 2019.93,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 21,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-07",
+    "decimal_date": 2019.933,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 22,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-08",
+    "decimal_date": 2019.936,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 31,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-09",
+    "decimal_date": 2019.938,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 26,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-10",
+    "decimal_date": 2019.941,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 40,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-11",
+    "decimal_date": 2019.944,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 32,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-12",
+    "decimal_date": 2019.947,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 27,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-13",
+    "decimal_date": 2019.949,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 21,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-14",
+    "decimal_date": 2019.952,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 42,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-15",
+    "decimal_date": 2019.955,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 39,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-16",
+    "decimal_date": 2019.958,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 25,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-17",
+    "decimal_date": 2019.96,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 19,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-18",
+    "decimal_date": 2019.963,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 31,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-19",
+    "decimal_date": 2019.966,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 19,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-20",
+    "decimal_date": 2019.968,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 29,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-21",
+    "decimal_date": 2019.971,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 28,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-22",
+    "decimal_date": 2019.974,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 19,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-23",
+    "decimal_date": 2019.977,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 30,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-24",
+    "decimal_date": 2019.979,
+    "sunspot_number": 16,
+    "std_dev": 0.9,
+    "n_observations": 14,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-25",
+    "decimal_date": 2019.982,
+    "sunspot_number": 23,
+    "std_dev": 0.0,
+    "n_observations": 7,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-26",
+    "decimal_date": 2019.985,
+    "sunspot_number": 8,
+    "std_dev": 3.1,
+    "n_observations": 17,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-27",
+    "decimal_date": 2019.988,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 31,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-28",
+    "decimal_date": 2019.99,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 32,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-29",
+    "decimal_date": 2019.993,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 33,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-30",
+    "decimal_date": 2019.996,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 35,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  },
+  {
+    "date": "2019-12-31",
+    "decimal_date": 2019.999,
+    "sunspot_number": 0,
+    "std_dev": 0.0,
+    "n_observations": 25,
+    "is_provisional": true,
+    "primary_is_provisional": false
+  }
+]

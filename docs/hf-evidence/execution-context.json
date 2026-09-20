@@ -1,0 +1,11 @@
+{
+  "applicationCommit": "1ea3585af23d7c969116ccb5b2875576c11ddc7f",
+  "executionContext": "New validation scripts were run before commit; these hashes identify their exact versions. App code was unchanged from the tested staging commit.",
+  "scripts": {
+    "scripts/hf-validation.py": "b74e350b8e2ce5300beeb1c9cb507b435042ea1b08bc96f8670bf7bb1d530b2a",
+    "scripts/check-hf.mjs": "7b4163183e4e9da3646d3fb5d829eff465b17fd4cf8cb02d034d07b105a17855",
+    "scripts/check-hf-browser.mjs": "8d6ae515d9d485affc57f0276790225073a054fd09ebc1d82fbcd8abae1c9a7c",
+    "examples/hf/sources.json": "03d2726e4a3085492831b2f03e7827642b38bff0aa27602d3e8f8ca4b5ea8323",
+    "examples/hf/validation-plan.json": "9c80da87d350093290d763b2c07c7249744857c3f1134cb0c832fc5f66a61a67"
+  }
+}

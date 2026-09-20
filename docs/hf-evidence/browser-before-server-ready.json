@@ -1,0 +1,8 @@
+{
+  "status": "FAIL",
+  "checks": [],
+  "errors": [],
+  "physicalGpu": "NOT_RUN",
+  "browser": "HeadlessChrome/153.0.8010.52",
+  "failure": "net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5173/"
+}

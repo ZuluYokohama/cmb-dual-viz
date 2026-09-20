@@ -57,6 +57,7 @@ import { genDemoClaims, genExampleCl, genSyntheticGcpLike } from './math/generat
 
 const TRAIL_MAX = 48;
 
+/** Render and coordinate the complete dual-thread research instrument. */
 export default function App() {
   const [ellMax, setEllMax] = useState(16);
   const [ellFocus, setEllFocus] = useState(8);
@@ -651,6 +652,7 @@ export default function App() {
         name: ds.name,
         type: ds.type,
         sourceUrl: ds.sourceUrl ?? null,
+        staging: ds.meta?.staging ?? null,
         status: entry.status,
         message: entry.message,
       },

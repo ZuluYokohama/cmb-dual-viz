@@ -8,4 +8,7 @@ coverage/
 artifacts/*.png
 artifacts/*.pdf
 artifacts/ledger/*.jsonl
+artifacts/staging/
+artifacts/vv/
+artifacts/hf-validation/
 !.gitkeep

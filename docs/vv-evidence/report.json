@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "cmb.software-vv/v1",
+  "at": "2026-09-19T21:29:33.730Z",
+  "node": "v24.19.0",
+  "commit": "8fff042499c58973a2cee0dd3491ddf6bf318c80",
+  "workingTreeDirty": false,
+  "lockSha256": "0a822c49e0314743aa49c60b74bedb9ba60c28c8a1f02ce4d53b07a71dbac144",
+  "softwareVerification": "PASS",
+  "checks": [
+    {
+      "command": "npm test",
+      "status": "PASS",
+      "exitCode": 0,
+      "logSha256": "db3f296bd27453769ebb842501faed00bdf07b1b824820ef672240db37525898"
+    },
+    {
+      "command": "npm run lint",
+      "status": "PASS",
+      "exitCode": 0,
+      "logSha256": "9602f814f0e7999920ea84b6287d186f5c5775e4ba3a6d201665e5aa754294a6"
+    },
+    {
+      "command": "npm run build",
+      "status": "PASS",
+      "exitCode": 0,
+      "logSha256": "07f844e4e9f59c84c865cf0a7804d9f34cd89dcbf66e7726831be99210fc4912"
+    }
+  ],
+  "realDataValidation": "NOT_RUN",
+  "physicalGpuValidation": "NOT_RUN",
+  "inferenceCalibration": "NOT_RUN"
+}
