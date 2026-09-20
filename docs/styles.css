@@ -338,3 +338,34 @@ section { padding: 3rem 0; border-top: 1px solid var(--line); }
   .surf h3, .surf p { margin-left: 0; margin-right: 0; }
   .top { flex-direction: column; align-items: flex-start; }
 }
+
+.measure-stage {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: rgba(8, 10, 18, 0.85);
+}
+.measure-stage canvas {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.92;
+}
+.measure-caption {
+  margin: 0;
+  padding: 0.65rem 1rem 0.85rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--line);
+}
+.evidence-grid {
+  max-width: 40rem;
+  color: var(--muted);
+}
+.evidence-grid p { margin: 0 0 1rem; }
+.evidence-grid code {
+  font-size: 0.88em;
+  color: var(--accent);
+}
+.evidence-links { font-size: 0.9rem; }
