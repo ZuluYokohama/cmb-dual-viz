@@ -4,6 +4,7 @@ import { mapJsonl, parseStagingDocument, STAGING_VERSION, type StagingEnvelope }
 import { stagingSmoke } from './stagingSmoke';
 import { parseCsvDocument } from './parseCsv';
 
+/** Build a valid minimal envelope for each supported staging kind. */
 function fixture(kind: StagingEnvelope['kind'] = 'series'): StagingEnvelope {
   const e: StagingEnvelope = { schemaVersion: STAGING_VERSION, name: 'Synthetic fixture', kind,
     provenance: { source: 'file:fixture', revision: 'fixture-v1', license: 'CC0-1.0', origin: 'synthetic' },
@@ -105,6 +106,7 @@ describe('versioned staging contract and CPU pipeline', () => {
 });
 
 describe('explicit JSONL adapter', () => {
+  /** Build an explicit mapping for the JSONL adapter tests. */
   function mapping() {
     const { records: _records, ...envelope } = fixture();
     return { envelope, columns: { t: 'time_s', value: 'reading' } };

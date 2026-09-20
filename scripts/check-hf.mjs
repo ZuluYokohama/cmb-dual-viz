@@ -7,10 +7,12 @@ import { build } from 'esbuild';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 if (!process.argv[2]) throw new Error('Usage: node scripts/check-hf.mjs RUN_DIRECTORY');
 const out = resolve(process.argv[2]);
+/** Read one JSON artifact from the validation run directory. */
 const read = name => JSON.parse(readFileSync(join(out, name), 'utf8'));
 const reference = read('references.json');
 const temp = mkdtempSync(join(tmpdir(), 'cmb-hf-check-'));
 const results = [];
+/** Record whether a numerical comparison stays within its allowed error. */
 function check(name, error, tolerance, details = {}) {
   results.push({ name, maxAbsoluteError: error, tolerance, status: Number.isFinite(error) && error <= tolerance ? 'PASS' : 'FAIL', ...details });
 }

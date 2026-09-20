@@ -57,6 +57,7 @@ export interface ShSynthGpuResult {
   device: 'webgpu';
 }
 
+/** Synthesize a spherical-harmonic grid on the selected WebGPU device. */
 export async function shSynthGpu(
   handle: WebGpuHandle,
   coeffs: HarmonicCoeff[],

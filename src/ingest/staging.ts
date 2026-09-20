@@ -26,27 +26,34 @@ export interface StagingEnvelope {
   records: Obj[];
 }
 
+/** Narrow an unknown value to a non-array object. */
 function object(v: unknown): v is Obj {
   return !!v && typeof v === 'object' && !Array.isArray(v);
 }
+/** Narrow an unknown value to a nonempty string. */
 function nonempty(v: unknown): v is string {
   return typeof v === 'string' && v.trim().length > 0;
 }
+/** Accept only finite numbers that can be represented by the engine. */
 function number(v: unknown): v is number {
   return typeof v === 'number' && Number.isFinite(v) && Number.isFinite(Math.fround(v));
 }
+/** Check a string-valued discriminant against its allowed values. */
 function oneOf(v: unknown, choices: string[]): boolean {
   return typeof v === 'string' && choices.includes(v);
 }
+/** Report object fields that the strict contract does not support. */
 function keys(o: Obj, allowed: string[], path: string, errors: string[]) {
   for (const k of Object.keys(o)) {
     if (!allowed.includes(k)) errors.push(`${path}.${k}: unsupported field (no silent data loss)`);
   }
 }
 
+/** Validate and atomically convert a versioned envelope into engine data. */
 export function parseStagingDocument(raw: unknown, id: string, at = Date.now()): ParseResult {
   const errors: string[] = [];
   const residue: string[] = [];
+  /** Return the accumulated errors without exposing a partial dataset. */
   const reject = (): ParseResult => ({ ok: false, errors, residue });
   if (!object(raw)) return { ok: false, errors: ['Expected staging object'], residue };
   keys(raw, ['schemaVersion', 'name', 'kind', 'provenance', 'units', 'coordinateFrame', 'harmonicConvention', 'records'], 'root', errors);
@@ -86,6 +93,7 @@ export function parseStagingDocument(raw: unknown, id: string, at = Date.now()):
   };
   const seen = new Set<string>();
   let previousTime = -Infinity;
+  /** Read and validate one numeric field while accumulating row errors. */
   const valueAt = (row: Obj, field: string, path: string): number => {
     const v = row[field];
     if (!number(v)) errors.push(`${path}.${field}: expected finite numeric value representable in float32`);

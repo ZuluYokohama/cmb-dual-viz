@@ -88,6 +88,7 @@ function parseEpistemic(raw: unknown): EpistemicLabel {
   return 'DERIVED/MEANING-MAP';
 }
 
+/** Parse versioned or legacy JSON while preventing label promotion. */
 export function parseJsonDocument(
   text: string,
   nameHint: string,

@@ -14,6 +14,7 @@ export function nextIngestId(prefix = 'ds'): string {
   return `${prefix}-${Date.now().toString(36)}-${_idSeq}`;
 }
 
+/** Parse one local payload atomically and return its intake log entry. */
 export function ingestFile(
   filename: string,
   text: string

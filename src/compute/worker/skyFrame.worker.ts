@@ -54,6 +54,7 @@ function nowMs(): number {
     : Date.now();
 }
 
+/** Build a sky frame in the worker and transfer owned result buffers. */
 self.onmessage = (ev: MessageEvent<SkyWorkerRequest>) => {
   const msg = ev.data;
   if (!msg || msg.type !== 'skyframe') return;

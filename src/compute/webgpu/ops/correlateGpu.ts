@@ -120,6 +120,7 @@ async function readI32(device: GPUDevice, src: GPUBuffer, n: number): Promise<In
   return copy;
 }
 
+/** Compute lagged pair correlations on WebGPU and return scores and lags. */
 export async function correlateLaggedBatchGpu(
   handle: WebGpuHandle,
   series: Float32Array,

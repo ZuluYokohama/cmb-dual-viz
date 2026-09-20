@@ -27,14 +27,17 @@ CAP = 5 * 1024 * 1024
 
 
 def sha(data):
+    """Return the SHA-256 hex digest for artifact identity checks."""
     return hashlib.sha256(data).hexdigest()
 
 
 def dump(path, data):
+    """Write JSON evidence with stable formatting and no non-finite values."""
     path.write_text(json.dumps(data, indent=2, allow_nan=False, default=str) + '\n')
 
 
 def download(url, path):
+    """Download a bounded HTTPS resource and preserve its exact bytes."""
     if not url.startswith('https://'):
         raise ValueError('HTTPS required')
     chunks, total, start = [], 0, time.monotonic()
@@ -53,10 +56,12 @@ def download(url, path):
 
 
 def finite(*values):
+    """Return whether every value is a finite, non-boolean number."""
     return all(isinstance(v, (int, float)) and not isinstance(v, bool) and math.isfinite(v) for v in values)
 
 
 def envelope(name, kind, source, records, units, **extra):
+    """Build a versioned staging envelope with pinned source provenance."""
     return dict(schemaVersion='cmb.dataset/v1', name=name, kind=kind,
                 provenance=dict(source=f"hf://datasets/{source['repo']}/{source['path']}",
                                 revision=source['revision'], license=source['license'], origin='measured'),
@@ -64,6 +69,7 @@ def envelope(name, kind, source, records, units, **extra):
 
 
 def lag_reference(a, b, max_lag):
+    """Compute an independent best lagged Pearson reference result."""
     best_score, best_lag = 0.0, 0
     for lag in range(-max_lag, max_lag + 1):
         # Independently form overlap; matches documented positive lag convention.
@@ -79,6 +85,7 @@ def lag_reference(a, b, max_lag):
 
 
 def references(values, sky, plan):
+    """Generate independent numerical reference cases from validated inputs."""
     rng = np.random.default_rng(plan['controls']['seed'])
     cases = []
     for n in plan['controls']['seriesLengths']:
@@ -106,6 +113,7 @@ def references(values, sky, plan):
 
 
 def main():
+    """Validate pinned datasets and emit reproducible intake evidence."""
     parser = argparse.ArgumentParser()
     parser.add_argument('--out', required=True)
     args = parser.parse_args()

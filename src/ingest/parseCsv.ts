@@ -30,6 +30,7 @@ function normHeader(h: string): string {
   return h.trim().toLowerCase().replace(/\s+/g, '_');
 }
 
+/** Parse supported CSV or TSV shapes into a derived research dataset. */
 export function parseCsvDocument(
   text: string,
   nameHint: string,
@@ -87,6 +88,7 @@ export function parseCsvDocument(
 
   for (let r = 1; r < lines.length; r++) {
     const cols = splitCsvLine(lines[r]!);
+    /** Read a nonempty column as a number, or return NaN when absent. */
     const num = (i: number) => {
       if (i < 0 || i >= cols.length) return NaN;
       if (cols[i]!.trim() === '') return NaN;

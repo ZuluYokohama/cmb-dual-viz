@@ -8,8 +8,10 @@ import { execFileSync } from 'node:child_process';
 import { build } from 'esbuild';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+/** Return the SHA-256 digest used to identify staged artifacts. */
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 const cap = 5 * 1024 * 1024;
+/** Read a file without accepting more than the intake byte limit. */
 function readBounded(path) {
   const fd = openSync(path, 'r');
   const buffer = Buffer.alloc(cap + 1);
@@ -51,6 +53,7 @@ try {
   const result = parseStagingDocument(envelope, `stage-${sha(serialized).slice(0, 20)}`, 0);
   if (!result.ok) throw new Error(result.errors.join('\n'));
   const smoke = stagingSmoke(result.dataset);
+  /** Run a read-only Git query for the staging evidence report. */
   const git = (...args) => execFileSync('git', args, { cwd: root, encoding: 'utf8' }).trim();
   const report = { schemaVersion: 'cmb.staging-report/v1', status: 'VERIFIED_FOR_RESEARCH_INTAKE',
     createdAt: new Date().toISOString(), sourceCommit: git('rev-parse', 'HEAD'), workingTreeDirty: !!git('status', '--porcelain'),

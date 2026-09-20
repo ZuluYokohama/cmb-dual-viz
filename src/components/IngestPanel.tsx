@@ -23,6 +23,7 @@ interface Props {
   onLogOnly: (log: IngestLogEntry) => void;
 }
 
+/** Render dataset intake controls, samples, status, and evidence logs. */
 export function IngestPanel({
   datasets,
   log,
