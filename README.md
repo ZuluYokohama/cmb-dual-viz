@@ -7,6 +7,8 @@ Dark cosmic UI · Mollweide canvas · PCA/force meaning map · Vite + React + Ty
 > **Mode: RESEARCH / exploratory.** Never certifies OPEN claims. Meaning map / correlates / Smith z-mapping are intuition instruments — not proof of non-local effects.  
 > **Not “NASA compliant.”** Honest NPR Class D-*analogue* only; see `docs/CLASSIFICATION.md`.
 
+**Public surface:** https://zuluyokohama.github.io/cmb-dual-viz/ — representational boundary-layer site (not a console).
+
 ## Run
 
 ```bash
@@ -48,7 +50,7 @@ npm run preview
 ## Epistemic labels
 
 | Layer | Label | Meaning |
-|-------|--------|---------|
+|-------|-------|---------|
 | Multipole synthesis / \(Y_\ell^m\) | **PHYSICS-BACKED** | Real associated-Legendre / real Y_lm math |
 | Acoustic-peak style \(C_\ell\) | **PHYSICS-BACKED (EXAMPLE)** | Toy compressed peaks — **not** Planck |
 | Coherence field + z-score | **METAPHOR/RESEARCH** | Exploratory overlay; **not** GCP = CMB |
@@ -107,15 +109,19 @@ For checked new-data intake, use [Data staging](docs/DATA_STAGING.md): `npm run 
 | `docs/PERF_BASELINE.md` | Measured CPU timings |
 | `docs/DRESSING_CHECKLIST.md` | Dressing states + Bombelli/DFM motif (no Lean/DFM impl) |
 | `docs/CAPABILITIES_BRIEFING.md` | Operator capabilities briefing (shareable) |
-
+| `docs/BOUNDARY_LAYER.md` | Interior↔exterior / representation framing |
+| `docs/HF_VALIDATION.md` | Pinned HF astronomy validation |
+| `docs/DATA_STAGING.md` | Strict `cmb.dataset/v1` intake |
+| `docs/LANDING.md` | Public Pages site notes |
 
 ## Landing
 
-GitHub Pages–ready cosmic landing (static HTML/CSS/JS, no React build):
+Public **representational** site (not a console / HUD):
 
-- **`site/`** — `index.html` · `styles.css` · `app.js`
-- Enable Pages: **Settings → Pages → Deploy from branch `main` / folder `/site`**
-- See [`site/README.md`](./site/README.md) for local preview and link notes.
+- **Live:** https://zuluyokohama.github.io/cmb-dual-viz/
+- **Source:** `docs/index.html` · `docs/styles.css` · `docs/app.js` (+ art embeds)
+- Pages folder: branch **`main`** · **`/docs`** (GitHub only offers `/` or `/docs`, not `/site`)
+- See [`docs/LANDING.md`](./docs/LANDING.md). The live engine remains the operational interior (`npm run dev`).
 
 ## Screenshots
 
