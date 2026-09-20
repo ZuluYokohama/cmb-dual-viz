@@ -52,6 +52,10 @@ python scripts/hf-validation.py --out artifacts/hf-validation/new-run
 
 Use a fresh output directory. The script validates pinned HF file identity, downloads primary SILSO data, maps selected fields with sidecars, invokes strict CMB staging, and compares engine results with independent NumPy/SciPy calculations. Downloads have a 5 MiB per-response cap. Upstream SILSO's current complete file can change; the captured primary 2019 slice and complete-download hash document this run's comparison.
 
+### Refresh the SILSO primary pin
+
+Normal validation never updates source pins. If SILSO publishes a changed primary CSV, validation stops before parsing it. Refreshing the pin is an explicit review step: download the URL in `examples/hf/sources.json` to a scratch file, inspect the upstream change and the retained 2019 comparison slice, compute the file's byte count and SHA-256, then update `upstreamBytes` and `upstreamSha256` in that file and rerun validation into a fresh output directory. Commit the pin update together with the reviewed evidence; do not derive or rewrite pins during a normal validation run.
+
 For the browser test, install or select a Chromium binary, then:
 
 ```bash

@@ -31,6 +31,15 @@ def sha(data):
     return hashlib.sha256(data).hexdigest()
 
 
+def verify_silso_primary(data, source):
+    digest = sha(data)
+    bytes_match = len(data) == source['upstreamBytes']
+    sha256_match = digest == source['upstreamSha256']
+    if not bytes_match or not sha256_match:
+        raise ValueError('sunspots: primary source identity mismatch; follow the explicit refresh process in docs/HF_VALIDATION.md')
+    return digest
+
+
 def dump(path, data):
     """Write JSON evidence with stable formatting and no non-finite values."""
     path.write_text(json.dumps(data, indent=2, allow_nan=False, default=str) + '\n')
@@ -164,6 +173,7 @@ def main():
         selected = sorted([r for r in tables['sunspots'] if r['date'].year == 2019], key=lambda r: r['date'])
         epoch = dt.date(2019, 1, 1)
         primary_bytes = download(sources['sunspots']['upstream'], out / 'silso-primary.csv')
+        primary_sha256 = verify_silso_primary(primary_bytes, sources['sunspots'])
         primary = {}
         for line in primary_bytes.decode('ascii').splitlines():
             fields = line.split(';')
@@ -188,7 +198,7 @@ def main():
         dump(out / 'sunspots.cmb.json', envelope('SILSO 2019 daily sunspot index — numeric fields independently checked',
              'series', sources['sunspots'], series, dict(value='SILSO international sunspot number v2', time='UTC days since 2019-01-01')))
         report['sources']['sunspots'].update(selectedRows=len(series), selection='2019-01-01..2019-12-31 inclusive',
-             primaryUrl=sources['sunspots']['upstream'], primarySha256=sha(primary_bytes),
+             primaryUrl=sources['sunspots']['upstream'], primaryByteIdentity='PASS', primarySha256=primary_sha256,
              numericPrimaryComparison='PASS', numericMismatches=0, flagMismatches=len(flag_mismatches),
              metadataGate='FAIL' if flag_mismatches else 'PASS',
              policy='Only date and numeric value are admitted; disputed flag is preserved in sidecar and excluded')

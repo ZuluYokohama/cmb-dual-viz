@@ -18,6 +18,8 @@
     "license": "CC-BY-NC-4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
     "upstream": "https://www.sidc.be/SILSO/DATA/SN_d_tot_V2.0.csv",
+    "upstreamBytes": 2896132,
+    "upstreamSha256": "e6f37789ce9cd535df02dadf1a08bca1e86fd814272854b8fbda02c700350015",
     "upstreamDocumentation": "https://www.sidc.be/SILSO/infosndtot"
   }
 }
