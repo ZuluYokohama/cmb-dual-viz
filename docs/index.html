@@ -3,180 +3,237 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="CMB Dual-Thread — boundary-layer instrument. Representations are the interface. RESEARCH · high score ≠ OPEN." />
-  <meta name="theme-color" content="#03040a" />
-  <title>CMB Dual-Thread · boundary layer</title>
+  <meta name="description" content="CMB Dual-Thread projects a dual way of attending onto a readable boundary layer. Representations are the interface. High score ≠ OPEN. Research-only." />
+  <meta name="theme-color" content="#07080f" />
+  <meta property="og:title" content="CMB Dual-Thread" />
+  <meta property="og:description" content="What we can see is the boundary layer — a public surface for a dual-thread research instrument." />
+  <meta property="og:type" content="website" />
+  <title>CMB Dual-Thread — boundary layer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-
-  <!-- Key-art = last-scatter screen under interactive Mollweide -->
-  <div class="surface-key" aria-hidden="true">
-    <img src="assets/key-art.png" alt="" />
+  <div class="atmosphere" aria-hidden="true">
+    <img class="atmosphere-art" src="assets/key-art.png" alt="" />
+    <div class="atmosphere-veil"></div>
   </div>
-  <canvas id="sky" class="sky-stage" aria-label="Mollweide last-scatter surface"></canvas>
 
-  <aside class="rail" aria-label="Instrument rail">
-    <div class="rail-mark">
-      <span class="rail-id">ZULU</span>
-      <span class="rail-unit">CMB-DT</span>
-      <span class="rail-mode">BOUNDARY LAYER</span>
-    </div>
+  <header class="top">
+    <a class="mark" href="#top">CMB Dual-Thread</a>
+    <nav aria-label="Primary">
+      <a href="#why">Why</a>
+      <a href="#threads">Threads</a>
+      <a href="#surfaces">Surfaces</a>
+      <a href="#honesty">Honesty</a>
+      <a href="#rooms">Rooms</a>
+      <a href="https://github.com/ZuluYokohama/cmb-dual-viz" rel="noopener noreferrer">GitHub</a>
+    </nav>
+  </header>
 
-    <div class="rail-block">
-      <div class="rail-label">THREADS</div>
-      <button type="button" class="thread-btn active" data-thread="A" aria-pressed="true">
-        <span class="led physics"></span>
-        <span class="thread-code">A</span>
-        <span class="thread-name">Y<sub>ℓm</sub></span>
-      </button>
-      <button type="button" class="thread-btn" data-thread="B" aria-pressed="false">
-        <span class="led metaphor"></span>
-        <span class="thread-code">B</span>
-        <span class="thread-name">COH</span>
-      </button>
-      <button type="button" class="thread-btn" data-thread="MIX" aria-pressed="false">
-        <span class="led derived"></span>
-        <span class="thread-code">⊕</span>
-        <span class="thread-name">MIX</span>
-      </button>
-    </div>
-
-    <div class="rail-block dress-block" id="dress-block" data-active="bare">
-      <div class="rail-label">DRESSING</div>
-      <div class="dress-glyph" aria-hidden="true">
-        <img src="assets/dressing-glyph.png" alt="" />
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Research projection · Class D-analogue · Zulu Research-Only</p>
+      <h1>What we can see is the boundary layer.</h1>
+      <p class="lede">
+        Humans like representations. We can only perceive boundary layers.
+        This site is not the instrument — it is the <em>screen</em> the work throws outward:
+        a dual-thread way of attending, made readable for people who were never in the room.
+      </p>
+      <p class="hero-line">Representations are the interface · high score ≠ OPEN</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="https://github.com/ZuluYokohama/cmb-dual-viz" rel="noopener noreferrer">Repository</a>
+        <a class="btn ghost" href="https://github.com/ZuluYokohama/cmb-dual-viz/blob/main/docs/CAPABILITIES_BRIEFING.md" rel="noopener noreferrer">Capabilities briefing</a>
+        <a class="btn ghost" href="https://github.com/ZuluYokohama/cmb-dual-viz/blob/main/docs/BOUNDARY_LAYER.md" rel="noopener noreferrer">Boundary layer note</a>
       </div>
-      <div class="dress-chips" role="group" aria-label="Dressing state">
-        <button type="button" class="dress-chip active" data-dress="bare">bare</button>
-        <button type="button" class="dress-chip" data-dress="dressed_candidate">dressed_candidate</button>
-        <button type="button" class="dress-chip" data-dress="invariant_claim">invariant_claim</button>
-      </div>
-    </div>
+    </section>
 
-    <div class="rail-block scrub-block">
-      <div class="rail-label">Γ SCRUB · RIM</div>
-      <input type="range" id="gamma-scrub" min="0" max="100" value="18" aria-label="Smith Gamma mismatch to match" />
-      <div class="scrub-readout">
-        <span id="gamma-val">|Γ| 0.82</span>
-        <span id="match-val" class="mismatch">MISMATCH</span>
-      </div>
-    </div>
-
-    <div class="rail-foot">
-      <a href="https://github.com/ZuluYokohama/cmb-dual-viz" rel="noopener noreferrer">GH</a>
-      <a href="https://github.com/ZuluYokohama/cmb-dual-viz/blob/main/docs/CAPABILITIES_BRIEFING.md" rel="noopener noreferrer">CAP</a>
-      <a href="https://github.com/ZuluYokohama/cmb-dual-viz/blob/main/LICENSE" rel="noopener noreferrer">LIC</a>
-    </div>
-  </aside>
-
-  <div class="hud">
-    <header class="hud-header">
-      <div class="pkt">
-        <span class="pkt-k">PACKET</span>
-        <span class="pkt-v">BOUNDARY-LAYER / RESEARCH</span>
-      </div>
-      <div class="status-leds" aria-label="Epistemic status">
-        <span class="status-led"><i class="led physics on"></i>PHYS</span>
-        <span class="status-led"><i class="led metaphor on"></i>META</span>
-        <span class="status-led"><i class="led derived on"></i>DERIV</span>
-        <span class="status-led"><i class="led research on"></i>RSRCH</span>
-      </div>
-      <div class="pkt-right">
-        <span class="pkt-k">CLASS</span>
-        <span class="pkt-v amber">D-ANALOGUE</span>
-      </div>
-    </header>
-
-    <p class="boundary-one-liner">
-      Representations are the interface · high score ≠ OPEN
-    </p>
-
-    <div class="hud-body">
-      <section class="panel packet-panel" id="panel-packet">
-        <div class="panel-hd">
-          <span class="panel-id">01</span>
-          <span>LAB PACKET</span>
-        </div>
-        <h1>CMB Dual-Thread Engine</h1>
-        <p class="epigraph">Humans like representations… we can only perceive the boundary layers.</p>
-        <p class="mono-line" id="dress-copy">
-          state: bare · scaffolding visible · last-scatter screen only
+    <section class="why reveal" id="why">
+      <header class="section-head">
+        <p class="kicker">Intent</p>
+        <h2>Why this exists</h2>
+      </header>
+      <div class="why-grid">
+        <p>
+          Attention has an interior and an exterior. Formal structure and felt pattern
+          run on the same substrate, but most tools force you to pick one language.
+          CMB Dual-Thread keeps both — then projects their meeting onto surfaces you can look at.
         </p>
-        <p class="terse" id="dress-detail">
-          Mollweide = readable surface · not the interior.<br />
-          Smith = rim of reflection · mismatch→match.<br />
-          Fail-closed. Not NASA. Research-Only.
+        <p>
+          The public face is deliberately <strong>representational</strong>: art, metaphor, and
+          plain speech an outsider can hold. The operational workshop — controls, ledger,
+          fail-closed tags — stays inside the live engine. This page is the forest, not the trees.
         </p>
-      </section>
+      </div>
+    </section>
 
-      <section class="panel smith-panel" id="panel-smith">
-        <div class="panel-hd">
-          <span class="panel-id">02</span>
-          <span>SMITH Γ · RIM</span>
-          <span class="panel-tag derived">DERIVED z</span>
+    <section class="threads reveal" id="threads">
+      <header class="section-head">
+        <p class="kicker">Dual-thread</p>
+        <h2>Two ways of attending, one map</h2>
+        <p class="section-lede">Same sky. Different questions. Neither swallows the other.</p>
+      </header>
+      <div class="thread-pair">
+        <article class="thread-card structure">
+          <span class="thread-tag">Thread A · structure</span>
+          <h3>Formal geometry</h3>
+          <p>
+            Multipoles, spectra, carrier shape — the last-scatter screen as
+            <em>physics-backed</em> mathematics on a Mollweide sky. Real spherical harmonics;
+            example spectra stay labeled as examples, never dressed up as Planck.
+          </p>
+          <p class="thread-foot">Reads as: law, measure, scaffold you can check.</p>
+        </article>
+        <div class="thread-join" aria-hidden="true">
+          <span>same<br />substrate</span>
         </div>
-        <div class="smith-stage">
-          <img class="smith-relic" src="assets/smith-relic.png" alt="" aria-hidden="true" />
-          <canvas id="smith" width="180" height="180" aria-label="Smith chart Gamma dial"></canvas>
-        </div>
-        <div class="smith-readouts">
-          <div><span class="k">Γ</span> <span id="smith-g">—</span></div>
-          <div><span class="k">z</span> <span id="smith-z">—</span></div>
-          <div><span class="k">rim</span> <span id="smith-state" class="mismatch">MISMATCH</span></div>
-        </div>
-      </section>
+        <article class="thread-card coherence">
+          <span class="thread-tag">Thread B · coherence</span>
+          <h3>Felt field</h3>
+          <p>
+            Pattern, rhyme, attention — a coherence overlay on the <em>same</em> surface.
+            Metaphor and research intuition, with nulls that ask whether you are hearing
+            a rhyme or only yourself. Explicitly not “GCP = CMB.”
+          </p>
+          <p class="thread-foot">Reads as: presence, coincidence, honest doubt.</p>
+        </article>
+      </div>
+      <p class="pull center">Forest: dual-thread interior ↔ exterior on one substrate.</p>
+    </section>
 
-      <section class="panel map-panel" id="panel-map">
-        <div class="panel-hd">
-          <span class="panel-id">03</span>
-          <span>POINT-COINCIDENCES</span>
-          <span class="panel-tag derived">DERIVED</span>
-        </div>
-        <div class="map-stage">
-          <img class="map-relic" src="assets/meaning-constellation.png" alt="" aria-hidden="true" />
-          <canvas id="constellation" width="280" height="160" aria-label="Meaning map constellation"></canvas>
-        </div>
-        <div class="map-legend mono-line">
-          surface coincidences · ℓ-bin · claim · series · sky
-        </div>
-      </section>
+    <section class="surfaces reveal" id="surfaces">
+      <header class="section-head">
+        <p class="kicker">Projection</p>
+        <h2>Readable surfaces</h2>
+        <p class="section-lede">
+          Each surface is a rim — something you can perceive — not a claim about the core.
+        </p>
+      </header>
+      <ol class="surface-journey">
+        <li class="surf">
+          <figure><img src="assets/key-art.png" alt="" /></figure>
+          <div>
+            <h3>Last-scatter screen</h3>
+            <p>Sky-shaped carrier. Where light last became a map. Geometry you can look at — not the interior.</p>
+          </div>
+        </li>
+        <li class="surf">
+          <figure class="fig-tone"><img src="assets/key-art.png" alt="" /></figure>
+          <div>
+            <h3>Felt field on the same substrate</h3>
+            <p>Coherence as weather on that screen. Metaphor layered on measure — never a forced identity between domains.</p>
+          </div>
+        </li>
+        <li class="surf">
+          <figure><img src="assets/meaning-constellation.png" alt="" /></figure>
+          <div>
+            <h3>Point-coincidences</h3>
+            <p>Meaning as places where attention and data briefly share a coordinate — a constellation, not a verdict.</p>
+          </div>
+        </li>
+        <li class="surf">
+          <figure class="fig-tone"><img src="assets/meaning-constellation.png" alt="" /></figure>
+          <div>
+            <h3>Rhyme versus self</h3>
+            <p>Correlate search under shuffle-nulls: “does this rhyme?” versus hearing yourself. High score is still not OPEN.</p>
+          </div>
+        </li>
+        <li class="surf">
+          <figure><img src="assets/smith-relic.png" alt="" /></figure>
+          <div>
+            <h3>Rim of reflection</h3>
+            <p>When reflection drops, transfer rises. A derived dial for mismatch and match — RF math real; the mapped “z” is derived.</p>
+          </div>
+        </li>
+        <li class="surf">
+          <figure><img src="assets/dressing-glyph.png" alt="" /></figure>
+          <div>
+            <h3>Scaffolding that cancels</h3>
+            <p>Bare → dressed candidate → invariant claim. Intermediate scaffolding is allowed if controlled. An invariant tag is still not OPEN.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
 
-      <section class="panel readout-panel" id="panel-readout">
-        <div class="panel-hd">
-          <span class="panel-id">04</span>
-          <span>READOUT</span>
-        </div>
-        <dl class="readout-grid">
-          <div><dt>SURFACE</dt><dd>last-scatter</dd></div>
-          <div><dt>THREAD</dt><dd id="ro-thread">A · multipole</dd></div>
-          <div><dt>ℓ EMPHASIS</dt><dd id="ro-ell">Y₂₀ + Y₂₂</dd></div>
-          <div><dt>COH WEIGHT</dt><dd id="ro-coh">0.12</dd></div>
-          <div><dt>DRESSING</dt><dd id="ro-dress">bare</dd></div>
-          <div><dt>OPEN?</dt><dd class="fail">NEVER CERTIFY</dd></div>
-        </dl>
-      </section>
-    </div>
+    <section class="honesty reveal" id="honesty">
+      <header class="section-head">
+        <p class="kicker">Epistemic</p>
+        <h2>How to read without lying to yourself</h2>
+      </header>
+      <div class="honesty-grid">
+        <article>
+          <h3>High score ≠ OPEN</h3>
+          <p>Bright readouts, toy z-scores, and match-pull are instruments of intuition. They do not authorize discovery, funding, or safety decisions.</p>
+        </article>
+        <article>
+          <h3>Fail-closed</h3>
+          <p>Claims stay tagged. Promotion is human. Ingested streams stay untrusted until labeled. Nothing auto-promotes to PHYSICS-BACKED or OPEN.</p>
+        </article>
+        <article>
+          <h3>Labels travel</h3>
+          <p>Physics-backed, example, metaphor, derived, research — the strictest input sets the ceiling. Fake citations and invented “measured” numbers are forbidden.</p>
+        </article>
+        <article>
+          <h3>Research-only</h3>
+          <p>Zulu Research-Only License: non-commercial research, academic, educational, personal evaluative use. Commercial needs a separate grant. Not NASA-compliant — an honest Class D-analogue.</p>
+        </article>
+      </div>
+    </section>
 
-    <footer class="hud-footer">
-      <span>Zulu Research-Only License</span>
-      <span class="sep">·</span>
-      <span class="amber">high score ≠ OPEN</span>
-      <span class="sep">·</span>
-      <span>Class D-analogue</span>
-      <span class="sep">·</span>
-      <span class="muted">© 2026 ZuluYokohama</span>
-      <span class="footer-links">
-        <a href="https://github.com/ZuluYokohama/cmb-dual-viz" rel="noopener noreferrer">GitHub</a>
-        <a href="https://github.com/ZuluYokohama/cmb-dual-viz/blob/main/docs/CAPABILITIES_BRIEFING.md" rel="noopener noreferrer">CAPABILITIES_BRIEFING</a>
+    <section class="rooms reveal" id="rooms">
+      <header class="section-head">
+        <p class="kicker">Interior · exterior</p>
+        <h2>Two rooms, one project</h2>
+      </header>
+      <div class="room-pair">
+        <article class="room exterior">
+          <h3>This site — exterior</h3>
+          <p>A normal page. Atmosphere, story, surfaces. For anyone outside the workshop who still wants the shape of the thought.</p>
+          <ul>
+            <li>No control rail</li>
+            <li>No scrub or ledger UI</li>
+            <li>Projection, not operation</li>
+          </ul>
+        </article>
+        <article class="room interior">
+          <h3>The engine — interior</h3>
+          <p>Live desktop instrument at the repository: ingest, meaning map, correlates, Smith, dressing checklist, OpGraph fabric.</p>
+          <ul>
+            <li>Operational workshop</li>
+            <li>Fail-closed evidence ledger</li>
+            <li>Clone &amp; run locally</li>
+          </ul>
+          <a class="room-link" href="https://github.com/ZuluYokohama/cmb-dual-viz" rel="noopener noreferrer">Enter via GitHub →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="close reveal">
+      <blockquote>
+        <p>Humans like representations… we can only perceive the boundary layers.</p>
+      </blockquote>
+      <p class="close-links">
+        <a href="https://github.com/ZuluYokohama/cmb-dual-viz/blob/main/docs/BOUNDARY_LAYER.md" rel="noopener noreferrer">BOUNDARY_LAYER</a>
+        <span class="sep">·</span>
+        <a href="https://github.com/ZuluYokohama/cmb-dual-viz/blob/main/docs/CLASSIFICATION.md" rel="noopener noreferrer">CLASSIFICATION</a>
+        <span class="sep">·</span>
+        <a href="https://github.com/ZuluYokohama/cmb-dual-viz/blob/main/docs/CAPABILITIES_BRIEFING.md" rel="noopener noreferrer">CAPABILITIES</a>
+        <span class="sep">·</span>
         <a href="https://github.com/ZuluYokohama/cmb-dual-viz/blob/main/LICENSE" rel="noopener noreferrer">LICENSE</a>
-      </span>
-    </footer>
-  </div>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <span>© 2026 ZuluYokohama</span>
+    <span class="sep">·</span>
+    <span>Zulu Research-Only License</span>
+    <span class="sep">·</span>
+    <span>high score ≠ OPEN</span>
+    <span class="sep">·</span>
+    <span>Class D-analogue · not NASA-compliant</span>
+  </footer>
 
   <script src="asset-keyArt.js"></script>
   <script src="asset-smithRelic.js"></script>

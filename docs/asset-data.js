@@ -10,7 +10,6 @@
   };
   document.querySelectorAll("img").forEach(function (img) {
     var src = img.getAttribute("src") || "";
-    // also match if browser resolved path ends with filename
     Object.keys(byPath).forEach(function (k) {
       if (src === k || src.endsWith(k) || src.indexOf(k.split("/").pop()) !== -1) {
         if (byPath[k]) img.src = byPath[k];
