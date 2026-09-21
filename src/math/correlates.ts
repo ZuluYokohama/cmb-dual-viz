@@ -49,6 +49,10 @@ export interface CorrelateHit {
   nullStd: number;
   /** (score - nullMean) / nullStd — toy, not formal inference */
   zToy: number;
+  /** Toy shuffle-null two-sided tail probability */
+  pValue: number;
+  /** Number of paired samples used to compute score */
+  n: number;
   epistemic: EpistemicLabel;
   seedNodeId?: string;
   targetNodeId?: string;
@@ -168,7 +172,7 @@ export function nullZ(
   target: number[],
   nShuffle = 40,
   seed = 12345
-): { nullMean: number; nullStd: number; zToy: number } {
+): { nullMean: number; nullStd: number; zToy: number; pValue: number } {
   const rng = mulberry32(seed);
   const nullScores: number[] = [];
   for (let s = 0; s < nShuffle; s++) {
@@ -181,7 +185,12 @@ export function nullZ(
   for (const x of nullScores) v += (x - nullMean) ** 2;
   const nullStd = Math.sqrt(v / Math.max(1, nullScores.length - 1)) || 1e-6;
   const zToy = (score - nullMean) / nullStd;
-  return { nullMean, nullStd, zToy };
+  let exceed = 0;
+  for (const s of nullScores) {
+    if (Math.abs(s) >= Math.abs(score)) exceed++;
+  }
+  const pValue = (exceed + 1) / (nullScores.length + 1);
+  return { nullMean, nullStd, zToy, pValue };
 }
 
 function nullZCosine(
@@ -190,7 +199,7 @@ function nullZCosine(
   targetFeat: Float32Array | number[],
   nShuffle = 40,
   seed = 99
-): { nullMean: number; nullStd: number; zToy: number } {
+): { nullMean: number; nullStd: number; zToy: number; pValue: number } {
   const rng = mulberry32(seed);
   const nullScores: number[] = [];
   const dim = Math.min(seedFeat.length, targetFeat.length);
@@ -213,7 +222,12 @@ function nullZCosine(
   let v = 0;
   for (const x of nullScores) v += (x - nullMean) ** 2;
   const nullStd = Math.sqrt(v / Math.max(1, nullScores.length - 1)) || 1e-6;
-  return { nullMean, nullStd, zToy: (score - nullMean) / nullStd };
+  let exceed = 0;
+  for (const s of nullScores) {
+    if (Math.abs(s) >= Math.abs(score)) exceed++;
+  }
+  const pValue = (exceed + 1) / (nullScores.length + 1);
+  return { nullMean, nullStd, zToy: (score - nullMean) / nullStd, pValue };
 }
 
 /** Resample / truncate to common length by linear index alignment */
@@ -501,6 +515,7 @@ export function scanCorrelates(
           metric,
           score,
           lag: lagged.lag,
+          n: a.length,
           ...nullStats,
           epistemic: demote(seed.epistemic, tgt.epistemic),
           seedNodeId: seed.nodeId,
@@ -531,6 +546,7 @@ export function scanCorrelates(
         metric: 'cosine',
         score,
         lag: 0,
+        n: Math.min(seed.features.length, tgt.features.length),
         ...nullStats,
         epistemic: demote(seed.epistemic, tgt.epistemic),
         seedNodeId: seed.nodeId,

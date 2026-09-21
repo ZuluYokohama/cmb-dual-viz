@@ -111,9 +111,24 @@ export interface MeaningEdge {
   target: string;
   weight: number;
   reason: 'similarity' | 'co-occurrence' | 'shared-multipole' | 'thread-pull' | 'correlate';
+  correlate?: CorrelateEdge;
+  bareTouch?: boolean;
 }
 
 export interface MeaningGraph {
   nodes: MeaningNode[];
   edges: MeaningEdge[];
+}
+
+export interface CorrelateEdge {
+  id: string;
+  sourceId: string;
+  targetId: string;
+  metric: 'pearson' | 'lagged_pearson' | 'spearman' | 'cosine';
+  lag: number;
+  score: number;
+  pValue: number;
+  n: number;
+  ledgerRef: string;
+  createdAt: string;
 }

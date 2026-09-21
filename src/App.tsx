@@ -14,6 +14,7 @@ import {
   fabricCoherence,
   ledgerAppend,
   ledgerAppendDressing,
+  ledgerSnapshot,
   initComputeFabric,
   scrubShouldResynthSh,
   runSkyFrameOffthread,
@@ -39,9 +40,15 @@ import {
 } from './math/smith';
 import type { CorrelateHit } from './math/correlates';
 import {
+  filterCorrelateEdgesByPValue,
+  replayCorrelateEdgesFromLedger,
+  upsertCorrelateEdges,
+} from './math/correlateEdges';
+import {
   applyDressingTransition,
   bulkMarkDressedCandidate,
   nodeIdsFromCorrelateHits,
+  resolveDressingDisplay,
   type DressingState,
   type DressingStateMap,
 } from './math/dressing';
@@ -49,6 +56,7 @@ import { DressingChecklist } from './components/DressingChecklist';
 import type {
   IngestedDataset,
   IngestLogEntry,
+  CorrelateEdge,
   MeaningEdge,
   MeaningGraph,
   MeaningNode,
@@ -120,6 +128,16 @@ export default function App() {
   const trailPhaseRef = useRef<number | null>(null);
   const [correlateHits, setCorrelateHits] = useState<CorrelateHit[]>([]);
   const [activeHit, setActiveHit] = useState<CorrelateHit | null>(null);
+  const [correlateEdges, setCorrelateEdges] = useState<CorrelateEdge[]>(() =>
+    replayCorrelateEdgesFromLedger(ledgerSnapshot())
+  );
+  const [activeEdge, setActiveEdge] = useState<CorrelateEdge | null>(null);
+  const [edgePThreshold, setEdgePThreshold] = useState(() => {
+    if (typeof window === 'undefined') return 0.01;
+    const raw = window.sessionStorage.getItem('meaning-map-edge-p-threshold');
+    const n = raw == null ? NaN : Number(raw);
+    return Number.isFinite(n) ? Math.min(0.5, Math.max(0, n)) : 0.01;
+  });
   const [dressingMap, setDressingMap] = useState<DressingStateMap>({});
   const [dressingLog, setDressingLog] = useState<
     { nodeId: string; from: string; to: string; note: string; at: number }[]
@@ -351,6 +369,11 @@ export default function App() {
     setEllFocus((f) => Math.min(f, ellMax));
   }, [ellMax]);
 
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    window.sessionStorage.setItem('meaning-map-edge-p-threshold', String(edgePThreshold));
+  }, [edgePThreshold]);
+
   const onAmpScale = (ell: number, v: number) => {
     setAmpScales((prev) => ({ ...prev, [ell]: v }));
   };
@@ -368,26 +391,40 @@ export default function App() {
     [datasets, ellFocus, ellMax, Cl, coh, timePhase]
   );
 
-  // Merge top correlate hits as dashed correlate edges
+  // Overlay correlate-network edges from append-only edge store.
   const meaningGraph: MeaningGraph = useMemo(() => {
     const edges: MeaningEdge[] = [...baseGraph.edges];
-    const nodeIds = new Set(baseGraph.nodes.map((n) => n.id));
-    for (const h of correlateHits.slice(0, 6)) {
-      const a = h.seedNodeId;
-      const b = h.targetNodeId;
-      if (!a || !b || !nodeIds.has(a) || !nodeIds.has(b) || a === b) continue;
-      const w = Math.min(1, 0.35 + Math.abs(h.zToy) / 8);
-      edges.push({ source: a, target: b, weight: w, reason: 'correlate' });
+    const nodeById = new Map(baseGraph.nodes.map((n) => [n.id, n]));
+    const filtered = filterCorrelateEdgesByPValue(correlateEdges, edgePThreshold);
+    for (const edge of filtered) {
+      const a = nodeById.get(edge.sourceId);
+      const b = nodeById.get(edge.targetId);
+      if (!a || !b || a.id === b.id) continue;
+      const w = Math.max(0.08, Math.min(1, Math.abs(edge.score)));
+      const bareTouch =
+        resolveDressingDisplay(a, dressingMap) === 'bare' ||
+        resolveDressingDisplay(b, dressingMap) === 'bare';
+      edges.push({
+        source: a.id,
+        target: b.id,
+        weight: w,
+        reason: 'correlate',
+        correlate: edge,
+        bareTouch,
+      });
     }
     return { nodes: baseGraph.nodes, edges };
-  }, [baseGraph, correlateHits]);
+  }, [baseGraph, correlateEdges, edgePThreshold, dressingMap]);
 
   const highlightIds = useMemo(() => {
     const ids: string[] = [];
     if (activeHit?.seedNodeId) ids.push(activeHit.seedNodeId);
     if (activeHit?.targetNodeId) ids.push(activeHit.targetNodeId);
+    if (activeEdge) {
+      ids.push(activeEdge.sourceId, activeEdge.targetId);
+    }
     return ids;
-  }, [activeHit]);
+  }, [activeHit, activeEdge]);
 
   const highlights = useMemo(
     () => skyHighlightsFromNodes(meaningGraph.nodes, selectedNode?.id ?? null),
@@ -405,6 +442,11 @@ export default function App() {
     }
     return { a: a / nodes.length, b: b / nodes.length };
   }, [meaningGraph]);
+
+  const activeEdgeLedgerDetail = useMemo(() => {
+    if (!activeEdge) return null;
+    return ledgerSnapshot().find((r) => r.id === activeEdge.ledgerRef) ?? null;
+  }, [activeEdge]);
 
   const smithState = useMemo(() => {
     // Active correlate hit → blend pair features into z
@@ -587,6 +629,7 @@ export default function App() {
 
   const onSelectHit = (hit: CorrelateHit | null) => {
     setActiveHit(hit);
+    setActiveEdge(null);
     if (hit?.seedNodeId || hit?.targetNodeId) {
       const n =
         meaningGraph.nodes.find((x) => x.id === hit.targetNodeId) ??
@@ -595,6 +638,15 @@ export default function App() {
       if (n) setSelectedNode(n);
     }
   };
+
+  const onCorrelateResults = useCallback(
+    (payload: { hits: CorrelateHit[]; edges: CorrelateEdge[] }) => {
+      setCorrelateHits(payload.hits);
+      setCorrelateEdges((prev) => upsertCorrelateEdges(prev, payload.edges));
+      setActiveEdge(null);
+    },
+    []
+  );
 
   const pushDressingEntry = useCallback(
     (entry: {
@@ -732,12 +784,50 @@ export default function App() {
               onSelect={(n) => {
                 setSelectedNode(n);
                 setActiveHit(null);
+                setActiveEdge(null);
+              }}
+              onSelectEdge={(edge) => {
+                setActiveEdge(edge);
+                setActiveHit(null);
+                const focus = edge
+                  ? meaningGraph.nodes.find((n) => n.id === edge.sourceId) ??
+                    meaningGraph.nodes.find((n) => n.id === edge.targetId) ??
+                    null
+                  : null;
+                if (focus) setSelectedNode(focus);
               }}
               width={620}
               height={220}
               ellFocus={Math.min(ellFocus, ellMax)}
               coherenceZ={coh?.zScore ?? 0}
             />
+            <div className="hint">
+              Correlate edge threshold p&lt;
+              <input
+                type="number"
+                min={0}
+                max={0.5}
+                step={0.001}
+                value={edgePThreshold}
+                onChange={(e) =>
+                  setEdgePThreshold(Math.min(0.5, Math.max(0, Number(e.target.value) || 0)))
+                }
+                style={{ width: 68, margin: '0 6px' }}
+              />
+              ({filterCorrelateEdgesByPValue(correlateEdges, edgePThreshold).length} edges)
+            </div>
+            {activeEdge && (
+              <p className="hint">
+                Edge {activeEdge.metric} lag={activeEdge.lag} score={activeEdge.score.toFixed(3)}
+                {' '}p={activeEdge.pValue.toExponential(2)} n={activeEdge.n} · ledger {activeEdge.ledgerRef}
+              </p>
+            )}
+            {activeEdgeLedgerDetail && (
+              <p className="hint">
+                Ledger entry opened: {activeEdgeLedgerDetail.id} ·{' '}
+                {new Date(activeEdgeLedgerDetail.at).toISOString()}
+              </p>
+            )}
             <p className="hint">
               Halos = Thread A/B pull. Dashed magenta = correlate edges. Click → inspector +
               Smith.
@@ -768,7 +858,7 @@ export default function App() {
                 }}
                 activeHitId={activeHit?.id ?? null}
                 onSelectHit={onSelectHit}
-                onResults={setCorrelateHits}
+                onResults={onCorrelateResults}
               />
               <div className="mini-metrics">
                 <div className="spectrum-frame compact">

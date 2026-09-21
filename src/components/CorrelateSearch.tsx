@@ -11,6 +11,8 @@ import {
   ledgerAppend,
   runIngestConverge,
 } from '../compute';
+import { correlateEdgesFromHits } from '../math/correlateEdges';
+import type { CorrelateEdge } from '../ingest/types';
 
 interface Props {
   datasets: IngestedDataset[];
@@ -20,7 +22,7 @@ interface Props {
   convergence: ConvergenceState;
   activeHitId: string | null;
   onSelectHit: (hit: CorrelateHit | null) => void;
-  onResults: (hits: CorrelateHit[]) => void;
+  onResults: (payload: { hits: CorrelateHit[]; edges: CorrelateEdge[] }) => void;
 }
 
 /**
@@ -83,9 +85,7 @@ export function CorrelateSearch({
             setLastMs(result.ms);
             setLastDevice(result.device);
             setLastPath('main');
-            onResults(result.hits);
-            onSelectHit(result.hits[0] ?? null);
-            ledgerAppend({
+            const rec = ledgerAppend({
               kind: 'correlate',
               op: 'CORRELATE_BATCH',
               tp: 'TP_PAIR_BLOCK',
@@ -99,8 +99,16 @@ export function CorrelateSearch({
                 path: 'main',
                 bypass: true,
                 note: 'escape hatch fabricCorrelate (?correlateBypass=1)',
+                hits: result.hits,
               },
             });
+            const edges = correlateEdgesFromHits(
+              result.hits,
+              rec.id,
+              new Date(rec.at).toISOString()
+            );
+            onResults({ hits: result.hits, edges });
+            onSelectHit(result.hits[0] ?? null);
             return;
           }
 
@@ -120,9 +128,7 @@ export function CorrelateSearch({
           setLastMs(result.measurement.ms);
           setLastDevice(result.device);
           setLastPath(result.path);
-          onResults(result.correlate.hits);
-          onSelectHit(result.correlate.hits[0] ?? null);
-          ledgerAppend({
+          const rec = ledgerAppend({
             kind: 'correlate',
             op: 'CORRELATE_BATCH',
             tp: 'TP_PAIR_BLOCK',
@@ -136,8 +142,16 @@ export function CorrelateSearch({
               path: result.path,
               graphId: 'IngestConverge',
               note: 'z_toy is toy null — high score ≠ OPEN; IngestConverge default',
+              hits: result.correlate.hits,
             },
           });
+          const edges = correlateEdgesFromHits(
+            result.correlate.hits,
+            rec.id,
+            new Date(rec.at).toISOString()
+          );
+          onResults({ hits: result.correlate.hits, edges });
+          onSelectHit(result.correlate.hits[0] ?? null);
         } finally {
           setBusy(false);
         }
