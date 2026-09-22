@@ -30,7 +30,7 @@ try {
   await page.goto('http://127.0.0.1:5175/', { waitUntil: 'networkidle0', timeout: 30000 });
   await page.waitForSelector('.dataset-row');
   const before = await page.$$eval('.dataset-row', nodes => nodes.length);
-  const picker = await page.$('input[type=file]');
+  const picker = await page.$('.ingest-panel input[type=file]');
   await picker.uploadFile(join(run, 'planck-staged/dataset.cmb.json'), join(run, 'sunspots-staged/dataset.cmb.json'));
   await page.waitForFunction(n => document.querySelectorAll('.dataset-row').length === n + 2, { timeout: 30000 }, before);
   const imported = await page.$$eval('.dataset-row', nodes => nodes.map(n => n.textContent));

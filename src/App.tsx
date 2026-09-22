@@ -6,6 +6,7 @@ import { CoherenceMetrics } from './components/CoherenceMetrics';
 import { UlamPanel } from './components/UlamPanel';
 import { MeaningMap } from './components/MeaningMap';
 import { IngestPanel } from './components/IngestPanel';
+import { LlmTracePanel } from './components/LlmTracePanel';
 import { NodeInspector } from './components/NodeInspector';
 import { SmithChart } from './components/SmithChart';
 import { CorrelateSearch } from './components/CorrelateSearch';
@@ -836,6 +837,7 @@ export default function App() {
             onBulkCorrelateHits={onBulkCorrelateHits}
             recentNotes={dressingLog}
           />
+          <LlmTracePanel />
           <IngestPanel
             datasets={datasets}
             log={ingestLog}

@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-22",
+  "native_ctest": {
+    "passed": 1,
+    "failed": 0
+  },
+  "vitest": {
+    "passed": 84,
+    "files": 11
+  },
+  "python_unittest": {
+    "passed": 4
+  },
+  "eslint": "PASS",
+  "typescript_vite_build": "PASS",
+  "browser": "See browser-checks.json",
+  "physical_gpu": "NOT_RUN",
+  "source_sha256": {
+    "src/ingest/llmTrace.ts": "2f1498ee28aeaa2d1b7a4b89bcbfeb8000ee7aa80021e1f652c94a9334fffe50",
+    "src/ingest/llmTrace.test.ts": "e3765869b86624cd38ca9a362698c0524e0d1ec94555b53d8dafb0d1fb8aaab7",
+    "src/components/LlmTracePanel.tsx": "3ec08afbe6667888d14cd8ce65d4ac0a767bf71862adacbbe03874eccdffc488",
+    "src/App.tsx": "c575880e84480fdc239b6f69627bf1e95161517d86667ffa4dbd845303d4bf90",
+    "src/styles.css": "ab7cbe0b4063da9508097a85892429ae468da932372f13d2bbf0f9bf3e5517d0",
+    "scripts/check-llm-browser.mjs": "b63b4a901f03730eae4f47632ee8ab67d6452225999bdd7c67c93bdb3bcb054c",
+    "scripts/check-hf-browser.mjs": "66bfc27d7e13b2ba8c5604757a12f97cc13f2f0c3c8d80df9af0c50ed2ad8247",
+    "experiments/llm/verify_trace.py": "aaecb3c37d23019150197288cae81cd207e03e2f0be79c75b4326632598e4c3a",
+    "experiments/llm/test_pilot.py": "ed1ca2e005da4bf9876179f9848845109e52d2a5ee927849873f2fea83ff97b6",
+    "bridge/llama_observer/metrics_test.cpp": "ee5b136d67a2399981c17f27c05a7b7057ddf3c278658ae71d35d279b7809b25"
+  }
+}

@@ -1207,3 +1207,13 @@ kbd {
 .mono {
   font-family: 'IBM Plex Mono', ui-monospace, monospace;
 }
+.llm-trace-panel {
+  margin: 12px 0;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg-panel);
+}
+.llm-trace-panel table { width: 100%; font-size: 12px; border-collapse: collapse; }
+.llm-trace-panel th, .llm-trace-panel td { padding: 8px; text-align: left; border-bottom: 1px solid #334155; }
+.llm-trace-panel input { max-width: 100%; }

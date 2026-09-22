@@ -11,6 +11,8 @@ Dark cosmic UI · Mollweide canvas · PCA/force meaning map · Vite + React + Ty
 
 ## Run
 
+The [LLM observation pilot](docs/LLM_OBSERVER.md) connects a pinned llama.cpp build to separate model-state traces and a controlled retry-allocation experiment. Its first real-model smoke verifies the bridge and records **no quality gain**. Build/run instructions and evidence are linked in the guide.
+
 ```bash
 cd /workspace/cmb-dual-viz
 npm install

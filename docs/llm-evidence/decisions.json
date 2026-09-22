@@ -1,0 +1,98 @@
+{
+  "features": {
+    "add-0": {
+      "entropy": 0.00016422598459562088,
+      "drift": 0.3133234816962023,
+      "geometry_available": true
+    },
+    "mul-0": {
+      "entropy": 0.04280220422353604,
+      "drift": 0.3098485524503242,
+      "geometry_available": true
+    },
+    "add-1": {
+      "entropy": 0.00015893711111240996,
+      "drift": 0.3128929295753985,
+      "geometry_available": true
+    },
+    "mul-1": {
+      "entropy": 0.02185308935579334,
+      "drift": 0.34463237483252945,
+      "geometry_available": true
+    },
+    "add-2": {
+      "entropy": 0.002591128418684619,
+      "drift": 0.30948211932166214,
+      "geometry_available": true
+    },
+    "mul-2": {
+      "entropy": 0.043864943439199604,
+      "drift": 0.3288693714664758,
+      "geometry_available": true
+    },
+    "add-3": {
+      "entropy": 0.0002748212870362218,
+      "drift": 0.2528490671409246,
+      "geometry_available": true
+    },
+    "mul-3": {
+      "entropy": 0.051752008376997796,
+      "drift": 0.2847335917449021,
+      "geometry_available": true
+    },
+    "add-4": {
+      "entropy": 0.021020863955741834,
+      "drift": 0.2254488116303816,
+      "geometry_available": true
+    },
+    "mul-4": {
+      "entropy": 0.11222061296066448,
+      "drift": 0.2722481132844504,
+      "geometry_available": true
+    },
+    "add-5": {
+      "entropy": 0.0012796134551187736,
+      "drift": 0.28466503696034456,
+      "geometry_available": true
+    },
+    "mul-5": {
+      "entropy": 0.09788492100308281,
+      "drift": 0.2437852277453621,
+      "geometry_available": true
+    }
+  },
+  "selected": {
+    "random": [
+      "add-0",
+      "add-1",
+      "add-2",
+      "add-5",
+      "mul-0",
+      "mul-1"
+    ],
+    "confidence": [
+      "mul-0",
+      "mul-1",
+      "mul-2",
+      "mul-3",
+      "mul-4",
+      "mul-5"
+    ],
+    "geometry": [
+      "mul-0",
+      "mul-1",
+      "mul-2",
+      "mul-3",
+      "mul-4",
+      "mul-5"
+    ],
+    "shuffled_geometry": [
+      "add-3",
+      "mul-1",
+      "mul-2",
+      "mul-3",
+      "mul-4",
+      "mul-5"
+    ]
+  }
+}
