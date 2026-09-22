@@ -15,6 +15,8 @@ The [LLM observation pilot](docs/LLM_OBSERVER.md) connects a pinned llama.cpp bu
 
 The subsequent [controlled CMB tool study](docs/CMB_TOOL_STUDY_RESULTS.md) improved the pinned small model from **36/96 to 71/96** on synthetic series questions using computed evidence. Geometry and entropy allocation both scored **63/96**; a learned modality remains unproven. The direct numerical tool scored 96/96. [Reproduce the study](docs/CMB_TOOL_STUDY.md).
 
+The [measured-series v2 tool](docs/MEASURED_SERIES_TOOL.md) adds explicit timestamp validation, per-lag missing-data counts, stable numerical calculations, and full descriptive lag profiles. Use this separate CLI for new measured inputs; the frozen v1 study and dashboard remain unchanged. [Continuation results](docs/MEASURED_SERIES_RESULTS.md).
+
 ```bash
 cd /workspace/cmb-dual-viz
 npm install
