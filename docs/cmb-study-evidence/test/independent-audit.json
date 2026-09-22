@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "n": 96,
+  "traces": 480,
+  "vectors": 192,
+  "dataset_anchored_at_collection": true,
+  "independent_pearson": "60-digit decimal raw-moment formula",
+  "max_pearson_absolute_error": 5.551115123125783e-16,
+  "max_vector_norm_absolute_error": 4.547473508864641e-13,
+  "max_vector_drift_absolute_error": 2.220446049250313e-16,
+  "max_feature_absolute_error": 0.0,
+  "bootstrap_draws_reproduced": 2000,
+  "checks": [
+    "dataset/run evidence hashes",
+    "independent raw-input labels and tool values",
+    "trace/prediction identity and output parity",
+    "signed-vector norms and cosine drift",
+    "feature aggregation",
+    "all arm and policy scores",
+    "blinded policy selections",
+    "stratified reselected bootstrap intervals"
+  ],
+  "limits": [
+    "Entropy is range/aggregation checked; raw logits were not retained",
+    "This audits recorded evidence; it is not a second model run"
+  ],
+  "auditor_sha256": "57fe02eeb3c5fee4ad9f4cc3216a8847fb1e7e8a00ae10ab0150466363efd570",
+  "analysis_sha256": "b7f1d21cc70c9dcd77ea2b901f76f2cd9efd3498e0c8d4ba0a952cad2b4d6a5b"
+}

@@ -1,0 +1,51 @@
+{
+  "schema": "cmb.allocation-run/v1",
+  "status": "PASS",
+  "split": "test",
+  "model": {
+    "repo_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+    "revision": "9217f5db79a29953eb74d5343926648285ec7e67",
+    "filename": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+    "sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+    "size_bytes": 491400032,
+    "license_declared": "apache-2.0",
+    "purpose": "engineering smoke only; not a frontier comparison",
+    "llama_revision": "7ab4ee7baad2d920464cbacfad4f4b07cf111fd2"
+  },
+  "binary_sha256": "1d0225c9d7387003307cb28fcda028073561692c5304e9f5f330f1f31238eb26",
+  "threads": 4,
+  "gpu_layers": 0,
+  "max_tokens": 24,
+  "seed": 31,
+  "temperature": 0,
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "protocol_sha256": "5dad3f552a7e4115efcc28fe897096ff291da283377f47124be2f3df7a171ca0",
+  "input_sha256": "5fafc4372767be6c2ea41d858102606d88e8a058b4a76653858029a0c6f7275f",
+  "dataset_manifest_sha256": "88e591ee4fc7aa2f96253477c4697b9a7eac7764548f8655414ed4f812876fa0",
+  "answers_sha256": "0386de64a56570fd4c588d4b302b12046bb85c1621ef19a7b6652c0eaa7ae949",
+  "source_sha256": {
+    "experiments/llm/cmb_study.py": "466d2d887aeeeaf700c609650964592367125de66ac628c63cc9eb04d7ea1031",
+    "experiments/llm/pilot.py": "07a3a4cda4cda88bceaee1b2f5450d087fb4e1f83f38abe7b7049ef47579ff1e",
+    "experiments/llm/model.lock.json": "1efbca5f56b41537b19421fb71e0673ca19ee2c3cb158747b51ed37d3ead6f62",
+    "src/math/correlates.ts": "b916e9f84d57be685e8f9714cff62645528bed4b976f3d2760f8fb02d26c7017",
+    "src/ingest/seriesTool.ts": "c53bdb17c390a15283584c1dd76ac0d6943c1149d4bdfe6273d5f9af6e2ab8c1",
+    "scripts/cmb-series-tool.mjs": "93e8ec40c0323c5a947b7dc55914f8c4f42305f165b6dc03030348bd57a7d162",
+    "bridge/llama_observer/main.cpp": "5f8d30bb39cdefbee230283940f5ef3800d19f468f9a0ffb00b84ceee8f1cbea",
+    "bridge/llama_observer/metrics.h": "114b6232df1cf6d9fa4dd27f6acbca96cfbbfd84883374ddc141219a3c7b4db1"
+  },
+  "parity_equal": 96,
+  "n": 96,
+  "tool_batch_ms": 134.1122470003029,
+  "collection_wall_ms": 1343267.284575999,
+  "evidence_sha256": {
+    "warmup.json": "31fc03f49dcc149d3d0a1698813b6c35f59b68cbf51ab891869add795dc3f604",
+    "control-donors.json": "785e3484f1db6e527293150fe40ff79ba274253fa2c10af7b6196c00a4647f08",
+    "decisions.json": "e28daee91bf354aa51fcd0f02e7b6f7291401069f5e84680677eb011bdfa63d4",
+    "observer.log.gz": "c0cee9d8fba6facdbec7d6d5280eea9faaa37ab7e706dafad391af2d2272ae5d",
+    "tool-responses.jsonl": "8d28565ab86dd05450bdf7cd4d2b0e148f4d9d0d96fb6882d3774d9bb7151ef3",
+    "tool-requests.jsonl": "0a814c42a24de094d11d988c7f110d27996484755528eb891cf31089b2d4af1a",
+    "predictions.json": "532288245e6b5ef3d0de8c4b23267e482ce54199368c9bf0a7c763551a656cee",
+    "numerical-checks.json": "18ed6e369255aa26ce70067bacb8d371c43ea3bdd6895817ab8f2771680d4139",
+    "traces.jsonl.gz": "8a3c414a44c4182f31a30d2d93c657bbe66d3d4ef44ca5aead50b0016f2020b2"
+  }
+}

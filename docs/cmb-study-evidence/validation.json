@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-22",
+  "application_tests": 92,
+  "python_tests": 9,
+  "lint": "PASS",
+  "build": "PASS",
+  "confirmation_audit": "PASS",
+  "physical_gpu": "NOT_RUN",
+  "source_sha256": {
+    "src/ingest/seriesTool.ts": "c53bdb17c390a15283584c1dd76ac0d6943c1149d4bdfe6273d5f9af6e2ab8c1",
+    "src/ingest/seriesTool.test.ts": "083d9abad013e8586c654b0dcd30f73db23c544c034711a2aa1c6c6ae8fd40d1",
+    "scripts/cmb-series-tool.mjs": "93e8ec40c0323c5a947b7dc55914f8c4f42305f165b6dc03030348bd57a7d162",
+    "experiments/llm/test_cmb_study.py": "34acf941fd7b928de2f7978dc5bc4a3ddfb4e70bc222ff88ff35f4a005f21feb",
+    "experiments/llm/audit_cmb_study.py": "57fe02eeb3c5fee4ad9f4cc3216a8847fb1e7e8a00ae10ab0150466363efd570"
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "schema": "cmb.allocation-result/v1",
+  "split": "test",
+  "n": 96,
+  "arms": {
+    "ordinary": {
+      "correct": 36,
+      "n": 96,
+      "llm_wall_ms": 233432.4921759853,
+      "prompt_plus_emitted_tokens": 46145
+    },
+    "observed": {
+      "correct": 36,
+      "n": 96,
+      "llm_wall_ms": 314674.78773599945,
+      "prompt_plus_emitted_tokens": 46145
+    },
+    "tool": {
+      "correct": 71,
+      "n": 96,
+      "llm_wall_ms": 267340.1140440037,
+      "prompt_plus_emitted_tokens": 52961
+    },
+    "null": {
+      "correct": 36,
+      "n": 96,
+      "llm_wall_ms": 259741.54956399254,
+      "prompt_plus_emitted_tokens": 51617
+    },
+    "shuffled": {
+      "correct": 36,
+      "n": 96,
+      "llm_wall_ms": 265457.6196959952,
+      "prompt_plus_emitted_tokens": 52963
+    },
+    "deterministic_tool": {
+      "correct": 96,
+      "n": 96,
+      "tool_compute_ms": 9.04473800000008,
+      "tool_batch_ms_including_startup": 134.1122470003029
+    }
+  },
+  "policies": {
+    "random": {
+      "correct": 55,
+      "n": 96,
+      "tool_calls": 48,
+      "replay_llm_wall_ms": 445395.4727690034,
+      "prompt_plus_emitted_tokens": 72649,
+      "selected_tool_compute_ms": 4.309781000000029
+    },
+    "entropy": {
+      "correct": 63,
+      "n": 96,
+      "tool_calls": 48,
+      "replay_llm_wall_ms": 447124.8101229994,
+      "prompt_plus_emitted_tokens": 72513,
+      "selected_tool_compute_ms": 4.824122000000074
+    },
+    "length": {
+      "correct": 52,
+      "n": 96,
+      "tool_calls": 48,
+      "replay_llm_wall_ms": 450355.028031001,
+      "prompt_plus_emitted_tokens": 72543,
+      "selected_tool_compute_ms": 4.207946000000021
+    },
+    "task_type": {
+      "correct": 56,
+      "n": 96,
+      "tool_calls": 48,
+      "replay_llm_wall_ms": 448833.40360700095,
+      "prompt_plus_emitted_tokens": 72567,
+      "selected_tool_compute_ms": 4.7833789999999965
+    },
+    "geometry": {
+      "correct": 63,
+      "n": 96,
+      "tool_calls": 48,
+      "replay_llm_wall_ms": 446915.17154699983,
+      "prompt_plus_emitted_tokens": 72478,
+      "selected_tool_compute_ms": 4.616989000000075
+    },
+    "shuffled_geometry": {
+      "correct": 60,
+      "n": 96,
+      "tool_calls": 48,
+      "replay_llm_wall_ms": 448964.5058510032,
+      "prompt_plus_emitted_tokens": 72532,
+      "selected_tool_compute_ms": 3.721844000000061
+    }
+  },
+  "analysis_source_sha256": "466d2d887aeeeaf700c609650964592367125de66ac628c63cc9eb04d7ea1031",
+  "dataset_anchored_at_collection": true,
+  "comparisons": {
+    "geometry_minus_entropy": {
+      "delta": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "geometry_minus_task_type": {
+      "delta": 0.07291666666666667,
+      "ci95": [
+        0.03125,
+        0.11458333333333337
+      ]
+    },
+    "tool_minus_ordinary": {
+      "delta": 0.3645833333333333,
+      "ci95": [
+        0.2916666666666667,
+        0.4375
+      ]
+    },
+    "tool_minus_null": {
+      "delta": 0.3645833333333333,
+      "ci95": [
+        0.2916666666666667,
+        0.4375
+      ]
+    },
+    "tool_minus_shuffled": {
+      "delta": 0.3645833333333333,
+      "ci95": [
+        0.28125,
+        0.4479166666666667
+      ]
+    }
+  },
+  "bootstrap": {
+    "draws": 2000,
+    "seed": 90210,
+    "strata": "family x task",
+    "reselect_policies": true
+  },
+  "gates": {
+    "information_signal": true,
+    "correct_context_controls": true,
+    "geometry_allocation": false
+  },
+  "repair": {
+    "repaired": 36,
+    "regressed": 1
+  },
+  "geometry_available": 96,
+  "shuffled_answer_agreement": {
+    "lag": 4,
+    "sign": 10,
+    "strong": 10,
+    "zero_sign": 6
+  },
+  "per_task": {
+    "lag": {
+      "ordinary": 2,
+      "observed": 2,
+      "tool": 22,
+      "null": 2,
+      "shuffled": 3
+    },
+    "sign": {
+      "ordinary": 12,
+      "observed": 12,
+      "tool": 19,
+      "null": 12,
+      "shuffled": 13
+    },
+    "strong": {
+      "ordinary": 12,
+      "observed": 12,
+      "tool": 12,
+      "null": 12,
+      "shuffled": 12
+    },
+    "zero_sign": {
+      "ordinary": 10,
+      "observed": 10,
+      "tool": 18,
+      "null": 10,
+      "shuffled": 8
+    }
+  },
+  "limitations": [
+    "Synthetic questions whose exact answer is available in tool output",
+    "One 0.5B quantized model, no weights updated, no modality learned",
+    "Equal tool-call quotas and max response caps; not equal wall-time/FLOPs/tokens",
+    "Offline replay; no end-to-end latency or compute-efficiency claim",
+    "Bootstrap uncertainty is within the fixed synthetic family mixture, not new-model uncertainty"
+  ]
+}

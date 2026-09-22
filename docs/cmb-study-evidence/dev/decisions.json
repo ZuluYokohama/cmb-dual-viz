@@ -1,0 +1,283 @@
+{
+  "features": [
+    {
+      "id": "dev-iid-lag-0",
+      "task": "lag",
+      "entropy": 0.043374164882300954,
+      "drift": 0.5378296737570775,
+      "geometry_available": true,
+      "length": 1
+    },
+    {
+      "id": "dev-iid-lag-1",
+      "task": "lag",
+      "entropy": 0.05439120281276479,
+      "drift": 0.5323233273429389,
+      "geometry_available": true,
+      "length": 1
+    },
+    {
+      "id": "dev-iid-lag-2",
+      "task": "lag",
+      "entropy": 0.052339315035187975,
+      "drift": 0.5359279423958064,
+      "geometry_available": true,
+      "length": 1
+    },
+    {
+      "id": "dev-iid-lag-3",
+      "task": "lag",
+      "entropy": 0.06709132329012016,
+      "drift": 0.5253658560075583,
+      "geometry_available": true,
+      "length": 1
+    },
+    {
+      "id": "dev-iid-lag-4",
+      "task": "lag",
+      "entropy": 0.06261469848412056,
+      "drift": 0.5308774617529975,
+      "geometry_available": true,
+      "length": 1
+    },
+    {
+      "id": "dev-iid-lag-5",
+      "task": "lag",
+      "entropy": 0.06319727328791729,
+      "drift": 0.5261742182478648,
+      "geometry_available": true,
+      "length": 1
+    },
+    {
+      "id": "dev-iid-sign-0",
+      "task": "sign",
+      "entropy": 0.019313463364979393,
+      "drift": 0.5130880153252004,
+      "geometry_available": true,
+      "length": 1
+    },
+    {
+      "id": "dev-iid-sign-1",
+      "task": "sign",
+      "entropy": 0.02112882197341605,
+      "drift": 0.5147947859889279,
+      "geometry_available": true,
+      "length": 1
+    },
+    {
+      "id": "dev-iid-sign-2",
+      "task": "sign",
+      "entropy": 0.02194663144949805,
+      "drift": 0.5107098078779256,
+      "geometry_available": true,
+      "length": 1
+    },
+    {
+      "id": "dev-iid-sign-3",
+      "task": "sign",
+      "entropy": 0.02123590447948396,
+      "drift": 0.5163101296975663,
+      "geometry_available": true,
+      "length": 1
+    },
+    {
+      "id": "dev-iid-sign-4",
+      "task": "sign",
+      "entropy": 0.022013298017211816,
+      "drift": 0.5103569725560323,
+      "geometry_available": true,
+      "length": 1
+    },
+    {
+      "id": "dev-iid-sign-5",
+      "task": "sign",
+      "entropy": 0.019099320446628845,
+      "drift": 0.5168255260325358,
+      "geometry_available": true,
+      "length": 1
+    },
+    {
+      "id": "dev-iid-strong-0",
+      "task": "strong",
+      "entropy": 0.01095621555420863,
+      "drift": 0.4840957982775376,
+      "geometry_available": true,
+      "length": 1
+    },
+    {
+      "id": "dev-iid-strong-1",
+      "task": "strong",
+      "entropy": 0.010471711603170564,
+      "drift": 0.48605399743270405,
+      "geometry_available": true,
+      "length": 1
+    },
+    {
+      "id": "dev-iid-strong-2",
+      "task": "strong",
+      "entropy": 0.013097571099059962,
+      "drift": 0.4799820762723236,
+      "geometry_available": true,
+      "length": 1
+    },
+    {
+      "id": "dev-iid-strong-3",
+      "task": "strong",
+      "entropy": 0.014205487787070299,
+      "drift": 0.48441309960572637,
+      "geometry_available": true,
+      "length": 1
+    },
+    {
+      "id": "dev-iid-strong-4",
+      "task": "strong",
+      "entropy": 0.011634221781491814,
+      "drift": 0.4807002959884643,
+      "geometry_available": true,
+      "length": 1
+    },
+    {
+      "id": "dev-iid-strong-5",
+      "task": "strong",
+      "entropy": 0.009379362850808795,
+      "drift": 0.4805903905817036,
+      "geometry_available": true,
+      "length": 1
+    },
+    {
+      "id": "dev-iid-zero_sign-0",
+      "task": "zero_sign",
+      "entropy": 0.0041954385331058695,
+      "drift": 0.5066224888000752,
+      "geometry_available": true,
+      "length": 1
+    },
+    {
+      "id": "dev-iid-zero_sign-1",
+      "task": "zero_sign",
+      "entropy": 0.004034227674756715,
+      "drift": 0.5089741201875052,
+      "geometry_available": true,
+      "length": 1
+    },
+    {
+      "id": "dev-iid-zero_sign-2",
+      "task": "zero_sign",
+      "entropy": 0.004695941863181096,
+      "drift": 0.5027107916469776,
+      "geometry_available": true,
+      "length": 1
+    },
+    {
+      "id": "dev-iid-zero_sign-3",
+      "task": "zero_sign",
+      "entropy": 0.004541962057280008,
+      "drift": 0.5054558480989614,
+      "geometry_available": true,
+      "length": 1
+    },
+    {
+      "id": "dev-iid-zero_sign-4",
+      "task": "zero_sign",
+      "entropy": 0.0038760994784803513,
+      "drift": 0.5025587320600964,
+      "geometry_available": true,
+      "length": 1
+    },
+    {
+      "id": "dev-iid-zero_sign-5",
+      "task": "zero_sign",
+      "entropy": 0.0036599097566974697,
+      "drift": 0.5041522721577731,
+      "geometry_available": true,
+      "length": 1
+    }
+  ],
+  "selected": {
+    "random": [
+      "dev-iid-lag-0",
+      "dev-iid-lag-1",
+      "dev-iid-lag-2",
+      "dev-iid-lag-3",
+      "dev-iid-lag-4",
+      "dev-iid-sign-1",
+      "dev-iid-sign-5",
+      "dev-iid-strong-0",
+      "dev-iid-strong-3",
+      "dev-iid-zero_sign-1",
+      "dev-iid-zero_sign-2",
+      "dev-iid-zero_sign-3"
+    ],
+    "entropy": [
+      "dev-iid-lag-0",
+      "dev-iid-lag-1",
+      "dev-iid-lag-2",
+      "dev-iid-lag-3",
+      "dev-iid-lag-4",
+      "dev-iid-lag-5",
+      "dev-iid-sign-0",
+      "dev-iid-sign-1",
+      "dev-iid-sign-2",
+      "dev-iid-sign-3",
+      "dev-iid-sign-4",
+      "dev-iid-sign-5"
+    ],
+    "length": [
+      "dev-iid-lag-0",
+      "dev-iid-lag-1",
+      "dev-iid-lag-2",
+      "dev-iid-lag-3",
+      "dev-iid-lag-4",
+      "dev-iid-lag-5",
+      "dev-iid-sign-0",
+      "dev-iid-sign-1",
+      "dev-iid-sign-2",
+      "dev-iid-sign-3",
+      "dev-iid-sign-4",
+      "dev-iid-sign-5"
+    ],
+    "task_type": [
+      "dev-iid-lag-0",
+      "dev-iid-lag-1",
+      "dev-iid-lag-2",
+      "dev-iid-lag-3",
+      "dev-iid-lag-4",
+      "dev-iid-lag-5",
+      "dev-iid-strong-0",
+      "dev-iid-strong-1",
+      "dev-iid-strong-2",
+      "dev-iid-strong-3",
+      "dev-iid-strong-4",
+      "dev-iid-strong-5"
+    ],
+    "geometry": [
+      "dev-iid-lag-0",
+      "dev-iid-lag-1",
+      "dev-iid-lag-2",
+      "dev-iid-lag-3",
+      "dev-iid-lag-4",
+      "dev-iid-lag-5",
+      "dev-iid-sign-0",
+      "dev-iid-sign-1",
+      "dev-iid-sign-2",
+      "dev-iid-sign-3",
+      "dev-iid-sign-4",
+      "dev-iid-sign-5"
+    ],
+    "shuffled_geometry": [
+      "dev-iid-lag-0",
+      "dev-iid-lag-1",
+      "dev-iid-lag-2",
+      "dev-iid-lag-3",
+      "dev-iid-lag-4",
+      "dev-iid-lag-5",
+      "dev-iid-sign-3",
+      "dev-iid-sign-4",
+      "dev-iid-strong-0",
+      "dev-iid-strong-2",
+      "dev-iid-strong-3",
+      "dev-iid-zero_sign-0"
+    ]
+  },
+  "controller_ms_all_policies": 0.6159610002214322
+}

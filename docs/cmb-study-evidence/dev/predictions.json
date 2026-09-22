@@ -1,0 +1,1268 @@
+[
+  {
+    "id": "dev-iid-lag-0",
+    "family": "iid",
+    "task": "lag",
+    "arms": {
+      "ordinary": {
+        "completion": "4",
+        "token_ids": [
+          19
+        ],
+        "prompt_tokens": 464,
+        "wall_ms": 2670.101137000529,
+        "stop": "eog"
+      },
+      "observed": {
+        "completion": "4",
+        "token_ids": [
+          19
+        ],
+        "prompt_tokens": 464,
+        "wall_ms": 3027.7445480005554,
+        "stop": "eog"
+      },
+      "tool": {
+        "completion": "-4",
+        "token_ids": [
+          12,
+          19
+        ],
+        "prompt_tokens": 535,
+        "wall_ms": 2534.2385760013713,
+        "stop": "eog"
+      },
+      "null": {
+        "completion": "4",
+        "token_ids": [
+          19
+        ],
+        "prompt_tokens": 521,
+        "wall_ms": 2218.343728000036,
+        "stop": "eog"
+      },
+      "shuffled": {
+        "completion": "-4",
+        "token_ids": [
+          12,
+          19
+        ],
+        "prompt_tokens": 535,
+        "wall_ms": 2381.057550999685,
+        "stop": "eog"
+      }
+    }
+  },
+  {
+    "id": "dev-iid-lag-1",
+    "family": "iid",
+    "task": "lag",
+    "arms": {
+      "observed": {
+        "completion": "4",
+        "token_ids": [
+          19
+        ],
+        "prompt_tokens": 466,
+        "wall_ms": 2726.5221629986627,
+        "stop": "eog"
+      },
+      "tool": {
+        "completion": "-1",
+        "token_ids": [
+          12,
+          16
+        ],
+        "prompt_tokens": 537,
+        "wall_ms": 2411.0675280007854,
+        "stop": "eog"
+      },
+      "null": {
+        "completion": "4",
+        "token_ids": [
+          19
+        ],
+        "prompt_tokens": 523,
+        "wall_ms": 2106.822359000944,
+        "stop": "eog"
+      },
+      "shuffled": {
+        "completion": "-1",
+        "token_ids": [
+          12,
+          16
+        ],
+        "prompt_tokens": 536,
+        "wall_ms": 2224.4541970012506,
+        "stop": "eog"
+      },
+      "ordinary": {
+        "completion": "4",
+        "token_ids": [
+          19
+        ],
+        "prompt_tokens": 466,
+        "wall_ms": 1668.1470700004866,
+        "stop": "eog"
+      }
+    }
+  },
+  {
+    "id": "dev-iid-lag-2",
+    "family": "iid",
+    "task": "lag",
+    "arms": {
+      "tool": {
+        "completion": "-4",
+        "token_ids": [
+          12,
+          19
+        ],
+        "prompt_tokens": 531,
+        "wall_ms": 2121.102425000572,
+        "stop": "eog"
+      },
+      "null": {
+        "completion": "4",
+        "token_ids": [
+          19
+        ],
+        "prompt_tokens": 517,
+        "wall_ms": 2264.309142001366,
+        "stop": "eog"
+      },
+      "shuffled": {
+        "completion": "-3",
+        "token_ids": [
+          12,
+          18
+        ],
+        "prompt_tokens": 531,
+        "wall_ms": 2453.082866999466,
+        "stop": "eog"
+      },
+      "ordinary": {
+        "completion": "4",
+        "token_ids": [
+          19
+        ],
+        "prompt_tokens": 460,
+        "wall_ms": 2156.2968870002805,
+        "stop": "eog"
+      },
+      "observed": {
+        "completion": "4",
+        "token_ids": [
+          19
+        ],
+        "prompt_tokens": 460,
+        "wall_ms": 2859.0676430012536,
+        "stop": "eog"
+      }
+    }
+  },
+  {
+    "id": "dev-iid-lag-3",
+    "family": "iid",
+    "task": "lag",
+    "arms": {
+      "null": {
+        "completion": "4",
+        "token_ids": [
+          19
+        ],
+        "prompt_tokens": 527,
+        "wall_ms": 2118.474327000513,
+        "stop": "eog"
+      },
+      "shuffled": {
+        "completion": "-4",
+        "token_ids": [
+          12,
+          19
+        ],
+        "prompt_tokens": 541,
+        "wall_ms": 2205.1363909995416,
+        "stop": "eog"
+      },
+      "ordinary": {
+        "completion": "4",
+        "token_ids": [
+          19
+        ],
+        "prompt_tokens": 470,
+        "wall_ms": 2502.6667910005926,
+        "stop": "eog"
+      },
+      "observed": {
+        "completion": "4",
+        "token_ids": [
+          19
+        ],
+        "prompt_tokens": 470,
+        "wall_ms": 3081.2619640000776,
+        "stop": "eog"
+      },
+      "tool": {
+        "completion": "-2",
+        "token_ids": [
+          12,
+          17
+        ],
+        "prompt_tokens": 541,
+        "wall_ms": 2384.8496159989736,
+        "stop": "eog"
+      }
+    }
+  },
+  {
+    "id": "dev-iid-lag-4",
+    "family": "iid",
+    "task": "lag",
+    "arms": {
+      "shuffled": {
+        "completion": "-1",
+        "token_ids": [
+          12,
+          16
+        ],
+        "prompt_tokens": 541,
+        "wall_ms": 2470.352334999916,
+        "stop": "eog"
+      },
+      "ordinary": {
+        "completion": "4",
+        "token_ids": [
+          19
+        ],
+        "prompt_tokens": 470,
+        "wall_ms": 2045.303648999834,
+        "stop": "eog"
+      },
+      "observed": {
+        "completion": "4",
+        "token_ids": [
+          19
+        ],
+        "prompt_tokens": 470,
+        "wall_ms": 2720.548522000172,
+        "stop": "eog"
+      },
+      "tool": {
+        "completion": "-3",
+        "token_ids": [
+          12,
+          18
+        ],
+        "prompt_tokens": 541,
+        "wall_ms": 2072.6176840016706,
+        "stop": "eog"
+      },
+      "null": {
+        "completion": "4",
+        "token_ids": [
+          19
+        ],
+        "prompt_tokens": 527,
+        "wall_ms": 2258.3570959995996,
+        "stop": "eog"
+      }
+    }
+  },
+  {
+    "id": "dev-iid-lag-5",
+    "family": "iid",
+    "task": "lag",
+    "arms": {
+      "ordinary": {
+        "completion": "4",
+        "token_ids": [
+          19
+        ],
+        "prompt_tokens": 463,
+        "wall_ms": 1926.1340209995979,
+        "stop": "eog"
+      },
+      "observed": {
+        "completion": "4",
+        "token_ids": [
+          19
+        ],
+        "prompt_tokens": 463,
+        "wall_ms": 2741.3517709992448,
+        "stop": "eog"
+      },
+      "tool": {
+        "completion": "-1",
+        "token_ids": [
+          12,
+          16
+        ],
+        "prompt_tokens": 533,
+        "wall_ms": 2533.485470999949,
+        "stop": "eog"
+      },
+      "null": {
+        "completion": "4",
+        "token_ids": [
+          19
+        ],
+        "prompt_tokens": 520,
+        "wall_ms": 2564.6649600003,
+        "stop": "eog"
+      },
+      "shuffled": {
+        "completion": "-2",
+        "token_ids": [
+          12,
+          17
+        ],
+        "prompt_tokens": 534,
+        "wall_ms": 2597.376957000961,
+        "stop": "eog"
+      }
+    }
+  },
+  {
+    "id": "dev-iid-sign-0",
+    "family": "iid",
+    "task": "sign",
+    "arms": {
+      "observed": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 476,
+        "wall_ms": 3323.4172520005814,
+        "stop": "eog"
+      },
+      "tool": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 546,
+        "wall_ms": 2351.660513999377,
+        "stop": "eog"
+      },
+      "null": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 533,
+        "wall_ms": 2933.1564419990173,
+        "stop": "eog"
+      },
+      "shuffled": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 547,
+        "wall_ms": 2334.0144239991787,
+        "stop": "eog"
+      },
+      "ordinary": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 476,
+        "wall_ms": 2192.4706460013113,
+        "stop": "eog"
+      }
+    }
+  },
+  {
+    "id": "dev-iid-sign-1",
+    "family": "iid",
+    "task": "sign",
+    "arms": {
+      "tool": {
+        "completion": "-1",
+        "token_ids": [
+          12,
+          16
+        ],
+        "prompt_tokens": 547,
+        "wall_ms": 2425.0304569995933,
+        "stop": "eog"
+      },
+      "null": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 533,
+        "wall_ms": 2354.233526999451,
+        "stop": "eog"
+      },
+      "shuffled": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 547,
+        "wall_ms": 2464.367497999774,
+        "stop": "eog"
+      },
+      "ordinary": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 476,
+        "wall_ms": 2350.552322999647,
+        "stop": "eog"
+      },
+      "observed": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 476,
+        "wall_ms": 2815.2400570015743,
+        "stop": "eog"
+      }
+    }
+  },
+  {
+    "id": "dev-iid-sign-2",
+    "family": "iid",
+    "task": "sign",
+    "arms": {
+      "null": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 532,
+        "wall_ms": 2500.4210980005155,
+        "stop": "eog"
+      },
+      "shuffled": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 546,
+        "wall_ms": 2423.0281569998624,
+        "stop": "eog"
+      },
+      "ordinary": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 475,
+        "wall_ms": 2234.3172689998028,
+        "stop": "eog"
+      },
+      "observed": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 475,
+        "wall_ms": 2934.590692000711,
+        "stop": "eog"
+      },
+      "tool": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 546,
+        "wall_ms": 2830.652952001401,
+        "stop": "eog"
+      }
+    }
+  },
+  {
+    "id": "dev-iid-sign-3",
+    "family": "iid",
+    "task": "sign",
+    "arms": {
+      "shuffled": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 543,
+        "wall_ms": 2885.3841999989527,
+        "stop": "eog"
+      },
+      "ordinary": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 473,
+        "wall_ms": 2436.5889719992992,
+        "stop": "eog"
+      },
+      "observed": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 473,
+        "wall_ms": 3727.7125300006446,
+        "stop": "eog"
+      },
+      "tool": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 544,
+        "wall_ms": 3144.1549319988553,
+        "stop": "eog"
+      },
+      "null": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 530,
+        "wall_ms": 2965.011915001014,
+        "stop": "eog"
+      }
+    }
+  },
+  {
+    "id": "dev-iid-sign-4",
+    "family": "iid",
+    "task": "sign",
+    "arms": {
+      "ordinary": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 472,
+        "wall_ms": 2444.4473489984375,
+        "stop": "eog"
+      },
+      "observed": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 472,
+        "wall_ms": 2648.16964900092,
+        "stop": "eog"
+      },
+      "tool": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 543,
+        "wall_ms": 2154.208196001491,
+        "stop": "eog"
+      },
+      "null": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 529,
+        "wall_ms": 2414.789626000129,
+        "stop": "eog"
+      },
+      "shuffled": {
+        "completion": "-1",
+        "token_ids": [
+          12,
+          16
+        ],
+        "prompt_tokens": 543,
+        "wall_ms": 2289.299072999711,
+        "stop": "eog"
+      }
+    }
+  },
+  {
+    "id": "dev-iid-sign-5",
+    "family": "iid",
+    "task": "sign",
+    "arms": {
+      "observed": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 478,
+        "wall_ms": 2915.111264999723,
+        "stop": "eog"
+      },
+      "tool": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 549,
+        "wall_ms": 2253.0996980003692,
+        "stop": "eog"
+      },
+      "null": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 535,
+        "wall_ms": 2781.050666999363,
+        "stop": "eog"
+      },
+      "shuffled": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 549,
+        "wall_ms": 2795.0496269986616,
+        "stop": "eog"
+      },
+      "ordinary": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 478,
+        "wall_ms": 2190.109589999338,
+        "stop": "eog"
+      }
+    }
+  },
+  {
+    "id": "dev-iid-strong-0",
+    "family": "iid",
+    "task": "strong",
+    "arms": {
+      "tool": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 548,
+        "wall_ms": 2277.6944439992803,
+        "stop": "eog"
+      },
+      "null": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 534,
+        "wall_ms": 2294.06931900121,
+        "stop": "eog"
+      },
+      "shuffled": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 548,
+        "wall_ms": 2156.3797500002693,
+        "stop": "eog"
+      },
+      "ordinary": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 477,
+        "wall_ms": 2103.4429899991665,
+        "stop": "eog"
+      },
+      "observed": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 477,
+        "wall_ms": 2699.141098999462,
+        "stop": "eog"
+      }
+    }
+  },
+  {
+    "id": "dev-iid-strong-1",
+    "family": "iid",
+    "task": "strong",
+    "arms": {
+      "null": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 538,
+        "wall_ms": 2583.21201400031,
+        "stop": "eog"
+      },
+      "shuffled": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 552,
+        "wall_ms": 2858.0959729988535,
+        "stop": "eog"
+      },
+      "ordinary": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 481,
+        "wall_ms": 1929.9497089996294,
+        "stop": "eog"
+      },
+      "observed": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 481,
+        "wall_ms": 2698.7043699991773,
+        "stop": "eog"
+      },
+      "tool": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 552,
+        "wall_ms": 2591.8602519996057,
+        "stop": "eog"
+      }
+    }
+  },
+  {
+    "id": "dev-iid-strong-2",
+    "family": "iid",
+    "task": "strong",
+    "arms": {
+      "shuffled": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 555,
+        "wall_ms": 2326.0815779995028,
+        "stop": "eog"
+      },
+      "ordinary": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 484,
+        "wall_ms": 2007.9897929990693,
+        "stop": "eog"
+      },
+      "observed": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 484,
+        "wall_ms": 2715.453909999269,
+        "stop": "eog"
+      },
+      "tool": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 555,
+        "wall_ms": 2596.6827369993553,
+        "stop": "eog"
+      },
+      "null": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 541,
+        "wall_ms": 2298.6282010006107,
+        "stop": "eog"
+      }
+    }
+  },
+  {
+    "id": "dev-iid-strong-3",
+    "family": "iid",
+    "task": "strong",
+    "arms": {
+      "ordinary": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 480,
+        "wall_ms": 2062.0208100008313,
+        "stop": "eog"
+      },
+      "observed": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 480,
+        "wall_ms": 3042.9829790009535,
+        "stop": "eog"
+      },
+      "tool": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 551,
+        "wall_ms": 2480.316537001272,
+        "stop": "eog"
+      },
+      "null": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 537,
+        "wall_ms": 2563.590716001272,
+        "stop": "eog"
+      },
+      "shuffled": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 551,
+        "wall_ms": 2472.529238999414,
+        "stop": "eog"
+      }
+    }
+  },
+  {
+    "id": "dev-iid-strong-4",
+    "family": "iid",
+    "task": "strong",
+    "arms": {
+      "observed": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 482,
+        "wall_ms": 3171.434167999905,
+        "stop": "eog"
+      },
+      "tool": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 553,
+        "wall_ms": 2711.040874999526,
+        "stop": "eog"
+      },
+      "null": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 539,
+        "wall_ms": 2606.994619998659,
+        "stop": "eog"
+      },
+      "shuffled": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 553,
+        "wall_ms": 2419.0321059995767,
+        "stop": "eog"
+      },
+      "ordinary": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 482,
+        "wall_ms": 1888.3199590000004,
+        "stop": "eog"
+      }
+    }
+  },
+  {
+    "id": "dev-iid-strong-5",
+    "family": "iid",
+    "task": "strong",
+    "arms": {
+      "tool": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 552,
+        "wall_ms": 2630.6117690000974,
+        "stop": "eog"
+      },
+      "null": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 538,
+        "wall_ms": 2423.012495000876,
+        "stop": "eog"
+      },
+      "shuffled": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 552,
+        "wall_ms": 2490.6395390007674,
+        "stop": "eog"
+      },
+      "ordinary": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 481,
+        "wall_ms": 2170.996926999578,
+        "stop": "eog"
+      },
+      "observed": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 481,
+        "wall_ms": 3154.4695180000417,
+        "stop": "eog"
+      }
+    }
+  },
+  {
+    "id": "dev-iid-zero_sign-0",
+    "family": "iid",
+    "task": "zero_sign",
+    "arms": {
+      "null": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 537,
+        "wall_ms": 2228.9669339988905,
+        "stop": "eog"
+      },
+      "shuffled": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 551,
+        "wall_ms": 2552.3637480000616,
+        "stop": "eog"
+      },
+      "ordinary": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 480,
+        "wall_ms": 2000.5669960009982,
+        "stop": "eog"
+      },
+      "observed": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 480,
+        "wall_ms": 3157.9575089999707,
+        "stop": "eog"
+      },
+      "tool": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 550,
+        "wall_ms": 2563.700153999889,
+        "stop": "eog"
+      }
+    }
+  },
+  {
+    "id": "dev-iid-zero_sign-1",
+    "family": "iid",
+    "task": "zero_sign",
+    "arms": {
+      "shuffled": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 550,
+        "wall_ms": 2551.591074001408,
+        "stop": "eog"
+      },
+      "ordinary": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 479,
+        "wall_ms": 2174.007302000973,
+        "stop": "eog"
+      },
+      "observed": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 479,
+        "wall_ms": 3402.798591001556,
+        "stop": "eog"
+      },
+      "tool": {
+        "completion": "-1",
+        "token_ids": [
+          12,
+          16
+        ],
+        "prompt_tokens": 550,
+        "wall_ms": 2534.2121190005855,
+        "stop": "eog"
+      },
+      "null": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 536,
+        "wall_ms": 2566.160601001684,
+        "stop": "eog"
+      }
+    }
+  },
+  {
+    "id": "dev-iid-zero_sign-2",
+    "family": "iid",
+    "task": "zero_sign",
+    "arms": {
+      "ordinary": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 480,
+        "wall_ms": 1992.644758998722,
+        "stop": "eog"
+      },
+      "observed": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 480,
+        "wall_ms": 2934.414691000711,
+        "stop": "eog"
+      },
+      "tool": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 551,
+        "wall_ms": 2657.3148610004864,
+        "stop": "eog"
+      },
+      "null": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 537,
+        "wall_ms": 2222.0713659989997,
+        "stop": "eog"
+      },
+      "shuffled": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 551,
+        "wall_ms": 2200.1046240002324,
+        "stop": "eog"
+      }
+    }
+  },
+  {
+    "id": "dev-iid-zero_sign-3",
+    "family": "iid",
+    "task": "zero_sign",
+    "arms": {
+      "observed": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 479,
+        "wall_ms": 2956.7397350001556,
+        "stop": "eog"
+      },
+      "tool": {
+        "completion": "-1",
+        "token_ids": [
+          12,
+          16
+        ],
+        "prompt_tokens": 550,
+        "wall_ms": 2397.3752509991755,
+        "stop": "eog"
+      },
+      "null": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 536,
+        "wall_ms": 2377.221730999736,
+        "stop": "eog"
+      },
+      "shuffled": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 549,
+        "wall_ms": 2430.1367759999266,
+        "stop": "eog"
+      },
+      "ordinary": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 479,
+        "wall_ms": 2171.4672059988516,
+        "stop": "eog"
+      }
+    }
+  },
+  {
+    "id": "dev-iid-zero_sign-4",
+    "family": "iid",
+    "task": "zero_sign",
+    "arms": {
+      "tool": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 544,
+        "wall_ms": 2511.615575000178,
+        "stop": "eog"
+      },
+      "null": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 530,
+        "wall_ms": 2684.9585060008394,
+        "stop": "eog"
+      },
+      "shuffled": {
+        "completion": "-1",
+        "token_ids": [
+          12,
+          16
+        ],
+        "prompt_tokens": 544,
+        "wall_ms": 2523.380257000099,
+        "stop": "eog"
+      },
+      "ordinary": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 473,
+        "wall_ms": 2182.4004130012327,
+        "stop": "eog"
+      },
+      "observed": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 473,
+        "wall_ms": 3103.9046549994964,
+        "stop": "eog"
+      }
+    }
+  },
+  {
+    "id": "dev-iid-zero_sign-5",
+    "family": "iid",
+    "task": "zero_sign",
+    "arms": {
+      "null": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 531,
+        "wall_ms": 2243.3277649997763,
+        "stop": "eog"
+      },
+      "shuffled": {
+        "completion": "-1",
+        "token_ids": [
+          12,
+          16
+        ],
+        "prompt_tokens": 545,
+        "wall_ms": 2313.0997829994158,
+        "stop": "eog"
+      },
+      "ordinary": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 474,
+        "wall_ms": 2003.7398479998956,
+        "stop": "eog"
+      },
+      "observed": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 474,
+        "wall_ms": 2838.22342899839,
+        "stop": "eog"
+      },
+      "tool": {
+        "completion": "1",
+        "token_ids": [
+          16
+        ],
+        "prompt_tokens": 545,
+        "wall_ms": 2707.6105960004497,
+        "stop": "eog"
+      }
+    }
+  }
+]

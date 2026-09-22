@@ -13,6 +13,8 @@ Dark cosmic UI · Mollweide canvas · PCA/force meaning map · Vite + React + Ty
 
 The [LLM observation pilot](docs/LLM_OBSERVER.md) connects a pinned llama.cpp build to separate model-state traces and a controlled retry-allocation experiment. Its first real-model smoke verifies the bridge and records **no quality gain**. Build/run instructions and evidence are linked in the guide.
 
+The subsequent [controlled CMB tool study](docs/CMB_TOOL_STUDY_RESULTS.md) improved the pinned small model from **36/96 to 71/96** on synthetic series questions using computed evidence. Geometry and entropy allocation both scored **63/96**; a learned modality remains unproven. The direct numerical tool scored 96/96. [Reproduce the study](docs/CMB_TOOL_STUDY.md).
+
 ```bash
 cd /workspace/cmb-dual-viz
 npm install
