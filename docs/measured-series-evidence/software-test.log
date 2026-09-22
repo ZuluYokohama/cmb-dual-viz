@@ -1,0 +1,29 @@
+
+> cmb-dual-viz@1.0.0 test
+> vitest run
+
+
+ RUN  v2.1.9 /workspace/scratch/66c8fdf75618/cmb-dual-viz
+
+ ✓ src/math/dressing.test.ts (7 tests) 6ms
+ ✓ src/ingest/measuredSeriesTool.test.ts (55 tests) 47ms
+ ✓ src/ingest/staging.test.ts (29 tests) 68ms
+ ✓ src/compute/multiDevice.test.ts (8 tests) 37ms
+ ✓ src/compute/webgpu.test.ts (9 tests) 72ms
+ ✓ src/ingest/seriesTool.test.ts (8 tests) 11ms
+ ✓ src/ingest/llmTrace.test.ts (5 tests) 9ms
+ ✓ src/compute/graphs.test.ts (8 tests) 193ms
+ ✓ src/compute/fabric.test.ts (6 tests) 281ms
+ ✓ src/math/correlates.test.ts (3 tests) 14ms
+ ✓ src/math/analyticReferences.test.ts (3 tests) 9ms
+ ✓ src/math/smith.test.ts (3 tests) 5ms
+ ✓ src/math/sphericalHarmonics.test.ts (3 tests) 291ms
+
+ Test Files  13 passed (13)
+      Tests  147 passed (147)
+   Start at  00:53:18
+   Duration  1.33s (transform 1.33s, setup 0ms, collect 2.50s, tests 1.04s, environment 3ms, prepare 1.06s)
+
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+

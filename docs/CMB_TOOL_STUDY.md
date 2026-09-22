@@ -4,6 +4,8 @@ This experiment uses the repository's actual `bestLaggedPearson` calculation as 
 
 The protocol and immutable dataset were published before confirmation in commit `a132a39ce99ac13f16af74032e0a44a163295529`. See [the frozen protocol](CMB_TOOL_STUDY_PROTOCOL.md) for hypotheses, exact policies, controls, gates, and limits. See [the results](CMB_TOOL_STUDY_RESULTS.md) for the executed findings. The initial arithmetic smoke is preserved separately in [LLM_OBSERVER.md](LLM_OBSERVER.md).
 
+For new measured-series work, use the [separate v2 tool](MEASURED_SERIES_TOOL.md). The v1 implementation below is retained for frozen-study reproduction and has documented constant-input and large-offset numerical limitations outside the audited fixtures.
+
 ## Run the numerical tool
 
 After `npm ci`, stream JSONL requests to:

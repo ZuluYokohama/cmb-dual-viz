@@ -1,0 +1,39 @@
+{
+  "schema": "cmb.measured-series-validation/v1",
+  "software_receipt": "software-report.json",
+  "numerical_receipt": "audit.json",
+  "application_tests": {
+    "status": "PASS",
+    "test_files": 13,
+    "tests": 147
+  },
+  "python_tests": {
+    "status": "PASS",
+    "tests": 9,
+    "command": "python -m unittest discover -s experiments/llm -p 'test_*.py' -v"
+  },
+  "numerical_audit": {
+    "status": "PASS",
+    "rows": 538,
+    "max_absolute_error": 2.220446049250313e-16
+  },
+  "frozen_v1_code_changed": false,
+  "new_llm_experiment": "NOT_RUN",
+  "physical_gpu": "NOT_RUN",
+  "interpretation": "Software receipt covers software gates; its generic realDataValidation field is separate from the numerical audit of the preserved measured fixtures.",
+  "sha256": {
+    "audit.json": "76a2d74112a32cab0e1c14dacfbf724511bebe8dfd00fe0cd7db82b4444cc495",
+    "inputs.jsonl": "5dfc7828f07b159bab5dd10eb63bed181874ac6a50f897755945e87ef23ab782",
+    "outputs.jsonl": "636bbf75b9835de6dc93ce1c12769e74c4fd347a4e98ec0e9023346a69777b85",
+    "software-build.log": "fbcdf9c29913161339ee1f1fa01ece0f81bcdf272b06961f6dc68331e5206d6a",
+    "software-lint.log": "9602f814f0e7999920ea84b6287d186f5c5775e4ba3a6d201665e5aa754294a6",
+    "software-report.json": "26e9639536fd237c6ba6c2bdcd5d1632771d8c769df9c7c1a41b6f84803df5d5",
+    "software-test.log": "4fe1ee1fa396389026c73315d404081c6427bcd9d52e4f54450f65b3ec265611"
+  },
+  "validated_source_sha256": {
+    "src/ingest/measuredSeriesTool.ts": "8119bd40e398e4d38638ba0771f1308754db4ff1a78d49dd9cc2453e0b7fb60f",
+    "src/ingest/measuredSeriesTool.test.ts": "3b8172f87fe053aeae6352640cacd13132dde30f738b4af866d2b5daf7b342e3",
+    "scripts/cmb-measured-series-tool.mjs": "bd33beaf8ea0dbf8b78b83d0a18479901b3b43ca88decbe6b5f0f396509d0d2c",
+    "experiments/series/audit_measured_series.py": "5cc01be014deda0c6176febdc6bd2e2c12766a501373880d60c519c51ec33eee"
+  }
+}

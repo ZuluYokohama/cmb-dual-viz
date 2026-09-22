@@ -1,0 +1,825 @@
+{
+  "schema": "cmb.measured-series-audit/v1",
+  "pass": true,
+  "errors": [],
+  "claim_scope": "Offline numerical/software verification on two measured channel queries and separately labeled controls; no LLM, causality, scientific discovery, or reasoning benchmark",
+  "created_utc": "2026-09-22T15:53:21.677027+00:00",
+  "source": {
+    "path": "docs/hf-evidence/silso-primary-2019.csv",
+    "sha256": "d9595d2eeb05af07fdc194604f95f2a9ec09243826a6b0a0ee9a3196b0a9c164",
+    "original_manifest": "docs/hf-evidence/SHA256SUMS.json",
+    "manifest_sha256": "ca11956c7eb73eb47a7e8dde960245a49ed3fc568c134f42a4a1e1a425862879",
+    "last_source_commit": "b757464d111ab6542cec11782e200081282dea2d",
+    "upstream_url": "https://www.sidc.be/SILSO/DATA/SN_d_tot_V2.0.csv",
+    "column_documentation": "https://www.sidc.be/SILSO/infosndtot",
+    "column_numbers_are_one_based": true,
+    "columns": {
+      "5": "daily total sunspot number",
+      "7": "observations used to compute daily value"
+    },
+    "dates": 365,
+    "first_date": "2019-01-01",
+    "last_date": "2019-12-31",
+    "daily_grid_validated": true,
+    "negative_sentinels": 0,
+    "capture_policy": "Preserved repository capture; no new download or claim of current upstream revision"
+  },
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "node": "v24.19.0",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "git_base_revision": "100bbe068249fad3924f6ab034e6fb51eac39351",
+    "git_status": "M .gitignore\n M README.md\n M docs/CMB_TOOL_STUDY.md\n?? docs/MEASURED_SERIES_TOOL.md\n?? docs/measured-series-evidence/\n?? experiments/series/\n?? node_modules\n?? scripts/cmb-measured-series-tool.mjs\n?? src/ingest/measuredSeriesTool.test.ts\n?? src/ingest/measuredSeriesTool.ts",
+    "command": [
+      "node",
+      "scripts/cmb-measured-series-tool.mjs"
+    ],
+    "no_network": true,
+    "no_llm_calls": true,
+    "application_modules_imported_by_oracle": false
+  },
+  "oracle": {
+    "method": "Centered Pearson using Decimal.from_float for exact binary64 inputs",
+    "precision_decimal_digits": 100,
+    "absolute_error_tolerance": 1e-12,
+    "all_requested_lags_compared": true,
+    "lag_convention": "a[t] versus b[t+lag]",
+    "undefined": "null with explicit status",
+    "best_rule": "largest absolute computed score; smallest lag on exact computed ties",
+    "timings": "CLI compute_ms is observational and excluded from numerical acceptance"
+  },
+  "counts": {
+    "measured_queries": 2,
+    "synthetic_or_derived_queries": 16,
+    "profile_rows_checked": 538,
+    "numeric_correlations_checked": 499,
+    "reference_status_counts": {
+      "ok": 499,
+      "constant": 18,
+      "insufficient_pairs": 21
+    },
+    "rejection_cases": 17
+  },
+  "worst_absolute_error": 2.220446049250313e-16,
+  "cases": [
+    {
+      "id": "measured-silso-sunspots-observations",
+      "category": "measured software check",
+      "description": "Daily sunspot number versus observation count; observational association only",
+      "pass": true,
+      "errors": [],
+      "profile_rows_checked": 65,
+      "numeric_correlations_checked": 65,
+      "reference_status_counts": {
+        "ok": 65
+      },
+      "worst_discrepancy": {
+        "absolute_error": 2.7755575615628914e-17,
+        "lag": -29,
+        "actual": -0.16909805034513276,
+        "decimal_reference": -0.16909805034513273
+      },
+      "best": {
+        "lag": 0,
+        "lag_time": 0,
+        "n_pairs": 365,
+        "correlation": -0.3383773568151839,
+        "status": "ok"
+      },
+      "zero_lag": {
+        "lag": 0,
+        "lag_time": 0,
+        "n_pairs": 365,
+        "correlation": -0.3383773568151839,
+        "status": "ok"
+      }
+    },
+    {
+      "id": "measured-silso-sunspots-autocorrelation",
+      "category": "measured software check",
+      "description": "Autocorrelation of the same captured daily sunspot channel",
+      "known_lag": 0,
+      "pass": true,
+      "errors": [],
+      "profile_rows_checked": 65,
+      "numeric_correlations_checked": 65,
+      "reference_status_counts": {
+        "ok": 65
+      },
+      "worst_discrepancy": {
+        "absolute_error": 1.1102230246251565e-16,
+        "lag": -1,
+        "actual": 0.8438538626480444,
+        "decimal_reference": 0.8438538626480443
+      },
+      "best": {
+        "lag": 0,
+        "lag_time": 0,
+        "n_pairs": 365,
+        "correlation": 1,
+        "status": "ok"
+      },
+      "zero_lag": {
+        "lag": 0,
+        "lag_time": 0,
+        "n_pairs": 365,
+        "correlation": 1,
+        "status": "ok"
+      }
+    },
+    {
+      "id": "derived-silso-affine",
+      "category": "synthetic/derived software control",
+      "description": "Independent positive affine transforms of the two measured channels",
+      "pass": true,
+      "errors": [],
+      "profile_rows_checked": 65,
+      "numeric_correlations_checked": 65,
+      "reference_status_counts": {
+        "ok": 65
+      },
+      "worst_discrepancy": {
+        "absolute_error": 2.7755575615628914e-17,
+        "lag": -29,
+        "actual": -0.16909805034513276,
+        "decimal_reference": -0.16909805034513273
+      },
+      "best": {
+        "lag": 0,
+        "lag_time": 0,
+        "n_pairs": 365,
+        "correlation": -0.3383773568151839,
+        "status": "ok"
+      },
+      "zero_lag": {
+        "lag": 0,
+        "lag_time": 0,
+        "n_pairs": 365,
+        "correlation": -0.3383773568151839,
+        "status": "ok"
+      }
+    },
+    {
+      "id": "derived-silso-polarity",
+      "category": "synthetic/derived software control",
+      "description": "Negated observation channel; correlation sign reversal",
+      "pass": true,
+      "errors": [],
+      "profile_rows_checked": 65,
+      "numeric_correlations_checked": 65,
+      "reference_status_counts": {
+        "ok": 65
+      },
+      "worst_discrepancy": {
+        "absolute_error": 2.7755575615628914e-17,
+        "lag": -29,
+        "actual": 0.16909805034513276,
+        "decimal_reference": 0.16909805034513273
+      },
+      "best": {
+        "lag": 0,
+        "lag_time": 0,
+        "n_pairs": 365,
+        "correlation": 0.3383773568151839,
+        "status": "ok"
+      },
+      "zero_lag": {
+        "lag": 0,
+        "lag_time": 0,
+        "n_pairs": 365,
+        "correlation": 0.3383773568151839,
+        "status": "ok"
+      }
+    },
+    {
+      "id": "derived-silso-masked",
+      "category": "synthetic/derived software control",
+      "description": "Deterministic missing-value masks on measured data",
+      "pass": true,
+      "errors": [],
+      "profile_rows_checked": 65,
+      "numeric_correlations_checked": 65,
+      "reference_status_counts": {
+        "ok": 65
+      },
+      "worst_discrepancy": {
+        "absolute_error": 5.551115123125783e-17,
+        "lag": 0,
+        "actual": -0.3410298965627784,
+        "decimal_reference": -0.3410298965627783
+      },
+      "best": {
+        "lag": 0,
+        "lag_time": 0,
+        "n_pairs": 305,
+        "correlation": -0.3410298965627784,
+        "status": "ok"
+      },
+      "zero_lag": {
+        "lag": 0,
+        "lag_time": 0,
+        "n_pairs": 305,
+        "correlation": -0.3410298965627784,
+        "status": "ok"
+      }
+    },
+    {
+      "id": "synthetic-delay-plus-7",
+      "category": "synthetic/derived software control",
+      "description": "Known delay b[t+7]=a[t]; null boundary padding does not fabricate samples",
+      "known_lag": 7,
+      "pass": true,
+      "errors": [],
+      "profile_rows_checked": 25,
+      "numeric_correlations_checked": 25,
+      "reference_status_counts": {
+        "ok": 25
+      },
+      "worst_discrepancy": {
+        "absolute_error": 5.551115123125783e-17,
+        "lag": -10,
+        "actual": -0.32713354332580413,
+        "decimal_reference": -0.3271335433258041
+      },
+      "best": {
+        "lag": 7,
+        "lag_time": 7,
+        "n_pairs": 89,
+        "correlation": 1,
+        "status": "ok"
+      },
+      "zero_lag": {
+        "lag": 0,
+        "lag_time": 0,
+        "n_pairs": 89,
+        "correlation": -0.09193021083696405,
+        "status": "ok"
+      }
+    },
+    {
+      "id": "synthetic-advance-minus-5",
+      "category": "synthetic/derived software control",
+      "description": "Known advance b[t-5]=a[t]; null boundary padding does not fabricate samples",
+      "known_lag": -5,
+      "pass": true,
+      "errors": [],
+      "profile_rows_checked": 25,
+      "numeric_correlations_checked": 25,
+      "reference_status_counts": {
+        "ok": 25
+      },
+      "worst_discrepancy": {
+        "absolute_error": 1.1102230246251565e-16,
+        "lag": -5,
+        "actual": 0.9999999999999999,
+        "decimal_reference": 1.0
+      },
+      "best": {
+        "lag": -5,
+        "lag_time": -5,
+        "n_pairs": 91,
+        "correlation": 0.9999999999999999,
+        "status": "ok"
+      },
+      "zero_lag": {
+        "lag": 0,
+        "lag_time": 0,
+        "n_pairs": 91,
+        "correlation": -0.09938970556181166,
+        "status": "ok"
+      }
+    },
+    {
+      "id": "synthetic-delay-inverted",
+      "category": "synthetic/derived software control",
+      "description": "Known delayed and inverted signal",
+      "known_lag": 7,
+      "pass": true,
+      "errors": [],
+      "profile_rows_checked": 25,
+      "numeric_correlations_checked": 25,
+      "reference_status_counts": {
+        "ok": 25
+      },
+      "worst_discrepancy": {
+        "absolute_error": 5.551115123125783e-17,
+        "lag": -10,
+        "actual": 0.32713354332580413,
+        "decimal_reference": 0.3271335433258041
+      },
+      "best": {
+        "lag": 7,
+        "lag_time": 7,
+        "n_pairs": 89,
+        "correlation": -1,
+        "status": "ok"
+      },
+      "zero_lag": {
+        "lag": 0,
+        "lag_time": 0,
+        "n_pairs": 89,
+        "correlation": 0.09193021083696405,
+        "status": "ok"
+      }
+    },
+    {
+      "id": "synthetic-scale-small",
+      "category": "synthetic/derived software control",
+      "description": "Finite amplitude stress control with scale 1e-200",
+      "pass": true,
+      "errors": [],
+      "profile_rows_checked": 17,
+      "numeric_correlations_checked": 17,
+      "reference_status_counts": {
+        "ok": 17
+      },
+      "worst_discrepancy": {
+        "absolute_error": 5.551115123125783e-17,
+        "lag": 6,
+        "actual": 0.29959458796875577,
+        "decimal_reference": 0.2995945879687557
+      },
+      "best": {
+        "lag": 8,
+        "lag_time": 8,
+        "n_pairs": 88,
+        "correlation": -0.4024352688073793,
+        "status": "ok"
+      },
+      "zero_lag": {
+        "lag": 0,
+        "lag_time": 0,
+        "n_pairs": 96,
+        "correlation": 0.043324149468414536,
+        "status": "ok"
+      }
+    },
+    {
+      "id": "synthetic-scale-large",
+      "category": "synthetic/derived software control",
+      "description": "Finite amplitude stress control with scale 1e+200",
+      "pass": true,
+      "errors": [],
+      "profile_rows_checked": 17,
+      "numeric_correlations_checked": 17,
+      "reference_status_counts": {
+        "ok": 17
+      },
+      "worst_discrepancy": {
+        "absolute_error": 2.7755575615628914e-17,
+        "lag": -4,
+        "actual": 0.18325498495934617,
+        "decimal_reference": 0.1832549849593462
+      },
+      "best": {
+        "lag": 8,
+        "lag_time": 8,
+        "n_pairs": 88,
+        "correlation": -0.40243526880737923,
+        "status": "ok"
+      },
+      "zero_lag": {
+        "lag": 0,
+        "lag_time": 0,
+        "n_pairs": 96,
+        "correlation": 0.04332414946841454,
+        "status": "ok"
+      }
+    },
+    {
+      "id": "synthetic-offset",
+      "category": "synthetic/derived software control",
+      "description": "Large common offset; oracle uses exact supplied binary64 values",
+      "pass": true,
+      "errors": [],
+      "profile_rows_checked": 17,
+      "numeric_correlations_checked": 17,
+      "reference_status_counts": {
+        "ok": 17
+      },
+      "worst_discrepancy": {
+        "absolute_error": 5.551115123125783e-17,
+        "lag": 6,
+        "actual": 0.2996011708651558,
+        "decimal_reference": 0.29960117086515575
+      },
+      "best": {
+        "lag": 8,
+        "lag_time": 8,
+        "n_pairs": 88,
+        "correlation": -0.4024470647743329,
+        "status": "ok"
+      },
+      "zero_lag": {
+        "lag": 0,
+        "lag_time": 0,
+        "n_pairs": 96,
+        "correlation": 0.043328553012727124,
+        "status": "ok"
+      }
+    },
+    {
+      "id": "synthetic-near-finite-limit",
+      "category": "synthetic/derived software control",
+      "description": "Mixed signs near the finite binary64 limit; expected finite correlations",
+      "pass": true,
+      "errors": [],
+      "profile_rows_checked": 17,
+      "numeric_correlations_checked": 17,
+      "reference_status_counts": {
+        "ok": 17
+      },
+      "worst_discrepancy": {
+        "absolute_error": 2.7755575615628914e-17,
+        "lag": -3,
+        "actual": -0.07593869784922609,
+        "decimal_reference": -0.07593869784922606
+      },
+      "best": {
+        "lag": 0,
+        "lag_time": 0,
+        "n_pairs": 96,
+        "correlation": -1,
+        "status": "ok"
+      },
+      "zero_lag": {
+        "lag": 0,
+        "lag_time": 0,
+        "n_pairs": 96,
+        "correlation": -1,
+        "status": "ok"
+      }
+    },
+    {
+      "id": "synthetic-subnormal",
+      "category": "synthetic/derived software control",
+      "description": "Positive subnormal representable values",
+      "pass": true,
+      "errors": [],
+      "profile_rows_checked": 17,
+      "numeric_correlations_checked": 17,
+      "reference_status_counts": {
+        "ok": 17
+      },
+      "worst_discrepancy": {
+        "absolute_error": 2.220446049250313e-16,
+        "lag": -2,
+        "actual": -0.9999999999999998,
+        "decimal_reference": -1.0
+      },
+      "best": {
+        "lag": -8,
+        "lag_time": -8,
+        "n_pairs": 88,
+        "correlation": -1,
+        "status": "ok"
+      },
+      "zero_lag": {
+        "lag": 0,
+        "lag_time": 0,
+        "n_pairs": 96,
+        "correlation": -1,
+        "status": "ok"
+      }
+    },
+    {
+      "id": "synthetic-constant",
+      "category": "synthetic/derived software control",
+      "description": "Identical nonzero binary64 values must report constant, never apparent variance",
+      "pass": true,
+      "errors": [],
+      "profile_rows_checked": 17,
+      "numeric_correlations_checked": 0,
+      "reference_status_counts": {
+        "constant": 17
+      },
+      "worst_discrepancy": {
+        "absolute_error": 0.0,
+        "lag": null
+      },
+      "best": null,
+      "zero_lag": {
+        "lag": 0,
+        "lag_time": 0,
+        "n_pairs": 96,
+        "correlation": null,
+        "status": "constant"
+      }
+    },
+    {
+      "id": "synthetic-insufficient",
+      "category": "synthetic/derived software control",
+      "description": "Only ten usable values; all lags below required twenty pairs",
+      "pass": true,
+      "errors": [],
+      "profile_rows_checked": 17,
+      "numeric_correlations_checked": 0,
+      "reference_status_counts": {
+        "insufficient_pairs": 17
+      },
+      "worst_discrepancy": {
+        "absolute_error": 0.0,
+        "lag": null
+      },
+      "best": null,
+      "zero_lag": {
+        "lag": 0,
+        "lag_time": 0,
+        "n_pairs": 10,
+        "correlation": null,
+        "status": "insufficient_pairs"
+      }
+    },
+    {
+      "id": "synthetic-edge-support",
+      "category": "synthetic/derived software control",
+      "description": "Large-lag rows fail minimum-pair support while central rows remain defined",
+      "pass": true,
+      "errors": [],
+      "profile_rows_checked": 17,
+      "numeric_correlations_checked": 13,
+      "reference_status_counts": {
+        "insufficient_pairs": 4,
+        "ok": 13
+      },
+      "worst_discrepancy": {
+        "absolute_error": 5.551115123125783e-17,
+        "lag": 6,
+        "actual": 0.2995945879687557,
+        "decimal_reference": 0.29959458796875577
+      },
+      "best": {
+        "lag": 6,
+        "lag_time": 6,
+        "n_pairs": 90,
+        "correlation": 0.2995945879687557,
+        "status": "ok"
+      },
+      "zero_lag": {
+        "lag": 0,
+        "lag_time": 0,
+        "n_pairs": 96,
+        "correlation": 0.04332414946841455,
+        "status": "ok"
+      }
+    },
+    {
+      "id": "synthetic-offset-short",
+      "category": "synthetic/derived software control",
+      "description": "Twelve representable differences at a 1e16 offset; correlation is one",
+      "known_lag": 0,
+      "pass": true,
+      "errors": [],
+      "profile_rows_checked": 1,
+      "numeric_correlations_checked": 1,
+      "reference_status_counts": {
+        "ok": 1
+      },
+      "worst_discrepancy": {
+        "absolute_error": 0.0,
+        "lag": null
+      },
+      "best": {
+        "lag": 0,
+        "lag_time": 0,
+        "n_pairs": 12,
+        "correlation": 1,
+        "status": "ok"
+      },
+      "zero_lag": {
+        "lag": 0,
+        "lag_time": 0,
+        "n_pairs": 12,
+        "correlation": 1,
+        "status": "ok"
+      }
+    },
+    {
+      "id": "synthetic-constant-short",
+      "category": "synthetic/derived software control",
+      "description": "Short nonzero constant control",
+      "pass": true,
+      "errors": [],
+      "profile_rows_checked": 1,
+      "numeric_correlations_checked": 0,
+      "reference_status_counts": {
+        "constant": 1
+      },
+      "worst_discrepancy": {
+        "absolute_error": 0.0,
+        "lag": null
+      },
+      "best": null,
+      "zero_lag": {
+        "lag": 0,
+        "lag_time": 0,
+        "n_pairs": 12,
+        "correlation": null,
+        "status": "constant"
+      }
+    }
+  ],
+  "rejection_checks": [
+    {
+      "id": "duplicate-timestamp",
+      "pass": true,
+      "input_encoding": {
+        "hex": "7b2261223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2235373639323164306435393836626237613439336130633332316362646539373135646464326163366461393733366464623632366464393838343038646662222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742361227d2c2274696d657374616d7073223a5b302c302c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b31652b31362c312e30303030303030303030303030303032652b31362c312e30303030303030303030303030303034652b31362c312e30303030303030303030303030303036652b31362c312e30303030303030303030303030303038652b31362c312e303030303030303030303030303031652b31362c312e30303030303030303030303030303132652b31362c312e30303030303030303030303030303134652b31362c312e30303030303030303030303030303136652b31362c312e30303030303030303030303030303138652b31362c312e303030303030303030303030303032652b31362c312e30303030303030303030303030303232652b31365d7d2c2262223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2239346636616662616361316666323836386262313331303864323539326134373730313365636165363132313366363861343439363130306638373130316539222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742362227d2c2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b302e302c322e302c342e302c362e302c382e302c31302e302c31322e302c31342e302c31362e302c31382e302c32302e302c32322e305d7d2c226964223a2272656a6563742d6475706c69636174652d74696d657374616d70222c226d61785f6c6167223a302c226d696e5f7061697273223a332c226d697373696e67223a2272656a656374222c226f726967696e223a2273796e746865746963222c22736368656d61223a22636d622e7365726965732d71756572792f7632222c2274696d65223a7b2273746570223a312c22756e6974223a2273796e7468657469632073616d706c6520696e74657276616c227d7d0a"
+      },
+      "input_sha256": "1f0dc13f28d3292ee26bc6e775607462c27920c89b2da040240f61fc6c99e7eb",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "MEASURED_SERIES_QUERY_REJECTED: Invalid measured-series query: a.timestamps: must be strictly increasing; a.timestamps: must match the declared regular grid; no resampling is performed; timestamps: a and b must share the same grid\n"
+    },
+    {
+      "id": "irregular-grid",
+      "pass": true,
+      "input_encoding": {
+        "hex": "7b2261223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2235373639323164306435393836626237613439336130633332316362646539373135646464326163366461393733366464623632366464393838343038646662222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742361227d2c2274696d657374616d7073223a5b302c312c322e32352c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b31652b31362c312e30303030303030303030303030303032652b31362c312e30303030303030303030303030303034652b31362c312e30303030303030303030303030303036652b31362c312e30303030303030303030303030303038652b31362c312e303030303030303030303030303031652b31362c312e30303030303030303030303030303132652b31362c312e30303030303030303030303030303134652b31362c312e30303030303030303030303030303136652b31362c312e30303030303030303030303030303138652b31362c312e303030303030303030303030303032652b31362c312e30303030303030303030303030303232652b31365d7d2c2262223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2239346636616662616361316666323836386262313331303864323539326134373730313365636165363132313366363861343439363130306638373130316539222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742362227d2c2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b302e302c322e302c342e302c362e302c382e302c31302e302c31322e302c31342e302c31362e302c31382e302c32302e302c32322e305d7d2c226964223a2272656a6563742d6972726567756c61722d67726964222c226d61785f6c6167223a302c226d696e5f7061697273223a332c226d697373696e67223a2272656a656374222c226f726967696e223a2273796e746865746963222c22736368656d61223a22636d622e7365726965732d71756572792f7632222c2274696d65223a7b2273746570223a312c22756e6974223a2273796e7468657469632073616d706c6520696e74657276616c227d7d0a"
+      },
+      "input_sha256": "1c7b24d6099428e1572a5a1a4c883a1d2cc13fdaf3d2a561192777434cf96639",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "MEASURED_SERIES_QUERY_REJECTED: Invalid measured-series query: a.timestamps: must match the declared regular grid; no resampling is performed; timestamps: a and b must share the same grid\n"
+    },
+    {
+      "id": "misaligned-grids",
+      "pass": true,
+      "input_encoding": {
+        "hex": "7b2261223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2235373639323164306435393836626237613439336130633332316362646539373135646464326163366461393733366464623632366464393838343038646662222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742361227d2c2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b31652b31362c312e30303030303030303030303030303032652b31362c312e30303030303030303030303030303034652b31362c312e30303030303030303030303030303036652b31362c312e30303030303030303030303030303038652b31362c312e303030303030303030303030303031652b31362c312e30303030303030303030303030303132652b31362c312e30303030303030303030303030303134652b31362c312e30303030303030303030303030303136652b31362c312e30303030303030303030303030303138652b31362c312e303030303030303030303030303032652b31362c312e30303030303030303030303030303232652b31365d7d2c2262223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2239346636616662616361316666323836386262313331303864323539326134373730313365636165363132313366363861343439363130306638373130316539222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742362227d2c2274696d657374616d7073223a5b312c322c332c342c352c362c372c382c392c31302c31312c31325d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b302e302c322e302c342e302c362e302c382e302c31302e302c31322e302c31342e302c31362e302c31382e302c32302e302c32322e305d7d2c226964223a2272656a6563742d6d6973616c69676e65642d6772696473222c226d61785f6c6167223a302c226d696e5f7061697273223a332c226d697373696e67223a2272656a656374222c226f726967696e223a2273796e746865746963222c22736368656d61223a22636d622e7365726965732d71756572792f7632222c2274696d65223a7b2273746570223a312c22756e6974223a2273796e7468657469632073616d706c6520696e74657276616c227d7d0a"
+      },
+      "input_sha256": "6e4cf88c4d40fe2649bf2706d446125f19543ec82083850f7b5c49859a81160a",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "MEASURED_SERIES_QUERY_REJECTED: Invalid measured-series query: b.timestamps: must match the declared regular grid; no resampling is performed; timestamps: a and b must share the same grid\n"
+    },
+    {
+      "id": "timestamp-count",
+      "pass": true,
+      "input_encoding": {
+        "hex": "7b2261223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2235373639323164306435393836626237613439336130633332316362646539373135646464326163366461393733366464623632366464393838343038646662222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742361227d2c2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31305d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b31652b31362c312e30303030303030303030303030303032652b31362c312e30303030303030303030303030303034652b31362c312e30303030303030303030303030303036652b31362c312e30303030303030303030303030303038652b31362c312e303030303030303030303030303031652b31362c312e30303030303030303030303030303132652b31362c312e30303030303030303030303030303134652b31362c312e30303030303030303030303030303136652b31362c312e30303030303030303030303030303138652b31362c312e303030303030303030303030303032652b31362c312e30303030303030303030303030303232652b31365d7d2c2262223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2239346636616662616361316666323836386262313331303864323539326134373730313365636165363132313366363861343439363130306638373130316539222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742362227d2c2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b302e302c322e302c342e302c362e302c382e302c31302e302c31322e302c31342e302c31362e302c31382e302c32302e302c32322e305d7d2c226964223a2272656a6563742d74696d657374616d702d636f756e74222c226d61785f6c6167223a302c226d696e5f7061697273223a332c226d697373696e67223a2272656a656374222c226f726967696e223a2273796e746865746963222c22736368656d61223a22636d622e7365726965732d71756572792f7632222c2274696d65223a7b2273746570223a312c22756e6974223a2273796e7468657469632073616d706c6520696e74657276616c227d7d0a"
+      },
+      "input_sha256": "56fbbf9983f09a24ca4bee540da7999efe7e6903fead8b010feb6ebd4176cf8d",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "MEASURED_SERIES_QUERY_REJECTED: Invalid measured-series query: a: values and timestamps must have identical lengths; min_pairs: expected an integer in 3..n\n"
+    },
+    {
+      "id": "missing-rejected",
+      "pass": true,
+      "input_encoding": {
+        "hex": "7b2261223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2235373639323164306435393836626237613439336130633332316362646539373135646464326163366461393733366464623632366464393838343038646662222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742361227d2c2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b6e756c6c2c312e30303030303030303030303030303032652b31362c312e30303030303030303030303030303034652b31362c312e30303030303030303030303030303036652b31362c312e30303030303030303030303030303038652b31362c312e303030303030303030303030303031652b31362c312e30303030303030303030303030303132652b31362c312e30303030303030303030303030303134652b31362c312e30303030303030303030303030303136652b31362c312e30303030303030303030303030303138652b31362c312e303030303030303030303030303032652b31362c312e30303030303030303030303030303232652b31365d7d2c2262223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2239346636616662616361316666323836386262313331303864323539326134373730313365636165363132313366363861343439363130306638373130316539222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742362227d2c2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b302e302c322e302c342e302c362e302c382e302c31302e302c31322e302c31342e302c31362e302c31382e302c32302e302c32322e305d7d2c226964223a2272656a6563742d6d697373696e672d72656a6563746564222c226d61785f6c6167223a302c226d696e5f7061697273223a332c226d697373696e67223a2272656a656374222c226f726967696e223a2273796e746865746963222c22736368656d61223a22636d622e7365726965732d71756572792f7632222c2274696d65223a7b2273746570223a312c22756e6974223a2273796e7468657469632073616d706c6520696e74657276616c227d7d0a"
+      },
+      "input_sha256": "14443c3a70b901cab29c2aeccdf22bfb29fd06a3bbe7b10ae3aba01e9515ba12",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "MEASURED_SERIES_QUERY_REJECTED: Invalid measured-series query: missing: reject does not accept null values\n"
+    },
+    {
+      "id": "boolean-value",
+      "pass": true,
+      "input_encoding": {
+        "hex": "7b2261223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2235373639323164306435393836626237613439336130633332316362646539373135646464326163366461393733366464623632366464393838343038646662222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742361227d2c2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b747275652c312e30303030303030303030303030303032652b31362c312e30303030303030303030303030303034652b31362c312e30303030303030303030303030303036652b31362c312e30303030303030303030303030303038652b31362c312e303030303030303030303030303031652b31362c312e30303030303030303030303030303132652b31362c312e30303030303030303030303030303134652b31362c312e30303030303030303030303030303136652b31362c312e30303030303030303030303030303138652b31362c312e303030303030303030303030303032652b31362c312e30303030303030303030303030303232652b31365d7d2c2262223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2239346636616662616361316666323836386262313331303864323539326134373730313365636165363132313366363861343439363130306638373130316539222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742362227d2c2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b302e302c322e302c342e302c362e302c382e302c31302e302c31322e302c31342e302c31362e302c31382e302c32302e302c32322e305d7d2c226964223a2272656a6563742d626f6f6c65616e2d76616c7565222c226d61785f6c6167223a302c226d696e5f7061697273223a332c226d697373696e67223a2272656a656374222c226f726967696e223a2273796e746865746963222c22736368656d61223a22636d622e7365726965732d71756572792f7632222c2274696d65223a7b2273746570223a312c22756e6974223a2273796e7468657469632073616d706c6520696e74657276616c227d7d0a"
+      },
+      "input_sha256": "5f1bb42162976715268604cdfaa481b57bad6423fb650db3b5425e8811e17131",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "MEASURED_SERIES_QUERY_REJECTED: Invalid measured-series query: a.values: only finite numbers or explicit null are accepted; min_pairs: expected an integer in 3..n\n"
+    },
+    {
+      "id": "string-value",
+      "pass": true,
+      "input_encoding": {
+        "hex": "7b2261223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2235373639323164306435393836626237613439336130633332316362646539373135646464326163366461393733366464623632366464393838343038646662222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742361227d2c2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b223132222c312e30303030303030303030303030303032652b31362c312e30303030303030303030303030303034652b31362c312e30303030303030303030303030303036652b31362c312e30303030303030303030303030303038652b31362c312e303030303030303030303030303031652b31362c312e30303030303030303030303030303132652b31362c312e30303030303030303030303030303134652b31362c312e30303030303030303030303030303136652b31362c312e30303030303030303030303030303138652b31362c312e303030303030303030303030303032652b31362c312e30303030303030303030303030303232652b31365d7d2c2262223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2239346636616662616361316666323836386262313331303864323539326134373730313365636165363132313366363861343439363130306638373130316539222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742362227d2c2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b302e302c322e302c342e302c362e302c382e302c31302e302c31322e302c31342e302c31362e302c31382e302c32302e302c32322e305d7d2c226964223a2272656a6563742d737472696e672d76616c7565222c226d61785f6c6167223a302c226d696e5f7061697273223a332c226d697373696e67223a2272656a656374222c226f726967696e223a2273796e746865746963222c22736368656d61223a22636d622e7365726965732d71756572792f7632222c2274696d65223a7b2273746570223a312c22756e6974223a2273796e7468657469632073616d706c6520696e74657276616c227d7d0a"
+      },
+      "input_sha256": "1d0f7916b1bd8993b6ba0f9b14a672936510bf80ddd5ba45285e914143ca9e3f",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "MEASURED_SERIES_QUERY_REJECTED: Invalid measured-series query: a.values: only finite numbers or explicit null are accepted; min_pairs: expected an integer in 3..n\n"
+    },
+    {
+      "id": "invalid-sha",
+      "pass": true,
+      "input_encoding": {
+        "hex": "7b2261223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a226e6f742d612d736861323536222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742361227d2c2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b31652b31362c312e30303030303030303030303030303032652b31362c312e30303030303030303030303030303034652b31362c312e30303030303030303030303030303036652b31362c312e30303030303030303030303030303038652b31362c312e303030303030303030303030303031652b31362c312e30303030303030303030303030303132652b31362c312e30303030303030303030303030303134652b31362c312e30303030303030303030303030303136652b31362c312e30303030303030303030303030303138652b31362c312e303030303030303030303030303032652b31362c312e30303030303030303030303030303232652b31365d7d2c2262223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2239346636616662616361316666323836386262313331303864323539326134373730313365636165363132313366363861343439363130306638373130316539222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742362227d2c2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b302e302c322e302c342e302c362e302c382e302c31302e302c31322e302c31342e302c31362e302c31382e302c32302e302c32322e305d7d2c226964223a2272656a6563742d696e76616c69642d736861222c226d61785f6c6167223a302c226d696e5f7061697273223a332c226d697373696e67223a2272656a656374222c226f726967696e223a2273796e746865746963222c22736368656d61223a22636d622e7365726965732d71756572792f7632222c2274696d65223a7b2273746570223a312c22756e6974223a2273796e7468657469632073616d706c6520696e74657276616c227d7d0a"
+      },
+      "input_sha256": "7a3b6ed9b9991beca791780cb17c9395655cff0c354edc8c36bdf23d97785a7d",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "MEASURED_SERIES_QUERY_REJECTED: Invalid measured-series query: a.provenance.sha256: expected exactly 64 hexadecimal characters; min_pairs: expected an integer in 3..n\n"
+    },
+    {
+      "id": "missing-provenance",
+      "pass": true,
+      "input_encoding": {
+        "hex": "7b2261223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2235373639323164306435393836626237613439336130633332316362646539373135646464326163366461393733366464623632366464393838343038646662222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742361227d2c2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b31652b31362c312e30303030303030303030303030303032652b31362c312e30303030303030303030303030303034652b31362c312e30303030303030303030303030303036652b31362c312e30303030303030303030303030303038652b31362c312e303030303030303030303030303031652b31362c312e30303030303030303030303030303132652b31362c312e30303030303030303030303030303134652b31362c312e30303030303030303030303030303136652b31362c312e30303030303030303030303030303138652b31362c312e303030303030303030303030303032652b31362c312e30303030303030303030303030303232652b31365d7d2c2262223a7b2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b302e302c322e302c342e302c362e302c382e302c31302e302c31322e302c31342e302c31362e302c31382e302c32302e302c32322e305d7d2c226964223a2272656a6563742d6d697373696e672d70726f76656e616e6365222c226d61785f6c6167223a302c226d696e5f7061697273223a332c226d697373696e67223a2272656a656374222c226f726967696e223a2273796e746865746963222c22736368656d61223a22636d622e7365726965732d71756572792f7632222c2274696d65223a7b2273746570223a312c22756e6974223a2273796e7468657469632073616d706c6520696e74657276616c227d7d0a"
+      },
+      "input_sha256": "fb8596b122e7a3cdb5d9e20f2cec0238422d9def07c1cbcdf4f2aefa10370a4d",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "MEASURED_SERIES_QUERY_REJECTED: Invalid measured-series query: b.provenance: required; b.provenance: expected an object\n"
+    },
+    {
+      "id": "empty-unit",
+      "pass": true,
+      "input_encoding": {
+        "hex": "7b2261223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2235373639323164306435393836626237613439336130633332316362646539373135646464326163366461393733366464623632366464393838343038646662222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742361227d2c2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22222c2276616c756573223a5b31652b31362c312e30303030303030303030303030303032652b31362c312e30303030303030303030303030303034652b31362c312e30303030303030303030303030303036652b31362c312e30303030303030303030303030303038652b31362c312e303030303030303030303030303031652b31362c312e30303030303030303030303030303132652b31362c312e30303030303030303030303030303134652b31362c312e30303030303030303030303030303136652b31362c312e30303030303030303030303030303138652b31362c312e303030303030303030303030303032652b31362c312e30303030303030303030303030303232652b31365d7d2c2262223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2239346636616662616361316666323836386262313331303864323539326134373730313365636165363132313366363861343439363130306638373130316539222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742362227d2c2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b302e302c322e302c342e302c362e302c382e302c31302e302c31322e302c31342e302c31362e302c31382e302c32302e302c32322e305d7d2c226964223a2272656a6563742d656d7074792d756e6974222c226d61785f6c6167223a302c226d696e5f7061697273223a332c226d697373696e67223a2272656a656374222c226f726967696e223a2273796e746865746963222c22736368656d61223a22636d622e7365726965732d71756572792f7632222c2274696d65223a7b2273746570223a312c22756e6974223a2273796e7468657469632073616d706c6520696e74657276616c227d7d0a"
+      },
+      "input_sha256": "3aa550ccd0f349f2291b8ce3bc844a15c507c14066fe7ca2645715075ea8a2cb",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "MEASURED_SERIES_QUERY_REJECTED: Invalid measured-series query: a.unit: expected a nonempty string of at most 256 characters; min_pairs: expected an integer in 3..n\n"
+    },
+    {
+      "id": "zero-time-step",
+      "pass": true,
+      "input_encoding": {
+        "hex": "7b2261223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2235373639323164306435393836626237613439336130633332316362646539373135646464326163366461393733366464623632366464393838343038646662222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742361227d2c2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b31652b31362c312e30303030303030303030303030303032652b31362c312e30303030303030303030303030303034652b31362c312e30303030303030303030303030303036652b31362c312e30303030303030303030303030303038652b31362c312e303030303030303030303030303031652b31362c312e30303030303030303030303030303132652b31362c312e30303030303030303030303030303134652b31362c312e30303030303030303030303030303136652b31362c312e30303030303030303030303030303138652b31362c312e303030303030303030303030303032652b31362c312e30303030303030303030303030303232652b31365d7d2c2262223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2239346636616662616361316666323836386262313331303864323539326134373730313365636165363132313366363861343439363130306638373130316539222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742362227d2c2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b302e302c322e302c342e302c362e302c382e302c31302e302c31322e302c31342e302c31362e302c31382e302c32302e302c32322e305d7d2c226964223a2272656a6563742d7a65726f2d74696d652d73746570222c226d61785f6c6167223a302c226d696e5f7061697273223a332c226d697373696e67223a2272656a656374222c226f726967696e223a2273796e746865746963222c22736368656d61223a22636d622e7365726965732d71756572792f7632222c2274696d65223a7b2273746570223a302c22756e6974223a2273796e7468657469632073616d706c6520696e74657276616c227d7d0a"
+      },
+      "input_sha256": "fae95d58c8d10a1ae7626c136ab9ed9032232a17c92ec04b70b448f653f22bbd",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "MEASURED_SERIES_QUERY_REJECTED: Invalid measured-series query: time.step: expected a positive finite number\n"
+    },
+    {
+      "id": "fractional-lag",
+      "pass": true,
+      "input_encoding": {
+        "hex": "7b2261223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2235373639323164306435393836626237613439336130633332316362646539373135646464326163366461393733366464623632366464393838343038646662222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742361227d2c2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b31652b31362c312e30303030303030303030303030303032652b31362c312e30303030303030303030303030303034652b31362c312e30303030303030303030303030303036652b31362c312e30303030303030303030303030303038652b31362c312e303030303030303030303030303031652b31362c312e30303030303030303030303030303132652b31362c312e30303030303030303030303030303134652b31362c312e30303030303030303030303030303136652b31362c312e30303030303030303030303030303138652b31362c312e303030303030303030303030303032652b31362c312e30303030303030303030303030303232652b31365d7d2c2262223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2239346636616662616361316666323836386262313331303864323539326134373730313365636165363132313366363861343439363130306638373130316539222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742362227d2c2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b302e302c322e302c342e302c362e302c382e302c31302e302c31322e302c31342e302c31362e302c31382e302c32302e302c32322e305d7d2c226964223a2272656a6563742d6672616374696f6e616c2d6c6167222c226d61785f6c6167223a312e352c226d696e5f7061697273223a332c226d697373696e67223a2272656a656374222c226f726967696e223a2273796e746865746963222c22736368656d61223a22636d622e7365726965732d71756572792f7632222c2274696d65223a7b2273746570223a312c22756e6974223a2273796e7468657469632073616d706c6520696e74657276616c227d7d0a"
+      },
+      "input_sha256": "57fc8f20b70b8840a5b56953d225be5a267fc6dd309fe5259f5770c40da662a9",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "MEASURED_SERIES_QUERY_REJECTED: Invalid measured-series query: max_lag: expected an integer in 0..min(64, floor(n/3))\n"
+    },
+    {
+      "id": "unknown-missing-policy",
+      "pass": true,
+      "input_encoding": {
+        "hex": "7b2261223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2235373639323164306435393836626237613439336130633332316362646539373135646464326163366461393733366464623632366464393838343038646662222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742361227d2c2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b31652b31362c312e30303030303030303030303030303032652b31362c312e30303030303030303030303030303034652b31362c312e30303030303030303030303030303036652b31362c312e30303030303030303030303030303038652b31362c312e303030303030303030303030303031652b31362c312e30303030303030303030303030303132652b31362c312e30303030303030303030303030303134652b31362c312e30303030303030303030303030303136652b31362c312e30303030303030303030303030303138652b31362c312e303030303030303030303030303032652b31362c312e30303030303030303030303030303232652b31365d7d2c2262223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2239346636616662616361316666323836386262313331303864323539326134373730313365636165363132313366363861343439363130306638373130316539222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742362227d2c2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b302e302c322e302c342e302c362e302c382e302c31302e302c31322e302c31342e302c31362e302c31382e302c32302e302c32322e305d7d2c226964223a2272656a6563742d756e6b6e6f776e2d6d697373696e672d706f6c696379222c226d61785f6c6167223a302c226d696e5f7061697273223a332c226d697373696e67223a227a65726f2d66696c6c222c226f726967696e223a2273796e746865746963222c22736368656d61223a22636d622e7365726965732d71756572792f7632222c2274696d65223a7b2273746570223a312c22756e6974223a2273796e7468657469632073616d706c6520696e74657276616c227d7d0a"
+      },
+      "input_sha256": "10b60578a30cae48d05391c9992f8e1c931d260cba6b88fa0869e554724734ec",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "MEASURED_SERIES_QUERY_REJECTED: Invalid measured-series query: missing: expected reject or pairwise-complete\n"
+    },
+    {
+      "id": "wrong-schema",
+      "pass": true,
+      "input_encoding": {
+        "hex": "7b2261223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2235373639323164306435393836626237613439336130633332316362646539373135646464326163366461393733366464623632366464393838343038646662222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742361227d2c2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b31652b31362c312e30303030303030303030303030303032652b31362c312e30303030303030303030303030303034652b31362c312e30303030303030303030303030303036652b31362c312e30303030303030303030303030303038652b31362c312e303030303030303030303030303031652b31362c312e30303030303030303030303030303132652b31362c312e30303030303030303030303030303134652b31362c312e30303030303030303030303030303136652b31362c312e30303030303030303030303030303138652b31362c312e303030303030303030303030303032652b31362c312e30303030303030303030303030303232652b31365d7d2c2262223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2239346636616662616361316666323836386262313331303864323539326134373730313365636165363132313366363861343439363130306638373130316539222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742362227d2c2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b302e302c322e302c342e302c362e302c382e302c31302e302c31322e302c31342e302c31362e302c31382e302c32302e302c32322e305d7d2c226964223a2272656a6563742d77726f6e672d736368656d61222c226d61785f6c6167223a302c226d696e5f7061697273223a332c226d697373696e67223a2272656a656374222c226f726967696e223a2273796e746865746963222c22736368656d61223a22636d622e7365726965732d71756572792f7631222c2274696d65223a7b2273746570223a312c22756e6974223a2273796e7468657469632073616d706c6520696e74657276616c227d7d0a"
+      },
+      "input_sha256": "f103e63a0512fceb9320831b28e56ae894c523aedcfc53919e96523ddf198c03",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "MEASURED_SERIES_QUERY_REJECTED: Invalid measured-series query: schema: expected cmb.series-query/v2\n"
+    },
+    {
+      "id": "invalid-json",
+      "pass": true,
+      "input_encoding": {
+        "hex": "7b2262726f6b656e223a0a"
+      },
+      "input_sha256": "ee3bb016ee1b1e395152b5db18af8d7e785aa19a2ab541c9bd9d13dfa8a2a0f0",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "MEASURED_SERIES_QUERY_REJECTED: Unexpected end of JSON input\n"
+    },
+    {
+      "id": "invalid-utf8",
+      "pass": true,
+      "input_encoding": {
+        "hex": "ff0a"
+      },
+      "input_sha256": "e4688624e5f1ad0629505e6768e3bb36244f2f3e33e751215afa820334a76ed3",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "MEASURED_SERIES_QUERY_REJECTED: The encoded data was not valid for encoding utf-8\n"
+    },
+    {
+      "id": "oversized-line",
+      "pass": true,
+      "input_encoding": {
+        "leading_ascii_spaces": 1048577,
+        "following_hex": "7b2261223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2235373639323164306435393836626237613439336130633332316362646539373135646464326163366461393733366464623632366464393838343038646662222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742361227d2c2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b31652b31362c312e30303030303030303030303030303032652b31362c312e30303030303030303030303030303034652b31362c312e30303030303030303030303030303036652b31362c312e30303030303030303030303030303038652b31362c312e303030303030303030303030303031652b31362c312e30303030303030303030303030303132652b31362c312e30303030303030303030303030303134652b31362c312e30303030303030303030303030303136652b31362c312e30303030303030303030303030303138652b31362c312e303030303030303030303030303032652b31362c312e30303030303030303030303030303232652b31365d7d2c2262223a7b2270726f76656e616e6365223a7b227265766973696f6e223a2264657465726d696e69737469632d636f6e74726f6c2d7631222c22736861323536223a2239346636616662616361316666323836386262313331303864323539326134373730313365636165363132313366363861343439363130306638373130316539222c22736f75726365223a22636d622d61756469743a73796e7468657469632d6f66667365742d73686f72742362227d2c2274696d657374616d7073223a5b302c312c322c332c342c352c362c372c382c392c31302c31315d2c22756e6974223a22636f6e74726f6c2d756e6974222c2276616c756573223a5b302e302c322e302c342e302c362e302c382e302c31302e302c31322e302c31342e302c31362e302c31382e302c32302e302c32322e305d7d2c226964223a2273796e7468657469632d6f66667365742d73686f7274222c226d61785f6c6167223a302c226d696e5f7061697273223a332c226d697373696e67223a2272656a656374222c226f726967696e223a2273796e746865746963222c22736368656d61223a22636d622e7365726965732d71756572792f7632222c2274696d65223a7b2273746570223a312c22756e6974223a2273796e7468657469632073616d706c6520696e74657276616c227d7d0a"
+      },
+      "input_sha256": "ffe6cbd14b467073329db3f2279d706e91f76bf01be7ef7e56df59306cd51359",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "MEASURED_SERIES_QUERY_REJECTED: Query line exceeds 1 MiB\n"
+    }
+  ],
+  "file_sha256": {
+    "docs/hf-evidence/silso-primary-2019.csv": "d9595d2eeb05af07fdc194604f95f2a9ec09243826a6b0a0ee9a3196b0a9c164",
+    "docs/hf-evidence/SHA256SUMS.json": "ca11956c7eb73eb47a7e8dde960245a49ed3fc568c134f42a4a1e1a425862879",
+    "scripts/cmb-measured-series-tool.mjs": "bd33beaf8ea0dbf8b78b83d0a18479901b3b43ca88decbe6b5f0f396509d0d2c",
+    "src/ingest/measuredSeriesTool.ts": "8119bd40e398e4d38638ba0771f1308754db4ff1a78d49dd9cc2453e0b7fb60f",
+    "experiments/series/audit_measured_series.py": "5cc01be014deda0c6176febdc6bd2e2c12766a501373880d60c519c51ec33eee",
+    "package.json": "1dc8d9117b2e267a2e8b334a5c25d742d3f1dbbf6b75a978e71ac8b79f95f1d9",
+    "package-lock.json": "0a822c49e0314743aa49c60b74bedb9ba60c28c8a1f02ce4d53b07a71dbac144"
+  },
+  "artifact_sha256": {
+    "inputs.jsonl": "5dfc7828f07b159bab5dd10eb63bed181874ac6a50f897755945e87ef23ab782",
+    "outputs.jsonl": "636bbf75b9835de6dc93ce1c12769e74c4fd347a4e98ec0e9023346a69777b85"
+  }
+}

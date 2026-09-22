@@ -1,0 +1,18 @@
+
+> cmb-dual-viz@1.0.0 build
+> tsc --noEmit && vite build
+
+vite v5.4.21 building for production...
+transforming...
+✓ 85 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                             0.72 kB │ gzip:  0.41 kB
+dist/assets/skyFrame.worker-CAxjtaSM.js     6.68 kB
+dist/assets/correlate.worker-BBFKhcQp.js    7.62 kB
+dist/assets/index-0t4E3EZR.css             17.50 kB │ gzip:  4.22 kB
+dist/assets/index-DfKGA-vN.js             289.12 kB │ gzip: 94.51 kB
+✓ built in 1.17s
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+

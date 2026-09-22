@@ -13,5 +13,6 @@ artifacts/vv/
 artifacts/hf-validation/
 artifacts/llm-build/
 artifacts/llm-runs/
+artifacts/measured-series/
 __pycache__/
 !.gitkeep
