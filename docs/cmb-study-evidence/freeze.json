@@ -1,0 +1,22 @@
+{
+  "schema": "cmb.study-freeze/v1",
+  "created_utc": "2026-09-22T11:52:10.465858+00:00",
+  "purpose": "Protocol, source and dataset identity frozen before confirmation inference",
+  "source_sha256": {
+    "experiments/llm/cmb_study.py": "466d2d887aeeeaf700c609650964592367125de66ac628c63cc9eb04d7ea1031",
+    "experiments/llm/pilot.py": "07a3a4cda4cda88bceaee1b2f5450d087fb4e1f83f38abe7b7049ef47579ff1e",
+    "experiments/llm/model.lock.json": "1efbca5f56b41537b19421fb71e0673ca19ee2c3cb158747b51ed37d3ead6f62",
+    "src/math/correlates.ts": "b916e9f84d57be685e8f9714cff62645528bed4b976f3d2760f8fb02d26c7017",
+    "src/ingest/seriesTool.ts": "c53bdb17c390a15283584c1dd76ac0d6943c1149d4bdfe6273d5f9af6e2ab8c1",
+    "scripts/cmb-series-tool.mjs": "93e8ec40c0323c5a947b7dc55914f8c4f42305f165b6dc03030348bd57a7d162",
+    "bridge/llama_observer/main.cpp": "5f8d30bb39cdefbee230283940f5ef3800d19f468f9a0ffb00b84ceee8f1cbea",
+    "bridge/llama_observer/metrics.h": "114b6232df1cf6d9fa4dd27f6acbca96cfbbfd84883374ddc141219a3c7b4db1",
+    "docs/CMB_TOOL_STUDY_PROTOCOL.md": "5dad3f552a7e4115efcc28fe897096ff291da283377f47124be2f3df7a171ca0",
+    "docs/cmb-study-evidence/dataset/test-inputs.json": "5fafc4372767be6c2ea41d858102606d88e8a058b4a76653858029a0c6f7275f",
+    "docs/cmb-study-evidence/dataset/dataset-manifest.json": "88e591ee4fc7aa2f96253477c4697b9a7eac7764548f8655414ed4f812876fa0",
+    "docs/cmb-study-evidence/dataset/dev-answers.json": "da14eae5f0fa792dfdc541692531bc7dff5071504eac4b363c2e08bd7d6673e6",
+    "docs/cmb-study-evidence/dataset/dev-inputs.json": "b1d1f12dc7d14deefae957ef9eac9ea5c0a9b390537649422b3d0acca11ed799",
+    "docs/cmb-study-evidence/dataset/test-answers.json": "0386de64a56570fd4c588d4b302b12046bb85c1621ef19a7b6652c0eaa7ae949"
+  },
+  "attached_report_sha256": "ecbb5ca6da79c290d95d8122bf7776ff9420e48bfa2d72d07fd5dfbbd69eb85a"
+}

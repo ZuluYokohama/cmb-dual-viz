@@ -1,0 +1,49 @@
+{
+  "schema": "cmb.allocation-run/v1",
+  "status": "PASS",
+  "split": "dev",
+  "model": {
+    "repo_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+    "revision": "9217f5db79a29953eb74d5343926648285ec7e67",
+    "filename": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+    "sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+    "size_bytes": 491400032,
+    "license_declared": "apache-2.0",
+    "purpose": "engineering smoke only; not a frontier comparison",
+    "llama_revision": "7ab4ee7baad2d920464cbacfad4f4b07cf111fd2"
+  },
+  "binary_sha256": "1d0225c9d7387003307cb28fcda028073561692c5304e9f5f330f1f31238eb26",
+  "threads": 4,
+  "gpu_layers": 0,
+  "max_tokens": 24,
+  "seed": 31,
+  "temperature": 0,
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "protocol_sha256": "5dad3f552a7e4115efcc28fe897096ff291da283377f47124be2f3df7a171ca0",
+  "input_sha256": "b1d1f12dc7d14deefae957ef9eac9ea5c0a9b390537649422b3d0acca11ed799",
+  "source_sha256": {
+    "experiments/llm/cmb_study.py": "e6fe9685e7fd26d9a302cc5bee45fac8358b31ec4dda6a91ea127d898293ee9b",
+    "experiments/llm/pilot.py": "07a3a4cda4cda88bceaee1b2f5450d087fb4e1f83f38abe7b7049ef47579ff1e",
+    "experiments/llm/model.lock.json": "1efbca5f56b41537b19421fb71e0673ca19ee2c3cb158747b51ed37d3ead6f62",
+    "src/math/correlates.ts": "b916e9f84d57be685e8f9714cff62645528bed4b976f3d2760f8fb02d26c7017",
+    "src/ingest/seriesTool.ts": "c53bdb17c390a15283584c1dd76ac0d6943c1149d4bdfe6273d5f9af6e2ab8c1",
+    "scripts/cmb-series-tool.mjs": "93e8ec40c0323c5a947b7dc55914f8c4f42305f165b6dc03030348bd57a7d162",
+    "bridge/llama_observer/main.cpp": "5f8d30bb39cdefbee230283940f5ef3800d19f468f9a0ffb00b84ceee8f1cbea",
+    "bridge/llama_observer/metrics.h": "114b6232df1cf6d9fa4dd27f6acbca96cfbbfd84883374ddc141219a3c7b4db1"
+  },
+  "parity_equal": 24,
+  "n": 24,
+  "tool_batch_ms": 80.18969899967487,
+  "collection_wall_ms": 301490.9874520017,
+  "evidence_sha256": {
+    "warmup.json": "60af4b2d81757252646d2e1ae458f707aaf1606d43d55516ebe9ae506363644e",
+    "control-donors.json": "e91747d04a51d540f7e1c96e3b45a367ae6c822d1effe3ba59a100a90295fa76",
+    "decisions.json": "c0d4f3da46da8609dd40025e42ab311d5a3baf9668c6097a5147b7c87e8e4eef",
+    "observer.log.gz": "5589b7b763d049556f8225623f922bd476d1377912e277aa9fe378dfec1e7015",
+    "tool-responses.jsonl": "966740754e985fc7202f4061c71c5459001a9f886781a32e1760f3816f88a2d9",
+    "tool-requests.jsonl": "db15d3e7b2a9b7022f84f0d142cb2a462dd0434fe67ed948bef1e5ab5b2fe446",
+    "predictions.json": "e206a529d57df560bceb5364a63f27a8265432bd7904a44e1795f14359dec02a",
+    "numerical-checks.json": "1cedc76ca0e75f7889af468d96be9b9718eb2e06bd3f3a6ac1c33d5f56d6e553",
+    "traces.jsonl.gz": "2cc6c4b9ecaaf82e33b367145e5768084223285e282a48170bbcd4b9b660476f"
+  }
+}

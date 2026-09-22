@@ -1,0 +1,242 @@
+{
+  "dev-iid-lag-0": {
+    "lag": -4,
+    "correlation": 0.9998549223671136,
+    "zero_lag_correlation": -0.2503011289899003,
+    "sign": 1,
+    "strong": 1,
+    "zero_lag_sign": -1,
+    "gap": 0.7495537933772133,
+    "answer": -4
+  },
+  "dev-iid-lag-1": {
+    "lag": -1,
+    "correlation": -0.9998045534949348,
+    "zero_lag_correlation": -0.25296149372796245,
+    "sign": -1,
+    "strong": 1,
+    "zero_lag_sign": -1,
+    "gap": 0.7173335053345256,
+    "answer": -1
+  },
+  "dev-iid-lag-2": {
+    "lag": -4,
+    "correlation": 0.9997787530262232,
+    "zero_lag_correlation": -0.3078522405428892,
+    "sign": 1,
+    "strong": 1,
+    "zero_lag_sign": -1,
+    "gap": 0.691926512483334,
+    "answer": -4
+  },
+  "dev-iid-lag-3": {
+    "lag": -2,
+    "correlation": -0.9998639571776958,
+    "zero_lag_correlation": 0.15786612488453822,
+    "sign": -1,
+    "strong": 1,
+    "zero_lag_sign": 1,
+    "gap": 0.7192624951709883,
+    "answer": -2
+  },
+  "dev-iid-lag-4": {
+    "lag": -3,
+    "correlation": 0.9998771469443565,
+    "zero_lag_correlation": -0.21805836456568564,
+    "sign": 1,
+    "strong": 1,
+    "zero_lag_sign": -1,
+    "gap": 0.7094254247597956,
+    "answer": -3
+  },
+  "dev-iid-lag-5": {
+    "lag": -1,
+    "correlation": -0.9998477379185408,
+    "zero_lag_correlation": -0.12505955893124293,
+    "sign": -1,
+    "strong": 1,
+    "zero_lag_sign": -1,
+    "gap": 0.6451233324304646,
+    "answer": -1
+  },
+  "dev-iid-sign-0": {
+    "lag": -2,
+    "correlation": 0.9998202311906587,
+    "zero_lag_correlation": -0.2543336096424918,
+    "sign": 1,
+    "strong": 1,
+    "zero_lag_sign": -1,
+    "gap": 0.6971288308128387,
+    "answer": 1
+  },
+  "dev-iid-sign-1": {
+    "lag": 1,
+    "correlation": -0.9998344025983287,
+    "zero_lag_correlation": 0.3304136559221231,
+    "sign": -1,
+    "strong": 1,
+    "zero_lag_sign": 1,
+    "gap": 0.6095650777883974,
+    "answer": -1
+  },
+  "dev-iid-sign-2": {
+    "lag": -2,
+    "correlation": 0.9997992778030295,
+    "zero_lag_correlation": -0.1558064884789963,
+    "sign": 1,
+    "strong": 1,
+    "zero_lag_sign": -1,
+    "gap": 0.5238274052336791,
+    "answer": 1
+  },
+  "dev-iid-sign-3": {
+    "lag": -3,
+    "correlation": -0.9997863587308052,
+    "zero_lag_correlation": -0.1084632610746525,
+    "sign": -1,
+    "strong": 1,
+    "zero_lag_sign": -1,
+    "gap": 0.7401449769122455,
+    "answer": -1
+  },
+  "dev-iid-sign-4": {
+    "lag": -1,
+    "correlation": 0.9998091370873948,
+    "zero_lag_correlation": -0.3540222955553999,
+    "sign": 1,
+    "strong": 1,
+    "zero_lag_sign": -1,
+    "gap": 0.645786841531995,
+    "answer": 1
+  },
+  "dev-iid-sign-5": {
+    "lag": -3,
+    "correlation": -0.9998110773114504,
+    "zero_lag_correlation": 0.10275921022203195,
+    "sign": -1,
+    "strong": 1,
+    "zero_lag_sign": 1,
+    "gap": 0.8040754251808993,
+    "answer": -1
+  },
+  "dev-iid-strong-0": {
+    "lag": -2,
+    "correlation": 0.9998058259402702,
+    "zero_lag_correlation": -0.14260896919594598,
+    "sign": 1,
+    "strong": 1,
+    "zero_lag_sign": -1,
+    "gap": 0.7472516773739604,
+    "answer": 1
+  },
+  "dev-iid-strong-1": {
+    "lag": 3,
+    "correlation": 0.4534810273227049,
+    "zero_lag_correlation": -0.18468850427094852,
+    "sign": 1,
+    "strong": 0,
+    "zero_lag_sign": -1,
+    "gap": 0.14727332407408372,
+    "answer": 0
+  },
+  "dev-iid-strong-2": {
+    "lag": -4,
+    "correlation": 0.9998124524527345,
+    "zero_lag_correlation": -0.11241694286568214,
+    "sign": 1,
+    "strong": 1,
+    "zero_lag_sign": -1,
+    "gap": 0.7521845534622023,
+    "answer": 1
+  },
+  "dev-iid-strong-3": {
+    "lag": -3,
+    "correlation": -0.6845610592103534,
+    "zero_lag_correlation": 0.13524896363528557,
+    "sign": -1,
+    "strong": 0,
+    "zero_lag_sign": 1,
+    "gap": 0.19988417608017328,
+    "answer": 0
+  },
+  "dev-iid-strong-4": {
+    "lag": -2,
+    "correlation": 0.9998761395733827,
+    "zero_lag_correlation": -0.1468235107264687,
+    "sign": 1,
+    "strong": 1,
+    "zero_lag_sign": -1,
+    "gap": 0.5158053823383504,
+    "answer": 1
+  },
+  "dev-iid-strong-5": {
+    "lag": -3,
+    "correlation": -0.44644853512911004,
+    "zero_lag_correlation": 0.1209192371801643,
+    "sign": -1,
+    "strong": 0,
+    "zero_lag_sign": 1,
+    "gap": 0.2849470968095984,
+    "answer": 0
+  },
+  "dev-iid-zero_sign-0": {
+    "lag": 1,
+    "correlation": 0.999830193063707,
+    "zero_lag_correlation": 0.10544402006306532,
+    "sign": 1,
+    "strong": 1,
+    "zero_lag_sign": 1,
+    "gap": 0.8814953095051825,
+    "answer": 1
+  },
+  "dev-iid-zero_sign-1": {
+    "lag": 0,
+    "correlation": -0.9998880063097009,
+    "zero_lag_correlation": -0.9998880063097009,
+    "sign": -1,
+    "strong": 1,
+    "zero_lag_sign": -1,
+    "gap": 0.6688586312061064,
+    "answer": -1
+  },
+  "dev-iid-zero_sign-2": {
+    "lag": 2,
+    "correlation": 0.9998249007306788,
+    "zero_lag_correlation": -0.1794211511104912,
+    "sign": 1,
+    "strong": 1,
+    "zero_lag_sign": -1,
+    "gap": 0.7032930614760347,
+    "answer": -1
+  },
+  "dev-iid-zero_sign-3": {
+    "lag": -3,
+    "correlation": -0.9998391409920189,
+    "zero_lag_correlation": -0.18086258836555366,
+    "sign": -1,
+    "strong": 1,
+    "zero_lag_sign": -1,
+    "gap": 0.7583250581861907,
+    "answer": -1
+  },
+  "dev-iid-zero_sign-4": {
+    "lag": -3,
+    "correlation": 0.9997905135810454,
+    "zero_lag_correlation": 0.17993214943785318,
+    "sign": 1,
+    "strong": 1,
+    "zero_lag_sign": 1,
+    "gap": 0.7299232627104807,
+    "answer": 1
+  },
+  "dev-iid-zero_sign-5": {
+    "lag": -1,
+    "correlation": -0.9996657830364422,
+    "zero_lag_correlation": 0.2778230744957436,
+    "sign": -1,
+    "strong": 1,
+    "zero_lag_sign": 1,
+    "gap": 0.7218427085406985,
+    "answer": 1
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schema": "cmb.llm-pilot/v1",
+  "engineering_only": true,
+  "quality_gain_established": false,
+  "parity": {
+    "equal_token_sequences": 12,
+    "total": 12
+  },
+  "policies": {
+    "ordinary": {
+      "correct": 6,
+      "n": 12,
+      "accuracy": 0.5,
+      "extra_attempts": 0,
+      "replay_wall_ms": 2618.998436999391,
+      "processed_plus_emitted_tokens": 385
+    },
+    "random": {
+      "correct": 6,
+      "n": 12,
+      "accuracy": 0.5,
+      "extra_attempts": 6,
+      "replay_wall_ms": 4425.694790999842,
+      "processed_plus_emitted_tokens": 606
+    },
+    "confidence": {
+      "correct": 6,
+      "n": 12,
+      "accuracy": 0.5,
+      "extra_attempts": 6,
+      "replay_wall_ms": 4688.208893999217,
+      "processed_plus_emitted_tokens": 620
+    },
+    "geometry": {
+      "correct": 6,
+      "n": 12,
+      "accuracy": 0.5,
+      "extra_attempts": 6,
+      "replay_wall_ms": 4688.208893999217,
+      "processed_plus_emitted_tokens": 620
+    },
+    "shuffled_geometry": {
+      "correct": 6,
+      "n": 12,
+      "accuracy": 0.5,
+      "extra_attempts": 6,
+      "replay_wall_ms": 4684.137543999896,
+      "processed_plus_emitted_tokens": 620
+    }
+  },
+  "geometry_available": 12,
+  "notes": [
+    "Retry replaces the first answer without consulting labels.",
+    "All retries were collected offline; replay is not a live deployment benchmark.",
+    "Total offline collection exceeds any individual replay policy budget."
+  ],
+  "retry_action_diagnostic": {
+    "repaired": 0,
+    "regressed": 0,
+    "unchanged_correctness": 12
+  }
+}

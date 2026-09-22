@@ -1,0 +1,18 @@
+{
+  "schema": "cmb.allocation-dataset/v1",
+  "origin": "synthetic",
+  "license": "repository research-only terms",
+  "dev_n": 24,
+  "test_n": 96,
+  "one_question_per_independent_pair": true,
+  "seeds": {
+    "dev": 1701,
+    "test": 2903
+  },
+  "sha256": {
+    "test-inputs.json": "5fafc4372767be6c2ea41d858102606d88e8a058b4a76653858029a0c6f7275f",
+    "dev-answers.json": "da14eae5f0fa792dfdc541692531bc7dff5071504eac4b363c2e08bd7d6673e6",
+    "dev-inputs.json": "b1d1f12dc7d14deefae957ef9eac9ea5c0a9b390537649422b3d0acca11ed799",
+    "test-answers.json": "0386de64a56570fd4c588d4b302b12046bb85c1621ef19a7b6652c0eaa7ae949"
+  }
+}

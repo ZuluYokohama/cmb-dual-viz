@@ -1,0 +1,50 @@
+{
+  "schema": "cmb.llm-run/v1",
+  "status": "PASS",
+  "purpose": "engineering-smoke",
+  "model": {
+    "repo_id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+    "revision": "9217f5db79a29953eb74d5343926648285ec7e67",
+    "filename": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+    "sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+    "size_bytes": 491400032,
+    "license_declared": "apache-2.0",
+    "purpose": "engineering smoke only; not a frontier comparison",
+    "llama_revision": "7ab4ee7baad2d920464cbacfad4f4b07cf111fd2"
+  },
+  "binary_sha256": "1d0225c9d7387003307cb28fcda028073561692c5304e9f5f330f1f31238eb26",
+  "harness_sha256": "07a3a4cda4cda88bceaee1b2f5450d087fb4e1f83f38abe7b7049ef47579ff1e",
+  "task_sha256": "5a80d6b1c3af0efb5f2a2a8129c37c9ec403901d3e6b55e91ab52e10625a9f89",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "threads": 4,
+  "gpu_layers_requested": 0,
+  "policy_revision": "fixed-half-entropy-half-drift-v1",
+  "seed": 31,
+  "max_tokens": 24,
+  "budget": {
+    "kind": "equal-extra-attempt-count",
+    "k": 6
+  },
+  "limitations": [
+    "No training or fitted controller",
+    "No held-out capability claim",
+    "Replay costs are estimates; not matched wall-time or FLOPs",
+    "Final-output states only; not intermediate-layer telemetry"
+  ],
+  "source_sha256": {
+    "bridge/llama_observer/CMakeLists.txt": "ab66025c4304ca4a74cb5a7441084d8cc6b34f5d72a693956ffd83b8907a5913",
+    "bridge/llama_observer/main.cpp": "5f8d30bb39cdefbee230283940f5ef3800d19f468f9a0ffb00b84ceee8f1cbea",
+    "bridge/llama_observer/metrics.h": "114b6232df1cf6d9fa4dd27f6acbca96cfbbfd84883374ddc141219a3c7b4db1",
+    "experiments/llm/pilot.py": "07a3a4cda4cda88bceaee1b2f5450d087fb4e1f83f38abe7b7049ef47579ff1e",
+    "experiments/llm/model.lock.json": "1efbca5f56b41537b19421fb71e0673ca19ee2c3cb158747b51ed37d3ead6f62"
+  },
+  "evidence_sha256": {
+    "warmup.json": "8e93f06585284e7f36e7f984bc279b5d42cfb1e0943d6ef27d25c29f98469020",
+    "decisions.json": "07b9c7b6f93910564df94d0d4177651807afe081dd85a972bae95f5b798cddd5",
+    "report.json": "90c79c0d7580bf5b4b850ca2ce9e58c7382d2e4d1222533ef92941990b4b08c3",
+    "tasks.json": "5a80d6b1c3af0efb5f2a2a8129c37c9ec403901d3e6b55e91ab52e10625a9f89",
+    "traces.jsonl": "bdd346a4a645a89fed7f0dd51af5d45e004d4b3f08b754618f81a927d03a5125",
+    "observer.log": "50ec44e29174fd95061e087098e0183b0f68fa9c757ce15c8001581ace59f954"
+  }
+}

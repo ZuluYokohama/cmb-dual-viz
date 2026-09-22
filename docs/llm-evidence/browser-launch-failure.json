@@ -1,0 +1,7 @@
+{
+  "status": "FAIL",
+  "errors": [],
+  "checks": [],
+  "physicalGpu": "NOT_RUN",
+  "failure": "Failed to launch the browser process!\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n"
+}

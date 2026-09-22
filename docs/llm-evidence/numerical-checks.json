@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "observed_rows": 12,
+  "observed_tokens_including_eog": 53,
+  "max_norm_absolute_error": 3.410605131648481e-13,
+  "max_drift_absolute_error": 1.7763568394002505e-15,
+  "entropy_reference": "analytic C++ metrics test; full logits not retained"
+}

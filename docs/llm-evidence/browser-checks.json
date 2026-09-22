@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "checks": [
+    "real observer trace imports",
+    "malformed mixed batch rejected atomically",
+    "astronomy inputs remain separate",
+    "no browser exceptions"
+  ],
+  "physicalGpu": "NOT_RUN",
+  "records": 36,
+  "browser": "HeadlessChrome/131.0.6778.264"
+}
